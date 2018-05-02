@@ -1,6 +1,6 @@
 import express from 'express'
 import unirest from 'unirest'
-import { gwHost, key } from '../../../config'
+import config from '../../config'
 
 const router = express.Router()
 
@@ -9,17 +9,17 @@ router
   .get('/:id', charData)
 
 function request (req, res) {
-  unirest.get(`${gwHost}/characters${req.url}`)
-    .headers({ Authorization: `Bearer ${key}` })
-    .end(data => res.json(data))
+  unirest.get(`${config.gwHost}/characters${req.url}`)
+    //TODO client will not be sending api key. Implement Database
+    .headers({ Authorization: `Bearer ${req.query.access_token}` })
+    .end(data => res.send(data))
 }
 
 function charData (req, res) {
-  unirest.get(`${gwHost}/characters${req.url}`)
-    .headers({ Authorization: `Bearer ${key}` })
-    .end(data => {
-      res.json(data)
-    })
+  unirest.get(`${config.gwHost}/characters${req.url}`)
+    //TODO client will not be sending api key. Implement Database
+    .headers({ Authorization: `Bearer ${req.query.access_token}` })
+    .end(data => res.send(data))
 }
 
 export default router
