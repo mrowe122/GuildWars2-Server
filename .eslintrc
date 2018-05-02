@@ -12,7 +12,6 @@
     "es6"     : true
   },
   "rules": {
-    "jsx-quotes"            : [2, "prefer-single"],
     "object-curly-spacing"  : [2, "always"],
     "arrow-parens"          : ["warn", "as-needed"],
     "no-var"                : 2

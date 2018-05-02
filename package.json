@@ -10,11 +10,11 @@
     "url": "git@github.com:mrowe122/GuildWars2-Server.git"
   },
   "bin": {
-    "gw2_server": "build/index"
+    "gw2_server": "bin/gw2_server"
   },
   "scripts": {
     "dev": "./node_modules/.bin/babel-watch src/index.js",
-    "build": "./node_modules/.bin/babel src --out-dir build"
+    "dist": "./node_modules/.bin/babel src --out-dir dist"
   },
   "dependencies": {
     "express": "^4.16.3",

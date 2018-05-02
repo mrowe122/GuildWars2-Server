@@ -1,8 +1,6 @@
-import express from 'express'
-import routes from './routes'
-import { port } from '../config'
-const app = express()
-app.use('/api', routes)
+import app from './server'
+import config from './config'
 
-app.listen(port)
-console.log(`Express router listening on port: ${port}`)
+app.listen(config.port, () => {
+  console.log(`Express router listening on port: ${config.port}`)
+})
