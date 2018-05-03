@@ -1,8 +1,21 @@
 import express from 'express'
 import unirest from 'unirest'
+import fs from 'fs'
 import config from '../../config'
 
 const router = express.Router()
+
+router.use((req, res, next) => {
+  fs.readFile('./userDb/user', 'utf8', (err, data) => {
+    const apiKey = JSON.parse(data).apiKey
+    if (apiKey) {
+      req.apiKey = apiKey
+      next()
+    } else {
+      res.status(403).send('no api key stored')
+    }
+  })
+})
 
 router
   .get('/', request)
@@ -10,16 +23,18 @@ router
 
 function request (req, res) {
   unirest.get(`${config.gwHost}/characters${req.url}`)
-    //TODO client will not be sending api key. Implement Database
-    .headers({ Authorization: `Bearer ${req.query.access_token}` })
-    .end(data => res.send(data))
+    .headers({ Authorization: `Bearer ${req.apiKey}` })
+    .end(data => {
+      res.send(data)
+    })
 }
 
 function charData (req, res) {
   unirest.get(`${config.gwHost}/characters${req.url}`)
-    //TODO client will not be sending api key. Implement Database
-    .headers({ Authorization: `Bearer ${req.query.access_token}` })
-    .end(data => res.send(data))
+    .headers({ Authorization: `Bearer ${req.apiKey}` })
+    .end(data => {
+      res.send(data)
+    })
 }
 
 export default router
