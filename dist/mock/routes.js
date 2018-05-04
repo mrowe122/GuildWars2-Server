@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
   characters: require('./api/characters/index.json'),
   CorruptedCreed: require('./api/characters/CorruptedCreed.json'),
@@ -5,4 +7,4 @@ module.exports = {
   CorruptedMatrix: require('./api/characters/CorruptedMatrix.json'),
   CorruptedNova: require('./api/characters/CorruptedNova.json'),
   NovaCrowe: require('./api/characters/NovaCrowe.json')
-}
+};

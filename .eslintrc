@@ -8,9 +8,6 @@
     "browser" : true,
     "es6": true
   },
-  "ecmaFeatures": {
-    "modules": true
-  },
   "rules": {
     "object-curly-spacing": [2, "always"],
     "arrow-parens": ["warn", "as-needed"],

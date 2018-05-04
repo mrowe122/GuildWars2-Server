@@ -10,12 +10,15 @@
     "url": "git@github.com:mrowe122/GuildWars2-Server.git"
   },
   "bin": {
-    "gw2_server": "bin/gw2_server"
+    "gw2_server": "bin/gw2_server",
+    "gw2_mock_server": "bin/gw2_mock_server"
   },
   "scripts": {
-    "start": "./node_modules/.bin/babel-watch src/index.js",
-    "mock": "./node_modules/.bin/babel-watch ./mockDb/json-server",
-    "dist": "./node_modules/.bin/babel src --out-dir dist"
+    "start": "./node_modules/.bin/babel-watch src",
+    "mock": "./node_modules/.bin/babel-watch mockDb",
+    "build": "node_modules/.bin/npm-run-all --parallel server mockServer",
+    "server": "./node_modules/.bin/babel src --out-dir dist/server",
+    "mockServer": "./node_modules/.bin/babel mockDb --out-dir dist/mock --copy-files"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
@@ -38,6 +41,7 @@
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-standard": "^3.1.0",
+    "npm-run-all": "^4.1.2",
     "path": "^0.12.7"
   }
 }
