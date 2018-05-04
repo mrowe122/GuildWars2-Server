@@ -16,13 +16,22 @@ var _routes = require('./routes');
 
 var _routes2 = _interopRequireDefault(_routes);
 
+var _config = require('./config');
+
+var _config2 = _interopRequireDefault(_config);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var app = (0, _express2.default)();
 
-app.use(_bodyParser2.default.urlencoded({ extended: false }));
-app.use(_bodyParser2.default.json());
+var start = function start() {
+  app.use(_bodyParser2.default.urlencoded({ extended: false }));
+  app.use(_bodyParser2.default.json());
 
-app.use('/api', _routes2.default);
+  app.use('/api', _routes2.default);
+  app.listen(_config2.default.port, function () {
+    console.log('Express router listening on port: ' + _config2.default.port);
+  });
+};
 
-exports.default = app;
+exports.default = start;
