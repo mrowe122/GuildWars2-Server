@@ -100,8 +100,8 @@
 				"elite": null
 			}
 		},
-		"equipment": [
-			{
+		"equipment": {
+			"HelmAquatic": {
 				"id": 66345,
 				"slot": "HelmAquatic",
 				"binding": "Character",
@@ -141,7 +141,7 @@
 				"infusions": [],
 				"upgrades": []
 			},
-			{
+			"Backpack": {
 				"id": 63717,
 				"slot": "Backpack",
 				"binding": "Account",
@@ -188,7 +188,7 @@
 				"infusions": [],
 				"upgrades": []
 			},
-			{
+			"Coat": {
 				"id": 6472,
 				"slot": "Coat",
 				"binding": "Character",
@@ -240,7 +240,7 @@
 				"infusions": [],
 				"upgrades": []
 			},
-			{
+			"Boots": {
 				"id": 6470,
 				"slot": "Boots",
 				"binding": "Character",
@@ -292,7 +292,7 @@
 				"infusions": [],
 				"upgrades": []
 			},
-			{
+			"Helm": {
 				"id": 64666,
 				"slot": "Helm",
 				"binding": "Character",
@@ -410,7 +410,7 @@
 					}
 				]
 			},
-			{
+			"Leggings": {
 				"id": 6473,
 				"slot": "Leggings",
 				"binding": "Character",
@@ -462,7 +462,7 @@
 				"infusions": [],
 				"upgrades": []
 			},
-			{
+			"Ring1": {
 				"id": 64127,
 				"slot": "Ring1",
 				"binding": "Character",
@@ -573,7 +573,7 @@
 					}
 				]
 			},
-			{
+			"Amulet": {
 				"id": 64130,
 				"slot": "Amulet",
 				"binding": "Character",
@@ -620,7 +620,7 @@
 				"infusions": [],
 				"upgrades": []
 			},
-			{
+			"WeaponAquaticA": {
 				"id": 64669,
 				"slot": "WeaponAquaticA",
 				"binding": "Character",
@@ -671,7 +671,7 @@
 				"infusions": [],
 				"upgrades": []
 			},
-			{
+			"WeaponAquaticB": {
 				"id": 64134,
 				"slot": "WeaponAquaticB",
 				"binding": "Character",
@@ -726,7 +726,7 @@
 				"infusions": [],
 				"upgrades": []
 			},
-			{
+			"WeaponA1": {
 				"id": 64123,
 				"slot": "WeaponA1",
 				"binding": "Character",
@@ -836,7 +836,7 @@
 					}
 				]
 			},
-			{
+			"WeaponA2": {
 				"id": 64691,
 				"slot": "WeaponA2",
 				"binding": "Character",
@@ -942,7 +942,7 @@
 					}
 				]
 			},
-			{
+			"WeaponB1": {
 				"id": 64673,
 				"slot": "WeaponB1",
 				"binding": "Character",
@@ -993,7 +993,7 @@
 				"infusions": [],
 				"upgrades": []
 			}
-		],
+		},
 		"recipes": [],
 		"equipment_pvp": {
 			"amulet": null,

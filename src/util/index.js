@@ -5,5 +5,5 @@ export const mergeEquipmentIds = (data, ids) => new Promise(resolve => {
   const equipment = flatMap(({ infusions = [], upgrades = [], ...e }) => assign(
     e, { data: idKey[e.id], infusions: infusions.map(i => idKey[i]), upgrades: upgrades.map(u => idKey[u]) }
   ))(data.equipment)
-  resolve(assign(data, { equipment: equipment }))
+  resolve(assign(data, { equipment: keyBy('slot')(equipment) }))
 })
