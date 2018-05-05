@@ -129,8 +129,8 @@
 				"elite": 14419
 			}
 		},
-		"equipment": [
-			{
+		"equipment": {
+			"HelmAquatic": {
 				"id": 63633,
 				"slot": "HelmAquatic",
 				"binding": "Character",
@@ -178,7 +178,7 @@
 				"infusions": [],
 				"upgrades": []
 			},
-			{
+			"Backpack": {
 				"id": 37055,
 				"slot": "Backpack",
 				"binding": "Account",
@@ -249,7 +249,7 @@
 				"infusions": [],
 				"upgrades": []
 			},
-			{
+			"Coat": {
 				"id": 6913,
 				"slot": "Coat",
 				"binding": "Character",
@@ -312,7 +312,7 @@
 				"infusions": [],
 				"upgrades": []
 			},
-			{
+			"Boots": {
 				"id": 6910,
 				"slot": "Boots",
 				"binding": "Character",
@@ -375,7 +375,7 @@
 				"infusions": [],
 				"upgrades": []
 			},
-			{
+			"Gloves": {
 				"id": 6916,
 				"slot": "Gloves",
 				"binding": "Character",
@@ -438,7 +438,7 @@
 				"infusions": [],
 				"upgrades": []
 			},
-			{
+			"Helm": {
 				"id": 6919,
 				"slot": "Helm",
 				"binding": "Character",
@@ -501,7 +501,7 @@
 				"infusions": [],
 				"upgrades": []
 			},
-			{
+			"Leggings": {
 				"id": 6922,
 				"slot": "Leggings",
 				"binding": "Character",
@@ -564,7 +564,7 @@
 				"infusions": [],
 				"upgrades": []
 			},
-			{
+			"Shoulders": {
 				"id": 6925,
 				"slot": "Shoulders",
 				"binding": "Character",
@@ -627,7 +627,7 @@
 				"infusions": [],
 				"upgrades": []
 			},
-			{
+			"Ring1": {
 				"id": 37076,
 				"slot": "Ring1",
 				"binding": "Account",
@@ -701,7 +701,7 @@
 				"infusions": [],
 				"upgrades": []
 			},
-			{
+			"Ring2": {
 				"id": 37089,
 				"slot": "Ring2",
 				"binding": "Account",
@@ -775,7 +775,7 @@
 				"infusions": [],
 				"upgrades": []
 			},
-			{
+			"Amulet": {
 				"id": 39265,
 				"slot": "Amulet",
 				"binding": "Account",
@@ -839,7 +839,7 @@
 				"infusions": [],
 				"upgrades": []
 			},
-			{
+			"WeaponAquaticA": {
 				"id": 28656,
 				"slot": "WeaponAquaticA",
 				"data": {
@@ -887,7 +887,7 @@
 				"infusions": [],
 				"upgrades": []
 			},
-			{
+			"WeaponAquaticB": {
 				"id": 47094,
 				"slot": "WeaponAquaticB",
 				"binding": "Character",
@@ -999,7 +999,7 @@
 					}
 				]
 			},
-			{
+			"WeaponA1": {
 				"id": 28875,
 				"slot": "WeaponA1",
 				"skin": 4355,
@@ -1049,7 +1049,7 @@
 				"infusions": [],
 				"upgrades": []
 			},
-			{
+			"WeaponB1": {
 				"id": 46239,
 				"slot": "WeaponB1",
 				"skin": 4223,
@@ -1106,7 +1106,7 @@
 				"infusions": [],
 				"upgrades": []
 			},
-			{
+			"Sickle": {
 				"id": 23008,
 				"slot": "Sickle",
 				"binding": "Account",
@@ -1142,7 +1142,7 @@
 				"infusions": [],
 				"upgrades": []
 			},
-			{
+			"Axe": {
 				"id": 23002,
 				"slot": "Axe",
 				"binding": "Account",
@@ -1178,7 +1178,7 @@
 				"infusions": [],
 				"upgrades": []
 			},
-			{
+			"Pick": {
 				"id": 23010,
 				"slot": "Pick",
 				"binding": "Account",
@@ -1214,7 +1214,7 @@
 				"infusions": [],
 				"upgrades": []
 			}
-		],
+		},
 		"recipes": [],
 		"equipment_pvp": {
 			"amulet": null,

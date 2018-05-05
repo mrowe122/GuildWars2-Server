@@ -25,7 +25,7 @@ var mergeEquipmentIds = function mergeEquipmentIds(data, ids) {
           return idKey[u];
         }) });
     })(data.equipment);
-    resolve((0, _fp.assign)(data, { equipment: equipment }));
+    resolve((0, _fp.assign)(data, { equipment: (0, _fp.keyBy)('slot')(equipment) }));
   });
 };
 exports.mergeEquipmentIds = mergeEquipmentIds;

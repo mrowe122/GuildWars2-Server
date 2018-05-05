@@ -7,7 +7,7 @@
 		"profession": "Mesmer",
 		"level": 80,
 		"guild": "F5AFEEF2-F280-4E2C-B291-AB012B307045",
-		"age": 2262232,
+		"age": 2262401,
 		"created": "2014-03-28T02:29:00Z",
 		"deaths": 1096,
 		"crafting": [
@@ -145,8 +145,8 @@
 				"elite": 10311
 			}
 		},
-		"equipment": [
-			{
+		"equipment": {
+			"HelmAquatic": {
 				"id": 6477,
 				"slot": "HelmAquatic",
 				"binding": "Character",
@@ -188,7 +188,7 @@
 				"infusions": [],
 				"upgrades": []
 			},
-			{
+			"Backpack": {
 				"id": 37055,
 				"slot": "Backpack",
 				"skin": 7743,
@@ -331,7 +331,7 @@
 				],
 				"upgrades": []
 			},
-			{
+			"Coat": {
 				"id": 39992,
 				"slot": "Coat",
 				"skin": 5743,
@@ -437,7 +437,7 @@
 					}
 				]
 			},
-			{
+			"Boots": {
 				"id": 39989,
 				"slot": "Boots",
 				"binding": "Character",
@@ -542,7 +542,7 @@
 					}
 				]
 			},
-			{
+			"Gloves": {
 				"id": 39995,
 				"slot": "Gloves",
 				"skin": 248,
@@ -648,7 +648,7 @@
 					}
 				]
 			},
-			{
+			"Helm": {
 				"id": 39998,
 				"slot": "Helm",
 				"skin": 2047,
@@ -754,7 +754,7 @@
 					}
 				]
 			},
-			{
+			"Leggings": {
 				"id": 40001,
 				"slot": "Leggings",
 				"skin": 159,
@@ -860,7 +860,7 @@
 					}
 				]
 			},
-			{
+			"Shoulders": {
 				"id": 40004,
 				"slot": "Shoulders",
 				"skin": 2263,
@@ -966,7 +966,7 @@
 					}
 				]
 			},
-			{
+			"Accessory1": {
 				"id": 39224,
 				"slot": "Accessory1",
 				"binding": "Account",
@@ -1101,7 +1101,7 @@
 				],
 				"upgrades": []
 			},
-			{
+			"Accessory2": {
 				"id": 39225,
 				"slot": "Accessory2",
 				"binding": "Account",
@@ -1236,7 +1236,7 @@
 				],
 				"upgrades": []
 			},
-			{
+			"Ring1": {
 				"id": 37076,
 				"slot": "Ring1",
 				"binding": "Account",
@@ -1385,7 +1385,7 @@
 				],
 				"upgrades": []
 			},
-			{
+			"Ring2": {
 				"id": 37089,
 				"slot": "Ring2",
 				"binding": "Account",
@@ -1530,7 +1530,7 @@
 				],
 				"upgrades": []
 			},
-			{
+			"Amulet": {
 				"id": 39277,
 				"slot": "Amulet",
 				"binding": "Account",
@@ -1598,7 +1598,7 @@
 				"infusions": [],
 				"upgrades": []
 			},
-			{
+			"WeaponAquaticA": {
 				"id": 47098,
 				"slot": "WeaponAquaticA",
 				"binding": "Character",
@@ -1710,7 +1710,7 @@
 					}
 				]
 			},
-			{
+			"WeaponAquaticB": {
 				"id": 28765,
 				"slot": "WeaponAquaticB",
 				"binding": "Character",
@@ -1821,7 +1821,7 @@
 					}
 				]
 			},
-			{
+			"WeaponA1": {
 				"id": 46762,
 				"slot": "WeaponA1",
 				"skin": 4839,
@@ -2138,7 +2138,7 @@
 					}
 				]
 			},
-			{
+			"WeaponB1": {
 				"id": 42045,
 				"slot": "WeaponB1",
 				"skin": 5239,
@@ -2198,7 +2198,7 @@
 				"infusions": [],
 				"upgrades": []
 			},
-			{
+			"WeaponB2": {
 				"id": 71097,
 				"slot": "WeaponB2",
 				"stats": {
@@ -2255,7 +2255,7 @@
 				"infusions": [],
 				"upgrades": []
 			},
-			{
+			"Sickle": {
 				"id": 49308,
 				"slot": "Sickle",
 				"binding": "Account",
@@ -2292,7 +2292,7 @@
 				"infusions": [],
 				"upgrades": []
 			},
-			{
+			"Axe": {
 				"id": 67030,
 				"slot": "Axe",
 				"binding": "Account",
@@ -2329,7 +2329,7 @@
 				"infusions": [],
 				"upgrades": []
 			},
-			{
+			"Pick": {
 				"id": 87422,
 				"slot": "Pick",
 				"binding": "Account",
@@ -2366,7 +2366,7 @@
 				"infusions": [],
 				"upgrades": []
 			}
-		],
+		},
 		"recipes": [
 			1,
 			2,
