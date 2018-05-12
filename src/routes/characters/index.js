@@ -1,10 +1,10 @@
 import express from 'express'
 import unirest from 'unirest'
 import fs from 'fs'
-import { flatMap } from 'lodash/fp'
+import { flatMap, reduce } from 'lodash/fp'
 import config from '../../config'
-import { getItems } from '../../lib'
-import { mergeEquipmentIds } from '../../util'
+import { getItems, getSkins } from '../../lib'
+import { mergeEquipment } from '../../util'
 
 const router = express.Router()
 
@@ -34,11 +34,12 @@ function charData (req, res) {
   unirest.get(`${config.gwHost}/characters${req.url}`)
     .headers({ Authorization: `Bearer ${req.apiKey}` })
     .end(data => {
-      const allIds = flatMap(
+      const itemsId = flatMap(
         ({ id, infusions = [] , upgrades = [] }) => [id, ...infusions, ...upgrades]
       )(data.body.equipment)
-      getItems(allIds).end(ids => {
-        mergeEquipmentIds(data.body, ids.body).then(merged => res.send({ body: merged, statusCode: data.statusCode }))
+      const skinIds = reduce((acc, { skin }) => skin ? acc.concat([skin]) : acc, [])(data.body.equipment)
+      Promise.all([getItems(itemsId), getSkins(skinIds)]).then(ids => {
+        mergeEquipment(data.body, ids).then(merged => res.send({ body: merged, statusCode: data.statusCode }))
       })
     })
 }
