@@ -233,7 +233,6 @@
 			"Backpack": {
 				"id": 50056,
 				"slot": "Backpack",
-				"skin": 2332,
 				"stats": {
 					"id": 656,
 					"attributes": {
@@ -294,12 +293,23 @@
 					}
 				},
 				"infusions": [],
-				"upgrades": []
+				"upgrades": [],
+				"skin": {
+					"name": "Synergetic Tempered Spinal Blades",
+					"description": "<c=@flavor>We faced Scarlet at our door, and that day we brought the fight to her.<c>",
+					"type": "Back",
+					"flags": [
+						"ShowInWardrobe"
+					],
+					"restrictions": [],
+					"rarity": "Basic",
+					"id": 2332,
+					"icon": "https://render.guildwars2.com/file/C6E26C1A03DF660B1AEB18486B487420C013094E/740257.png"
+				}
 			},
 			"Coat": {
 				"id": 6934,
 				"slot": "Coat",
-				"skin": 954,
 				"binding": "Character",
 				"bound_to": "Nova Crowe",
 				"dyes": [
@@ -400,7 +410,40 @@
 							"suffix": "of the Brawler"
 						}
 					}
-				]
+				],
+				"skin": {
+					"name": "Aurora Garb",
+					"type": "Armor",
+					"flags": [
+						"ShowInWardrobe"
+					],
+					"restrictions": [],
+					"rarity": "Basic",
+					"id": 954,
+					"icon": "https://render.guildwars2.com/file/D0070298D76A0E0CFFA6B304580EBA4076C1DFA6/61286.png",
+					"details": {
+						"type": "Coat",
+						"weight_class": "Light",
+						"dye_slots": {
+							"default": [
+								{
+									"color_id": 19,
+									"material": "cloth"
+								},
+								{
+									"color_id": 19,
+									"material": "metal"
+								},
+								{
+									"color_id": 107,
+									"material": "leather"
+								},
+								null
+							],
+							"overrides": {}
+						}
+					}
+				}
 			},
 			"Boots": {
 				"id": 6928,
@@ -510,7 +553,6 @@
 			"Gloves": {
 				"id": 6931,
 				"slot": "Gloves",
-				"skin": 93,
 				"binding": "Character",
 				"bound_to": "Nova Crowe",
 				"dyes": [
@@ -611,12 +653,41 @@
 							"suffix": "of the Brawler"
 						}
 					}
-				]
+				],
+				"skin": {
+					"name": "Conjurer Gloves",
+					"type": "Armor",
+					"flags": [
+						"ShowInWardrobe"
+					],
+					"restrictions": [],
+					"rarity": "Basic",
+					"id": 93,
+					"icon": "https://render.guildwars2.com/file/76276EDA2390224335093F0C48B20AC367CCB997/61082.png",
+					"details": {
+						"type": "Gloves",
+						"weight_class": "Light",
+						"dye_slots": {
+							"default": [
+								{
+									"color_id": 1,
+									"material": "cloth"
+								},
+								{
+									"color_id": 1,
+									"material": "cloth"
+								},
+								null,
+								null
+							],
+							"overrides": {}
+						}
+					}
+				}
 			},
 			"Helm": {
 				"id": 6937,
 				"slot": "Helm",
-				"skin": 94,
 				"binding": "Character",
 				"bound_to": "Nova Crowe",
 				"dyes": [
@@ -717,12 +788,44 @@
 							"suffix": "of the Brawler"
 						}
 					}
-				]
+				],
+				"skin": {
+					"name": "Seer Mask",
+					"type": "Armor",
+					"flags": [
+						"ShowInWardrobe"
+					],
+					"restrictions": [],
+					"rarity": "Basic",
+					"id": 94,
+					"icon": "https://render.guildwars2.com/file/3F43DAA7D2171B41B6F216804AC321E0B1B9A3AA/61083.png",
+					"details": {
+						"type": "Helm",
+						"weight_class": "Light",
+						"dye_slots": {
+							"default": [
+								{
+									"color_id": 19,
+									"material": "cloth"
+								},
+								{
+									"color_id": 19,
+									"material": "cloth"
+								},
+								{
+									"color_id": 107,
+									"material": "metal"
+								},
+								null
+							],
+							"overrides": {}
+						}
+					}
+				}
 			},
 			"Leggings": {
 				"id": 6943,
 				"slot": "Leggings",
-				"skin": 955,
 				"binding": "Character",
 				"bound_to": "Nova Crowe",
 				"dyes": [
@@ -823,12 +926,44 @@
 							"suffix": "of the Brawler"
 						}
 					}
-				]
+				],
+				"skin": {
+					"name": "Aurora Leggings",
+					"type": "Armor",
+					"flags": [
+						"ShowInWardrobe"
+					],
+					"restrictions": [],
+					"rarity": "Basic",
+					"id": 955,
+					"icon": "https://render.guildwars2.com/file/B67D09D9AFB8E635B7D87A405234B5E6580F46E6/61288.png",
+					"details": {
+						"type": "Leggings",
+						"weight_class": "Light",
+						"dye_slots": {
+							"default": [
+								{
+									"color_id": 19,
+									"material": "cloth"
+								},
+								{
+									"color_id": 456,
+									"material": "metal"
+								},
+								{
+									"color_id": 482,
+									"material": "leather"
+								},
+								null
+							],
+							"overrides": {}
+						}
+					}
+				}
 			},
 			"Shoulders": {
 				"id": 6940,
 				"slot": "Shoulders",
-				"skin": 169,
 				"binding": "Character",
 				"bound_to": "Nova Crowe",
 				"dyes": [
@@ -929,7 +1064,40 @@
 							"suffix": "of the Brawler"
 						}
 					}
-				]
+				],
+				"skin": {
+					"name": "Exalted Mantle",
+					"type": "Armor",
+					"flags": [
+						"ShowInWardrobe"
+					],
+					"restrictions": [],
+					"rarity": "Basic",
+					"id": 169,
+					"icon": "https://render.guildwars2.com/file/CB1168666B9D67CBF119DF365333327B72226E06/61525.png",
+					"details": {
+						"type": "Shoulders",
+						"weight_class": "Light",
+						"dye_slots": {
+							"default": [
+								{
+									"color_id": 19,
+									"material": "cloth"
+								},
+								{
+									"color_id": 19,
+									"material": "cloth"
+								},
+								{
+									"color_id": 107,
+									"material": "cloth"
+								},
+								null
+							],
+							"overrides": {}
+						}
+					}
+				}
 			},
 			"Accessory1": {
 				"id": 43246,
@@ -1553,7 +1721,6 @@
 			"WeaponA1": {
 				"id": 45965,
 				"slot": "WeaponA1",
-				"skin": 5227,
 				"binding": "Character",
 				"bound_to": "Nova Crowe",
 				"data": {
@@ -1659,7 +1826,22 @@
 							"suffix": "of the Hydromancer"
 						}
 					}
-				]
+				],
+				"skin": {
+					"name": "Flame Staff",
+					"type": "Weapon",
+					"flags": [
+						"ShowInWardrobe"
+					],
+					"restrictions": [],
+					"rarity": "Basic",
+					"id": 5227,
+					"icon": "https://render.guildwars2.com/file/00DC9C6326EE2B0AB1A016C060ADBABDC9EE572F/67841.png",
+					"details": {
+						"type": "Staff",
+						"damage_type": "Physical"
+					}
+				}
 			},
 			"WeaponB1": {
 				"id": 35219,

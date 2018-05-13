@@ -1002,7 +1002,6 @@
 			"WeaponA1": {
 				"id": 28875,
 				"slot": "WeaponA1",
-				"skin": 4355,
 				"binding": "Account",
 				"data": {
 					"name": "Strong Hammer",
@@ -1047,12 +1046,26 @@
 					}
 				},
 				"infusions": [],
-				"upgrades": []
+				"upgrades": [],
+				"skin": {
+					"name": "Molten Hammer",
+					"type": "Weapon",
+					"flags": [
+						"ShowInWardrobe"
+					],
+					"restrictions": [],
+					"rarity": "Basic",
+					"id": 4355,
+					"icon": "https://render.guildwars2.com/file/C5C3A0A63416C4697FDB5B99FF6F28E29075C5B7/455719.png",
+					"details": {
+						"type": "Hammer",
+						"damage_type": "Physical"
+					}
+				}
 			},
 			"WeaponB1": {
 				"id": 46239,
 				"slot": "WeaponB1",
-				"skin": 4223,
 				"binding": "Character",
 				"bound_to": "Corrupted Nova",
 				"data": {
@@ -1104,7 +1117,22 @@
 					}
 				},
 				"infusions": [],
-				"upgrades": []
+				"upgrades": [],
+				"skin": {
+					"name": "Crimson Antique Claymore",
+					"type": "Weapon",
+					"flags": [
+						"ShowInWardrobe"
+					],
+					"restrictions": [],
+					"rarity": "Basic",
+					"id": 4223,
+					"icon": "https://render.guildwars2.com/file/B1A52DB3FCD8A6C744144FD4770BCBE8F95A4CBA/631562.png",
+					"details": {
+						"type": "Greatsword",
+						"damage_type": "Physical"
+					}
+				}
 			},
 			"Sickle": {
 				"id": 23008,
