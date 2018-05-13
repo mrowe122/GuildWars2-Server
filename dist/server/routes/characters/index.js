@@ -54,7 +54,10 @@ function request(req, res) {
 
 function charData(req, res) {
   _unirest2.default.get(_config2.default.gwHost + '/characters' + req.url).headers({ Authorization: 'Bearer ' + req.apiKey }).end(function (data) {
-    var allIds = (0, _fp.flatMap)(function (_ref) {
+    if (!data.ok) {
+      return res.send({ body: data.body, statusCode: data.statusCode });
+    }
+    var itemsId = (0, _fp.flatMap)(function (_ref) {
       var id = _ref.id,
           _ref$infusions = _ref.infusions,
           infusions = _ref$infusions === undefined ? [] : _ref$infusions,
@@ -62,8 +65,12 @@ function charData(req, res) {
           upgrades = _ref$upgrades === undefined ? [] : _ref$upgrades;
       return [id].concat(_toConsumableArray(infusions), _toConsumableArray(upgrades));
     })(data.body.equipment);
-    (0, _lib.getItems)(allIds).end(function (ids) {
-      (0, _util.mergeEquipmentIds)(data.body, ids.body).then(function (merged) {
+    var skinIds = (0, _fp.reduce)(function (acc, _ref2) {
+      var skin = _ref2.skin;
+      return skin ? acc.concat([skin]) : acc;
+    }, [])(data.body.equipment);
+    Promise.all([(0, _lib.getItems)(itemsId), (0, _lib.getSkins)(skinIds)]).then(function (ids) {
+      (0, _util.mergeEquipment)(data.body, ids).then(function (merged) {
         return res.send({ body: merged, statusCode: data.statusCode });
       });
     });

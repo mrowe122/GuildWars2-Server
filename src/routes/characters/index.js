@@ -34,6 +34,9 @@ function charData (req, res) {
   unirest.get(`${config.gwHost}/characters${req.url}`)
     .headers({ Authorization: `Bearer ${req.apiKey}` })
     .end(data => {
+      if (!data.ok) {
+        return res.send({ body: data.body, statusCode: data.statusCode })
+      }
       const itemsId = flatMap(
         ({ id, infusions = [] , upgrades = [] }) => [id, ...infusions, ...upgrades]
       )(data.body.equipment)

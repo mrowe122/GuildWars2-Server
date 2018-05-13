@@ -7,7 +7,7 @@
 		"profession": "Mesmer",
 		"level": 80,
 		"guild": "F5AFEEF2-F280-4E2C-B291-AB012B307045",
-		"age": 2262401,
+		"age": 2278426,
 		"created": "2014-03-28T02:29:00Z",
 		"deaths": 1096,
 		"crafting": [
@@ -191,7 +191,6 @@
 			"Backpack": {
 				"id": 37055,
 				"slot": "Backpack",
-				"skin": 7743,
 				"binding": "Account",
 				"data": {
 					"name": "Prototype Fractal Capacitor",
@@ -329,12 +328,22 @@
 						}
 					}
 				],
-				"upgrades": []
+				"upgrades": [],
+				"skin": {
+					"name": "Branded Wing Backpack",
+					"type": "Back",
+					"flags": [
+						"ShowInWardrobe"
+					],
+					"restrictions": [],
+					"rarity": "Basic",
+					"id": 7743,
+					"icon": "https://render.guildwars2.com/file/1F7332072DF10DE918C3BA77BD741257D5EDDFD7/1822133.png"
+				}
 			},
 			"Coat": {
 				"id": 39992,
 				"slot": "Coat",
-				"skin": 5743,
 				"binding": "Character",
 				"bound_to": "Corrupted Fear",
 				"dyes": [
@@ -435,7 +444,41 @@
 							"suffix": "of the Brawler"
 						}
 					}
-				]
+				],
+				"skin": {
+					"name": "Carapace Vestments",
+					"description": "Obtained by defeating the Mordrem Vinewrath in the Silverwastes.",
+					"type": "Armor",
+					"flags": [
+						"ShowInWardrobe"
+					],
+					"restrictions": [],
+					"rarity": "Basic",
+					"id": 5743,
+					"icon": "https://render.guildwars2.com/file/343C35236F78EF6A63906B2BAC4D3D012EF2441B/904634.png",
+					"details": {
+						"type": "Coat",
+						"weight_class": "Light",
+						"dye_slots": {
+							"default": [
+								{
+									"color_id": 19,
+									"material": "cloth"
+								},
+								{
+									"color_id": 456,
+									"material": "cloth"
+								},
+								{
+									"color_id": 482,
+									"material": "cloth"
+								},
+								null
+							],
+							"overrides": {}
+						}
+					}
+				}
 			},
 			"Boots": {
 				"id": 39989,
@@ -545,7 +588,6 @@
 			"Gloves": {
 				"id": 39995,
 				"slot": "Gloves",
-				"skin": 248,
 				"binding": "Character",
 				"bound_to": "Corrupted Fear",
 				"dyes": [
@@ -646,12 +688,41 @@
 							"suffix": "of the Brawler"
 						}
 					}
-				]
+				],
+				"skin": {
+					"name": "Winged Gloves",
+					"type": "Armor",
+					"flags": [
+						"ShowInWardrobe"
+					],
+					"restrictions": [],
+					"rarity": "Basic",
+					"id": 248,
+					"icon": "https://render.guildwars2.com/file/B0F5E6C8F9BC712AA30A915F527414A556597B0F/61510.png",
+					"details": {
+						"type": "Gloves",
+						"weight_class": "Light",
+						"dye_slots": {
+							"default": [
+								{
+									"color_id": 19,
+									"material": "cloth"
+								},
+								{
+									"color_id": 19,
+									"material": "cloth"
+								},
+								null,
+								null
+							],
+							"overrides": {}
+						}
+					}
+				}
 			},
 			"Helm": {
 				"id": 39998,
 				"slot": "Helm",
-				"skin": 2047,
 				"binding": "Character",
 				"bound_to": "Corrupted Fear",
 				"dyes": [
@@ -752,12 +823,35 @@
 							"suffix": "of the Brawler"
 						}
 					}
-				]
+				],
+				"skin": {
+					"name": "Wraith Masque",
+					"type": "Armor",
+					"flags": [
+						"ShowInWardrobe"
+					],
+					"restrictions": [],
+					"rarity": "Basic",
+					"id": 2047,
+					"icon": "https://render.guildwars2.com/file/A3657D415E6796AF15A195BF44752D734EBE054A/61640.png",
+					"details": {
+						"type": "Helm",
+						"weight_class": "Light",
+						"dye_slots": {
+							"default": [
+								null,
+								null,
+								null,
+								null
+							],
+							"overrides": {}
+						}
+					}
+				}
 			},
 			"Leggings": {
 				"id": 40001,
 				"slot": "Leggings",
-				"skin": 159,
 				"binding": "Character",
 				"bound_to": "Corrupted Fear",
 				"dyes": [
@@ -858,12 +952,44 @@
 							"suffix": "of the Brawler"
 						}
 					}
-				]
+				],
+				"skin": {
+					"name": "Winged Pants",
+					"type": "Armor",
+					"flags": [
+						"ShowInWardrobe"
+					],
+					"restrictions": [],
+					"rarity": "Basic",
+					"id": 159,
+					"icon": "https://render.guildwars2.com/file/D306530EE5C2F6F11B3DD3F903BEDE3FEEC8D701/61512.png",
+					"details": {
+						"type": "Leggings",
+						"weight_class": "Light",
+						"dye_slots": {
+							"default": [
+								{
+									"color_id": 1,
+									"material": "cloth"
+								},
+								{
+									"color_id": 1,
+									"material": "cloth"
+								},
+								{
+									"color_id": 1,
+									"material": "cloth"
+								},
+								null
+							],
+							"overrides": {}
+						}
+					}
+				}
 			},
 			"Shoulders": {
 				"id": 40004,
 				"slot": "Shoulders",
-				"skin": 2263,
 				"binding": "Character",
 				"bound_to": "Corrupted Fear",
 				"dyes": [
@@ -964,7 +1090,34 @@
 							"suffix": "of the Brawler"
 						}
 					}
-				]
+				],
+				"skin": {
+					"name": "Diviner Mantle",
+					"type": "Armor",
+					"flags": [
+						"ShowInWardrobe"
+					],
+					"restrictions": [],
+					"rarity": "Basic",
+					"id": 2263,
+					"icon": "https://render.guildwars2.com/file/789FACB8DD1DEA342D7A09D04A073FA1D798F4B2/61372.png",
+					"details": {
+						"type": "Shoulders",
+						"weight_class": "Light",
+						"dye_slots": {
+							"default": [
+								{
+									"color_id": 19,
+									"material": "cloth"
+								},
+								null,
+								null,
+								null
+							],
+							"overrides": {}
+						}
+					}
+				}
 			},
 			"Accessory1": {
 				"id": 39224,
@@ -1824,7 +1977,6 @@
 			"WeaponA1": {
 				"id": 46762,
 				"slot": "WeaponA1",
-				"skin": 4839,
 				"binding": "Account",
 				"data": {
 					"name": "Zojja's Claymore",
@@ -2136,12 +2288,26 @@
 							"suffix": "of Accuracy"
 						}
 					}
-				]
+				],
+				"skin": {
+					"name": "Cobalt",
+					"type": "Weapon",
+					"flags": [
+						"ShowInWardrobe"
+					],
+					"restrictions": [],
+					"rarity": "Basic",
+					"id": 4839,
+					"icon": "https://render.guildwars2.com/file/6C4F9FD4E3B926D3A4502A4046C1EE03CD4296CF/619793.png",
+					"details": {
+						"type": "Greatsword",
+						"damage_type": "Physical"
+					}
+				}
 			},
 			"WeaponB1": {
 				"id": 42045,
 				"slot": "WeaponB1",
-				"skin": 5239,
 				"binding": "Character",
 				"bound_to": "Corrupted Fear",
 				"data": {
@@ -2196,7 +2362,22 @@
 					}
 				},
 				"infusions": [],
-				"upgrades": []
+				"upgrades": [],
+				"skin": {
+					"name": "Glyphic Edge",
+					"type": "Weapon",
+					"flags": [
+						"ShowInWardrobe"
+					],
+					"restrictions": [],
+					"rarity": "Basic",
+					"id": 5239,
+					"icon": "https://render.guildwars2.com/file/10DEC3A0EB435E9015260E0C2B34EF2DD36ABEEB/434566.png",
+					"details": {
+						"type": "Sword",
+						"damage_type": "Physical"
+					}
+				}
 			},
 			"WeaponB2": {
 				"id": 71097,

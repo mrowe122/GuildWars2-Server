@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.getItems = undefined;
+exports.getSkins = exports.getItems = undefined;
 
 var _unirest = require('unirest');
 
@@ -16,5 +16,19 @@ var _config2 = _interopRequireDefault(_config);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var getItems = exports.getItems = function getItems(ids) {
-  return _unirest2.default.get(_config2.default.gwHost + '/items?ids=' + ids);
+  return new Promise(function (resolve) {
+    _unirest2.default.get(_config2.default.gwHost + '/items?ids=' + ids).end(function (data) {
+      // check if errors
+      resolve(data);
+    });
+  });
+};
+
+var getSkins = exports.getSkins = function getSkins(ids) {
+  return new Promise(function (resolve) {
+    _unirest2.default.get(_config2.default.gwHost + '/skins?ids=' + ids).end(function (data) {
+      // check if errors
+      resolve(data);
+    });
+  });
 };
