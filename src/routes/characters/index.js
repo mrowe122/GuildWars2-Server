@@ -4,7 +4,7 @@ import fs from 'fs'
 import { flatMap, reduce } from 'lodash/fp'
 import config from '../../config'
 import { getItems, getSkins } from '../../lib'
-import { mergeEquipment } from '../../util'
+import { mergeEquipment } from '../../util/mergeData'
 
 const router = express.Router()
 
