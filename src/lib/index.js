@@ -18,3 +18,12 @@ export const getSkins = ids => new Promise(resolve => {
       resolve(data)
     })
 })
+
+export const getGuild = id => new Promise(resolve => {
+  unirest
+    .get(`${config.gwHost}/guild/${id}`)
+    .end(data => {
+      // check if errors
+      resolve(data)
+    })
+})
