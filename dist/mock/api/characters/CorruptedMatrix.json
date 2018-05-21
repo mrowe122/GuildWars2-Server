@@ -6,8 +6,10 @@
 		"flags": [],
 		"profession": "Revenant",
 		"level": 80,
-		"guild": null,
-		"age": 9967,
+		"guild": {
+			"text": "no such guild"
+		},
+		"age": 10025,
 		"created": "2017-10-21T13:57:00Z",
 		"deaths": 0,
 		"crafting": [],
@@ -1994,7 +1996,6 @@
 				"id": 22997,
 				"slot": "Sickle",
 				"binding": "Account",
-				"charges": 50,
 				"data": {
 					"name": "Orichalcum Harvesting Sickle",
 					"description": "Used to gather all plants.",
@@ -2030,7 +2031,6 @@
 				"id": 23000,
 				"slot": "Axe",
 				"binding": "Account",
-				"charges": 100,
 				"data": {
 					"name": "Orichalcum Logging Axe",
 					"description": "Used to chop down all saplings.",
@@ -2066,7 +2066,6 @@
 				"id": 23001,
 				"slot": "Pick",
 				"binding": "Account",
-				"charges": 100,
 				"data": {
 					"name": "Orichalcum Mining Pick",
 					"description": "Used to mine all metals.",

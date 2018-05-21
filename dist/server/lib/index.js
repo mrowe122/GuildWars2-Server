@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.getSkins = exports.getItems = undefined;
+exports.getGuild = exports.getSkins = exports.getItems = undefined;
 
 var _unirest = require('unirest');
 
@@ -27,6 +27,15 @@ var getItems = exports.getItems = function getItems(ids) {
 var getSkins = exports.getSkins = function getSkins(ids) {
   return new Promise(function (resolve) {
     _unirest2.default.get(_config2.default.gwHost + '/skins?ids=' + ids).end(function (data) {
+      // check if errors
+      resolve(data);
+    });
+  });
+};
+
+var getGuild = exports.getGuild = function getGuild(id) {
+  return new Promise(function (resolve) {
+    _unirest2.default.get(_config2.default.gwHost + '/guild/' + id).end(function (data) {
       // check if errors
       resolve(data);
     });

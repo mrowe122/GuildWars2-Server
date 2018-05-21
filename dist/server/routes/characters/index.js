@@ -69,10 +69,10 @@ function charData(req, res) {
       var skin = _ref2.skin;
       return skin ? acc.concat([skin]) : acc;
     }, [])(data.body.equipment);
-    Promise.all([(0, _lib.getItems)(itemsId), (0, _lib.getSkins)(skinIds)]).then(function (ids) {
-      (0, _util.mergeEquipment)(data.body, ids).then(function (merged) {
-        return res.send({ body: merged, statusCode: data.statusCode });
-      });
+    return Promise.all([(0, _lib.getItems)(itemsId), (0, _lib.getSkins)(skinIds), (0, _lib.getGuild)(data.body.guild)]).then(function (ids) {
+      return (0, _util.parseData)(data.body, ids);
+    }).then(function (merged) {
+      return res.send({ body: merged, statusCode: data.statusCode });
     });
   });
 }

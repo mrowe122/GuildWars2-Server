@@ -6,7 +6,27 @@
 		"flags": [],
 		"profession": "Necromancer",
 		"level": 80,
-		"guild": "F5AFEEF2-F280-4E2C-B291-AB012B307045",
+		"guild": {
+			"id": "F5AFEEF2-F280-4E2C-B291-AB012B307045",
+			"name": "Defenders Of The Black Citadel",
+			"tag": "DoBC",
+			"emblem": {
+				"background": {
+					"id": 8,
+					"colors": [
+						473
+					]
+				},
+				"foreground": {
+					"id": 3,
+					"colors": [
+						9,
+						146
+					]
+				},
+				"flags": []
+			}
+		},
 		"age": 1279576,
 		"created": "2013-09-25T04:42:00Z",
 		"deaths": 686,
@@ -809,11 +829,11 @@
 									"material": "cloth"
 								},
 								{
-									"color_id": 19,
+									"color_id": 456,
 									"material": "cloth"
 								},
 								{
-									"color_id": 107,
+									"color_id": 482,
 									"material": "metal"
 								},
 								null
@@ -1081,15 +1101,15 @@
 						"dye_slots": {
 							"default": [
 								{
-									"color_id": 19,
+									"color_id": 1,
 									"material": "cloth"
 								},
 								{
-									"color_id": 19,
+									"color_id": 1,
 									"material": "cloth"
 								},
 								{
-									"color_id": 107,
+									"color_id": 1,
 									"material": "cloth"
 								},
 								null

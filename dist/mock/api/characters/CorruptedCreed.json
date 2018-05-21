@@ -6,7 +6,27 @@
 		"flags": [],
 		"profession": "Thief",
 		"level": 30,
-		"guild": "F5AFEEF2-F280-4E2C-B291-AB012B307045",
+		"guild": {
+			"id": "F5AFEEF2-F280-4E2C-B291-AB012B307045",
+			"name": "Defenders Of The Black Citadel",
+			"tag": "DoBC",
+			"emblem": {
+				"background": {
+					"id": 8,
+					"colors": [
+						473
+					]
+				},
+				"foreground": {
+					"id": 3,
+					"colors": [
+						9,
+						146
+					]
+				},
+				"flags": []
+			}
+		},
 		"age": 18565,
 		"created": "2014-05-19T01:10:00Z",
 		"deaths": 3,

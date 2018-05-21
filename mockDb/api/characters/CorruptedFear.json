@@ -6,8 +6,28 @@
 		"flags": [],
 		"profession": "Mesmer",
 		"level": 80,
-		"guild": "F5AFEEF2-F280-4E2C-B291-AB012B307045",
-		"age": 2278426,
+		"guild": {
+			"id": "F5AFEEF2-F280-4E2C-B291-AB012B307045",
+			"name": "Defenders Of The Black Citadel",
+			"tag": "DoBC",
+			"emblem": {
+				"background": {
+					"id": 8,
+					"colors": [
+						473
+					]
+				},
+				"foreground": {
+					"id": 3,
+					"colors": [
+						9,
+						146
+					]
+				},
+				"flags": []
+			}
+		},
+		"age": 2293617,
 		"created": "2014-03-28T02:29:00Z",
 		"deaths": 1096,
 		"crafting": [
@@ -462,15 +482,15 @@
 						"dye_slots": {
 							"default": [
 								{
-									"color_id": 19,
+									"color_id": 1,
 									"material": "cloth"
 								},
 								{
-									"color_id": 456,
+									"color_id": 1,
 									"material": "cloth"
 								},
 								{
-									"color_id": 482,
+									"color_id": 1,
 									"material": "cloth"
 								},
 								null
@@ -969,15 +989,15 @@
 						"dye_slots": {
 							"default": [
 								{
-									"color_id": 1,
+									"color_id": 19,
 									"material": "cloth"
 								},
 								{
-									"color_id": 1,
+									"color_id": 456,
 									"material": "cloth"
 								},
 								{
-									"color_id": 1,
+									"color_id": 482,
 									"material": "cloth"
 								},
 								null
@@ -1107,7 +1127,7 @@
 						"dye_slots": {
 							"default": [
 								{
-									"color_id": 19,
+									"color_id": 1,
 									"material": "cloth"
 								},
 								null,
@@ -3607,7 +3627,7 @@
 					},
 					{
 						"id": 20018,
-						"count": 6,
+						"count": 7,
 						"binding": "Account"
 					},
 					{
@@ -3772,7 +3792,14 @@
 				"id": 38011,
 				"size": 20,
 				"inventory": [
-					null,
+					{
+						"id": 3376,
+						"count": 1,
+						"upgrades": [
+							24757
+						],
+						"binding": "Account"
+					},
 					null,
 					null,
 					null,

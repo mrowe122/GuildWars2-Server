@@ -6,7 +6,27 @@
 		"flags": [],
 		"profession": "Warrior",
 		"level": 80,
-		"guild": "F5AFEEF2-F280-4E2C-B291-AB012B307045",
+		"guild": {
+			"id": "F5AFEEF2-F280-4E2C-B291-AB012B307045",
+			"name": "Defenders Of The Black Citadel",
+			"tag": "DoBC",
+			"emblem": {
+				"background": {
+					"id": 8,
+					"colors": [
+						473
+					]
+				},
+				"foreground": {
+					"id": 3,
+					"colors": [
+						9,
+						146
+					]
+				},
+				"flags": []
+			}
+		},
 		"age": 287637,
 		"created": "2014-04-28T23:47:00Z",
 		"deaths": 138,
