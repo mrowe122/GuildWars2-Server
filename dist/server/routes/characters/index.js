@@ -65,11 +65,9 @@ function charData(req, res) {
           upgrades = _ref$upgrades === undefined ? [] : _ref$upgrades;
       return [id].concat(_toConsumableArray(infusions), _toConsumableArray(upgrades));
     })(data.body.equipment);
-    var skinIds = (0, _fp.reduce)(function (acc, _ref2) {
-      var skin = _ref2.skin;
-      return skin ? acc.concat([skin]) : acc;
-    }, [])(data.body.equipment);
-    return Promise.all([(0, _lib.getItems)(itemsId), (0, _lib.getSkins)(skinIds), (0, _lib.getGuild)(data.body.guild)]).then(function (ids) {
+    var skinIds = (0, _fp.map)((0, _fp.get)('skin'))(data.body.equipment);
+    var specializationIds = (0, _fp.flatMap)((0, _fp.map)((0, _fp.get)('id')))(data.body.specializations);
+    return Promise.all([(0, _lib.getItems)(itemsId), (0, _lib.getSkins)(skinIds), (0, _lib.getGuild)(data.body.guild), (0, _lib.getSpecializations)(specializationIds)]).then(function (ids) {
       return (0, _util.parseData)(data.body, ids);
     }).then(function (merged) {
       return res.send({ body: merged, statusCode: data.statusCode });

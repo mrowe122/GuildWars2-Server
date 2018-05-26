@@ -12,7 +12,7 @@ function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in ob
 function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
 var parseData = exports.parseData = function parseData(data, ids) {
-  return Promise.all([mergeEquipment(data.equipment, [ids[0].body, ids[1].body]), guildEmblem(ids[2].body)]).then(function (parsedData) {
+  return Promise.all([mergeEquipment(data.equipment, [ids[0].body, ids[1].body]), guildEmblem(ids[2].body), mergeSpecialization(data.specializations, ids[3].body)]).then(function (parsedData) {
     return (0, _fp.assignAll)([data].concat(_toConsumableArray(parsedData)));
   });
 };
@@ -48,5 +48,15 @@ var mergeEquipment = function mergeEquipment(data, ids) {
 var guildEmblem = function guildEmblem(data) {
   return new Promise(function (resolve) {
     return resolve({ guild: data });
+  });
+};
+
+var mergeSpecialization = function mergeSpecialization(data, ids) {
+  return new Promise(function (resolve) {
+    var _itemIdKey = (0, _fp.keyBy)('id')(ids);
+    var _specialization = (0, _fp.mapValues)((0, _fp.map)(function (s) {
+      return s ? (0, _fp.assign)(s, { data: _itemIdKey[s.id] }) : null;
+    }))(data);
+    resolve({ specializations: _specialization });
   });
 };
