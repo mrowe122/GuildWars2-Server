@@ -1,9 +1,10 @@
-import { keyBy, assign, assignAll, flatMap } from 'lodash/fp'
+import { keyBy, assign, assignAll, flatMap, map, mapValues } from 'lodash/fp'
 
 export const parseData = (data, ids) => {
   return Promise.all([
     mergeEquipment(data.equipment, [ids[0].body, ids[1].body]),
-    guildEmblem(ids[2].body)
+    guildEmblem(ids[2].body),
+    mergeSpecialization(data.specializations, ids[3].body)
   ]).then(parsedData => assignAll([data, ...parsedData]))
 }
 
@@ -22,3 +23,9 @@ const mergeEquipment = (data, ids) => new Promise(resolve => {
 })
 
 const guildEmblem = data => new Promise(resolve => resolve({ guild: data }))
+
+const mergeSpecialization = (data, ids) => new Promise(resolve => {
+  const _itemIdKey = keyBy('id')(ids)
+  const _specialization = mapValues(map(s => s ? assign(s, { data: _itemIdKey[s.id] }) : null))(data)
+  resolve({ specializations: _specialization })
+})

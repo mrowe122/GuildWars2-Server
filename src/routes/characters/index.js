@@ -1,9 +1,9 @@
 import express from 'express'
 import unirest from 'unirest'
 import fs from 'fs'
-import { flatMap, reduce } from 'lodash/fp'
+import { map, flatMap, reduce, get } from 'lodash/fp'
 import config from '../../config'
-import { getItems, getSkins, getGuild } from '../../lib'
+import { getItems, getSkins, getGuild, getSpecializations } from '../../lib'
 import { parseData } from '../../util'
 
 const router = express.Router()
@@ -40,9 +40,11 @@ function charData (req, res) {
       const itemsId = flatMap(
         ({ id, infusions = [] , upgrades = [] }) => [id, ...infusions, ...upgrades]
       )(data.body.equipment)
-      const skinIds = reduce((acc, { skin }) => skin ? acc.concat([skin]) : acc, [])(data.body.equipment)
-      return Promise.all([getItems(itemsId), getSkins(skinIds), getGuild(data.body.guild)])
-        .then(ids => parseData(data.body, ids))
+      const skinIds = map(get('skin'))(data.body.equipment)
+      const specializationIds = flatMap(map(get('id')))(data.body.specializations)
+      return Promise.all([
+        getItems(itemsId), getSkins(skinIds), getGuild(data.body.guild), getSpecializations(specializationIds)
+      ]).then(ids => parseData(data.body, ids))
         .then(merged => res.send({ body: merged, statusCode: data.statusCode }))
     })
 }
