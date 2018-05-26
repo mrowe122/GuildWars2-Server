@@ -59,7 +59,31 @@
 						888,
 						892,
 						905
-					]
+					],
+					"data": {
+						"id": 50,
+						"name": "Soul Reaping",
+						"profession": "Necromancer",
+						"elite": false,
+						"minor_traits": [
+							887,
+							891,
+							874
+						],
+						"major_traits": [
+							875,
+							898,
+							888,
+							894,
+							861,
+							892,
+							889,
+							893,
+							905
+						],
+						"icon": "https://render.guildwars2.com/file/A5A95CB5FADD99F59E07400907F0782B659574A9/1012010.png",
+						"background": "https://render.guildwars2.com/file/0956926B4A5109E07EFAB556E5DBEDCBC2B67C3B/1012071.png"
+					}
 				},
 				{
 					"id": 53,
@@ -67,7 +91,31 @@
 						916,
 						829,
 						853
-					]
+					],
+					"data": {
+						"id": 53,
+						"name": "Spite",
+						"profession": "Necromancer",
+						"elite": false,
+						"minor_traits": [
+							913,
+							915,
+							917
+						],
+						"major_traits": [
+							914,
+							916,
+							1863,
+							899,
+							829,
+							909,
+							919,
+							853,
+							903
+						],
+						"icon": "https://render.guildwars2.com/file/2D34377B04051FFDCDB553C7DCDABCD5DFBB68D7/1012011.png",
+						"background": "https://render.guildwars2.com/file/DDF39DBD61CCC1BCDD03B271080869251D097041/1012073.png"
+					}
 				},
 				{
 					"id": 2,
@@ -75,7 +123,31 @@
 						1922,
 						855,
 						1694
-					]
+					],
+					"data": {
+						"id": 2,
+						"name": "Death Magic",
+						"profession": "Necromancer",
+						"elite": false,
+						"minor_traits": [
+							856,
+							839,
+							1929
+						],
+						"major_traits": [
+							820,
+							857,
+							1922,
+							858,
+							860,
+							855,
+							842,
+							1940,
+							1694
+						],
+						"icon": "https://render.guildwars2.com/file/16663C1CDF532AB0DCC0CB08951DD2F49351D5D4/1012008.png",
+						"background": "https://render.guildwars2.com/file/B3F92D581B0A036CABB51590E6E560B21708391F/1012067.png"
+					}
 				}
 			],
 			"pvp": [
@@ -85,7 +157,31 @@
 						916,
 						899,
 						853
-					]
+					],
+					"data": {
+						"id": 53,
+						"name": "Spite",
+						"profession": "Necromancer",
+						"elite": false,
+						"minor_traits": [
+							913,
+							915,
+							917
+						],
+						"major_traits": [
+							914,
+							916,
+							1863,
+							899,
+							829,
+							909,
+							919,
+							853,
+							903
+						],
+						"icon": "https://render.guildwars2.com/file/2D34377B04051FFDCDB553C7DCDABCD5DFBB68D7/1012011.png",
+						"background": "https://render.guildwars2.com/file/DDF39DBD61CCC1BCDD03B271080869251D097041/1012073.png"
+					}
 				},
 				{
 					"id": 50,
@@ -93,7 +189,31 @@
 						875,
 						861,
 						893
-					]
+					],
+					"data": {
+						"id": 50,
+						"name": "Soul Reaping",
+						"profession": "Necromancer",
+						"elite": false,
+						"minor_traits": [
+							887,
+							891,
+							874
+						],
+						"major_traits": [
+							875,
+							898,
+							888,
+							894,
+							861,
+							892,
+							889,
+							893,
+							905
+						],
+						"icon": "https://render.guildwars2.com/file/A5A95CB5FADD99F59E07400907F0782B659574A9/1012010.png",
+						"background": "https://render.guildwars2.com/file/0956926B4A5109E07EFAB556E5DBEDCBC2B67C3B/1012071.png"
+					}
 				},
 				{
 					"id": 39,
@@ -101,7 +221,31 @@
 						2013,
 						812,
 						1696
-					]
+					],
+					"data": {
+						"id": 39,
+						"name": "Curses",
+						"profession": "Necromancer",
+						"elite": false,
+						"minor_traits": [
+							802,
+							803,
+							810
+						],
+						"major_traits": [
+							1883,
+							2013,
+							815,
+							816,
+							1693,
+							812,
+							813,
+							1696,
+							801
+						],
+						"icon": "https://render.guildwars2.com/file/C8E1A81601C3D5AC10285505E9F730621C3357CD/1012007.png",
+						"background": "https://render.guildwars2.com/file/71E7075E1AC9460AA507A630B54D1395DA465B2D/1012065.png"
+					}
 				}
 			],
 			"wvw": [
@@ -111,7 +255,31 @@
 						1922,
 						855,
 						1694
-					]
+					],
+					"data": {
+						"id": 2,
+						"name": "Death Magic",
+						"profession": "Necromancer",
+						"elite": false,
+						"minor_traits": [
+							856,
+							839,
+							1929
+						],
+						"major_traits": [
+							820,
+							857,
+							1922,
+							858,
+							860,
+							855,
+							842,
+							1940,
+							1694
+						],
+						"icon": "https://render.guildwars2.com/file/16663C1CDF532AB0DCC0CB08951DD2F49351D5D4/1012008.png",
+						"background": "https://render.guildwars2.com/file/B3F92D581B0A036CABB51590E6E560B21708391F/1012067.png"
+					}
 				},
 				{
 					"id": 53,
@@ -119,7 +287,31 @@
 						916,
 						829,
 						853
-					]
+					],
+					"data": {
+						"id": 53,
+						"name": "Spite",
+						"profession": "Necromancer",
+						"elite": false,
+						"minor_traits": [
+							913,
+							915,
+							917
+						],
+						"major_traits": [
+							914,
+							916,
+							1863,
+							899,
+							829,
+							909,
+							919,
+							853,
+							903
+						],
+						"icon": "https://render.guildwars2.com/file/2D34377B04051FFDCDB553C7DCDABCD5DFBB68D7/1012011.png",
+						"background": "https://render.guildwars2.com/file/DDF39DBD61CCC1BCDD03B271080869251D097041/1012073.png"
+					}
 				},
 				{
 					"id": 50,
@@ -127,7 +319,31 @@
 						888,
 						892,
 						893
-					]
+					],
+					"data": {
+						"id": 50,
+						"name": "Soul Reaping",
+						"profession": "Necromancer",
+						"elite": false,
+						"minor_traits": [
+							887,
+							891,
+							874
+						],
+						"major_traits": [
+							875,
+							898,
+							888,
+							894,
+							861,
+							892,
+							889,
+							893,
+							905
+						],
+						"icon": "https://render.guildwars2.com/file/A5A95CB5FADD99F59E07400907F0782B659574A9/1012010.png",
+						"background": "https://render.guildwars2.com/file/0956926B4A5109E07EFAB556E5DBEDCBC2B67C3B/1012071.png"
+					}
 				}
 			]
 		},
@@ -447,15 +663,15 @@
 						"dye_slots": {
 							"default": [
 								{
-									"color_id": 19,
+									"color_id": 1,
 									"material": "cloth"
 								},
 								{
-									"color_id": 19,
+									"color_id": 1,
 									"material": "metal"
 								},
 								{
-									"color_id": 107,
+									"color_id": 1,
 									"material": "leather"
 								},
 								null
@@ -825,15 +1041,15 @@
 						"dye_slots": {
 							"default": [
 								{
-									"color_id": 19,
+									"color_id": 1,
 									"material": "cloth"
 								},
 								{
-									"color_id": 456,
+									"color_id": 1,
 									"material": "cloth"
 								},
 								{
-									"color_id": 482,
+									"color_id": 1,
 									"material": "metal"
 								},
 								null
@@ -963,15 +1179,15 @@
 						"dye_slots": {
 							"default": [
 								{
-									"color_id": 19,
+									"color_id": 22,
 									"material": "cloth"
 								},
 								{
-									"color_id": 456,
+									"color_id": 455,
 									"material": "metal"
 								},
 								{
-									"color_id": 482,
+									"color_id": 455,
 									"material": "leather"
 								},
 								null

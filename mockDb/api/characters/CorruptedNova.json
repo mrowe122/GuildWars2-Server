@@ -48,7 +48,31 @@
 						1451,
 						1449,
 						1437
-					]
+					],
+					"data": {
+						"id": 4,
+						"name": "Strength",
+						"profession": "Warrior",
+						"elite": false,
+						"minor_traits": [
+							1446,
+							1448,
+							1453
+						],
+						"major_traits": [
+							1447,
+							1451,
+							1444,
+							2000,
+							1338,
+							1449,
+							1437,
+							1454,
+							1440
+						],
+						"icon": "https://render.guildwars2.com/file/0D48C40A1C042B0BC6DAA4B91AB272E5E90C934C/1012032.png",
+						"background": "https://render.guildwars2.com/file/09160450B40ED777650F632F2CE82504B90F5644/1012109.png"
+					}
 				},
 				{
 					"id": 22,
@@ -56,7 +80,31 @@
 						1488,
 						1368,
 						1649
-					]
+					],
+					"data": {
+						"id": 22,
+						"name": "Defense",
+						"profession": "Warrior",
+						"elite": false,
+						"minor_traits": [
+							1350,
+							1348,
+							1380
+						],
+						"major_traits": [
+							1376,
+							1488,
+							1372,
+							1368,
+							1379,
+							1367,
+							1375,
+							1649,
+							1708
+						],
+						"icon": "https://render.guildwars2.com/file/5F0B793A5479007078067CD71D0E01B30602189B/1012030.png",
+						"background": "https://render.guildwars2.com/file/E0190E3B3745AA61D32CFF92C1FEFFFB56A90D4C/1012107.png"
+					}
 				},
 				{
 					"id": 51,
@@ -64,7 +112,31 @@
 						1413,
 						1709,
 						1657
-					]
+					],
+					"data": {
+						"id": 51,
+						"name": "Discipline",
+						"profession": "Warrior",
+						"elite": false,
+						"minor_traits": [
+							1415,
+							1416,
+							1417
+						],
+						"major_traits": [
+							1329,
+							1413,
+							1381,
+							1484,
+							1489,
+							1709,
+							1369,
+							1317,
+							1657
+						],
+						"icon": "https://render.guildwars2.com/file/D10B771D01C85DA404472EE90F35EF15B0B36240/1012031.png",
+						"background": "https://render.guildwars2.com/file/2B80CF6504DA1B0DC8470D45ED5BE9992BEEC2B7/1012108.png"
+					}
 				}
 			],
 			"pvp": [
@@ -74,7 +146,31 @@
 						1488,
 						1368,
 						1649
-					]
+					],
+					"data": {
+						"id": 22,
+						"name": "Defense",
+						"profession": "Warrior",
+						"elite": false,
+						"minor_traits": [
+							1350,
+							1348,
+							1380
+						],
+						"major_traits": [
+							1376,
+							1488,
+							1372,
+							1368,
+							1379,
+							1367,
+							1375,
+							1649,
+							1708
+						],
+						"icon": "https://render.guildwars2.com/file/5F0B793A5479007078067CD71D0E01B30602189B/1012030.png",
+						"background": "https://render.guildwars2.com/file/E0190E3B3745AA61D32CFF92C1FEFFFB56A90D4C/1012107.png"
+					}
 				},
 				{
 					"id": 4,
@@ -82,7 +178,31 @@
 						1451,
 						1338,
 						1437
-					]
+					],
+					"data": {
+						"id": 4,
+						"name": "Strength",
+						"profession": "Warrior",
+						"elite": false,
+						"minor_traits": [
+							1446,
+							1448,
+							1453
+						],
+						"major_traits": [
+							1447,
+							1451,
+							1444,
+							2000,
+							1338,
+							1449,
+							1437,
+							1454,
+							1440
+						],
+						"icon": "https://render.guildwars2.com/file/0D48C40A1C042B0BC6DAA4B91AB272E5E90C934C/1012032.png",
+						"background": "https://render.guildwars2.com/file/09160450B40ED777650F632F2CE82504B90F5644/1012109.png"
+					}
 				},
 				{
 					"id": 51,
@@ -90,7 +210,31 @@
 						1413,
 						1489,
 						1657
-					]
+					],
+					"data": {
+						"id": 51,
+						"name": "Discipline",
+						"profession": "Warrior",
+						"elite": false,
+						"minor_traits": [
+							1415,
+							1416,
+							1417
+						],
+						"major_traits": [
+							1329,
+							1413,
+							1381,
+							1484,
+							1489,
+							1709,
+							1369,
+							1317,
+							1657
+						],
+						"icon": "https://render.guildwars2.com/file/D10B771D01C85DA404472EE90F35EF15B0B36240/1012031.png",
+						"background": "https://render.guildwars2.com/file/2B80CF6504DA1B0DC8470D45ED5BE9992BEEC2B7/1012108.png"
+					}
 				}
 			],
 			"wvw": [
@@ -100,7 +244,31 @@
 						1451,
 						1449,
 						1437
-					]
+					],
+					"data": {
+						"id": 4,
+						"name": "Strength",
+						"profession": "Warrior",
+						"elite": false,
+						"minor_traits": [
+							1446,
+							1448,
+							1453
+						],
+						"major_traits": [
+							1447,
+							1451,
+							1444,
+							2000,
+							1338,
+							1449,
+							1437,
+							1454,
+							1440
+						],
+						"icon": "https://render.guildwars2.com/file/0D48C40A1C042B0BC6DAA4B91AB272E5E90C934C/1012032.png",
+						"background": "https://render.guildwars2.com/file/09160450B40ED777650F632F2CE82504B90F5644/1012109.png"
+					}
 				},
 				{
 					"id": 22,
@@ -108,7 +276,31 @@
 						1488,
 						1368,
 						1649
-					]
+					],
+					"data": {
+						"id": 22,
+						"name": "Defense",
+						"profession": "Warrior",
+						"elite": false,
+						"minor_traits": [
+							1350,
+							1348,
+							1380
+						],
+						"major_traits": [
+							1376,
+							1488,
+							1372,
+							1368,
+							1379,
+							1367,
+							1375,
+							1649,
+							1708
+						],
+						"icon": "https://render.guildwars2.com/file/5F0B793A5479007078067CD71D0E01B30602189B/1012030.png",
+						"background": "https://render.guildwars2.com/file/E0190E3B3745AA61D32CFF92C1FEFFFB56A90D4C/1012107.png"
+					}
 				},
 				{
 					"id": 51,
@@ -116,7 +308,31 @@
 						1413,
 						1709,
 						1657
-					]
+					],
+					"data": {
+						"id": 51,
+						"name": "Discipline",
+						"profession": "Warrior",
+						"elite": false,
+						"minor_traits": [
+							1415,
+							1416,
+							1417
+						],
+						"major_traits": [
+							1329,
+							1413,
+							1381,
+							1484,
+							1489,
+							1709,
+							1369,
+							1317,
+							1657
+						],
+						"icon": "https://render.guildwars2.com/file/D10B771D01C85DA404472EE90F35EF15B0B36240/1012031.png",
+						"background": "https://render.guildwars2.com/file/2B80CF6504DA1B0DC8470D45ED5BE9992BEEC2B7/1012108.png"
+					}
 				}
 			]
 		},
