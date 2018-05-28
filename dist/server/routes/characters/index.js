@@ -33,13 +33,12 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 var router = _express2.default.Router();
 
 router.use(function (req, res, next) {
-  _fs2.default.readFile('./userDb/user', 'utf8', function (err, data) {
-    var apiKey = JSON.parse(data).apiKey;
-    if (apiKey) {
-      req.apiKey = apiKey;
-      next();
+  _fs2.default.readFile('./userDb/apiKey', 'utf8', function (err, data) {
+    if (err) {
+      res.status(401).send('no api key stored');
     } else {
-      res.status(403).send('no api key stored');
+      req.apiKey = JSON.parse(data).apiKey;
+      next();
     }
   });
 });
@@ -48,14 +47,18 @@ router.get('/', request).get('/:id', charData);
 
 function request(req, res) {
   _unirest2.default.get(_config2.default.gwHost + '/characters').headers({ Authorization: 'Bearer ' + req.apiKey }).end(function (data) {
-    return res.send({ body: data.body, statusCode: data.statusCode });
+    if (data.ok) {
+      return res.send({ body: data.body, statusCode: data.statusCode });
+    } else {
+      return res.status(data.statusCode).send(data.body);
+    }
   });
 }
 
 function charData(req, res) {
   _unirest2.default.get(_config2.default.gwHost + '/characters' + req.url).headers({ Authorization: 'Bearer ' + req.apiKey }).end(function (data) {
     if (!data.ok) {
-      return res.send({ body: data.body, statusCode: data.statusCode });
+      return res.status(data.statusCode).send(data.body);
     }
     var itemsId = (0, _fp.flatMap)(function (_ref) {
       var id = _ref.id,
@@ -67,9 +70,7 @@ function charData(req, res) {
     })(data.body.equipment);
     var skinIds = (0, _fp.map)((0, _fp.get)('skin'))(data.body.equipment);
     var specializationIds = (0, _fp.flatMap)((0, _fp.map)((0, _fp.get)('id')))(data.body.specializations);
-    return Promise.all([(0, _lib.getItems)(itemsId), (0, _lib.getSkins)(skinIds), (0, _lib.getGuild)(data.body.guild), (0, _lib.getSpecializations)(specializationIds)]).then(function (ids) {
-      return (0, _util.parseData)(data.body, ids);
-    }).then(function (merged) {
+    return Promise.all([(0, _lib.getItems)(itemsId), (0, _lib.getSkins)(skinIds), (0, _lib.getGuild)(data.body.guild), (0, _lib.getSpecializations)(specializationIds)]).then((0, _util.parseData)(data.body)).then(function (merged) {
       return res.send({ body: merged, statusCode: data.statusCode });
     });
   });

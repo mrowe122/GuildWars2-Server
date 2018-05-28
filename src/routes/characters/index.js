@@ -9,13 +9,12 @@ import { parseData } from '../../util'
 const router = express.Router()
 
 router.use((req, res, next) => {
-  fs.readFile('./userDb/user', 'utf8', (err, data) => {
-    const apiKey = JSON.parse(data).apiKey
-    if (apiKey) {
-      req.apiKey = apiKey
-      next()
+  fs.readFile('./userDb/apiKey', 'utf8', (err, data) => {
+    if (err) {
+      res.status(401).send('no api key stored')
     } else {
-      res.status(403).send('no api key stored')
+      req.apiKey = JSON.parse(data).apiKey
+      next()
     }
   })
 })
@@ -27,7 +26,13 @@ router
 function request (req, res) {
   unirest.get(`${config.gwHost}/characters`)
     .headers({ Authorization: `Bearer ${req.apiKey}` })
-    .end(data => res.send({ body: data.body, statusCode: data.statusCode }))
+    .end(data => {
+      if (data.ok) {
+        return res.send({ body: data.body, statusCode: data.statusCode })
+      } else {
+        return res.status(data.statusCode).send(data.body)
+      }
+    })
 }
 
 function charData (req, res) {
@@ -35,7 +40,7 @@ function charData (req, res) {
     .headers({ Authorization: `Bearer ${req.apiKey}` })
     .end(data => {
       if (!data.ok) {
-        return res.send({ body: data.body, statusCode: data.statusCode })
+        return res.status(data.statusCode).send(data.body)
       }
       const itemsId = flatMap(
         ({ id, infusions = [] , upgrades = [] }) => [id, ...infusions, ...upgrades]
