@@ -663,15 +663,15 @@
 						"dye_slots": {
 							"default": [
 								{
-									"color_id": 1,
+									"color_id": 22,
 									"material": "cloth"
 								},
 								{
-									"color_id": 1,
+									"color_id": 455,
 									"material": "metal"
 								},
 								{
-									"color_id": 1,
+									"color_id": 455,
 									"material": "leather"
 								},
 								null
@@ -1041,15 +1041,15 @@
 						"dye_slots": {
 							"default": [
 								{
-									"color_id": 1,
+									"color_id": 22,
 									"material": "cloth"
 								},
 								{
-									"color_id": 1,
+									"color_id": 455,
 									"material": "cloth"
 								},
 								{
-									"color_id": 1,
+									"color_id": 455,
 									"material": "metal"
 								},
 								null
@@ -1179,15 +1179,15 @@
 						"dye_slots": {
 							"default": [
 								{
-									"color_id": 22,
+									"color_id": 1,
 									"material": "cloth"
 								},
 								{
-									"color_id": 455,
+									"color_id": 1,
 									"material": "metal"
 								},
 								{
-									"color_id": 455,
+									"color_id": 1,
 									"material": "leather"
 								},
 								null
