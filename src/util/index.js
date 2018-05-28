@@ -1,6 +1,6 @@
 import { keyBy, assign, assignAll, flatMap, map, mapValues } from 'lodash/fp'
 
-export const parseData = (data, ids) => {
+export const parseData = data => ids => {
   return Promise.all([
     mergeEquipment(data.equipment, [ids[0].body, ids[1].body]),
     guildEmblem(ids[2].body),

@@ -44,7 +44,7 @@ function charData (req, res) {
       const specializationIds = flatMap(map(get('id')))(data.body.specializations)
       return Promise.all([
         getItems(itemsId), getSkins(skinIds), getGuild(data.body.guild), getSpecializations(specializationIds)
-      ]).then(ids => parseData(data.body, ids))
+      ]).then(parseData(data.body))
         .then(merged => res.send({ body: merged, statusCode: data.statusCode }))
     })
 }
