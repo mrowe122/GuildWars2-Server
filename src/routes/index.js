@@ -1,6 +1,7 @@
 import express from 'express'
 import character from './characters'
 import authentication from './authentication'
+import tokeninfo from './tokeninfo'
 
 const router = express.Router()
 
@@ -17,5 +18,6 @@ router.use(enableCors)
 router.use('/characters', character)
 // TODO: The entirety of this authentication is temporary
 router.use('/authenticate', authentication)
+router.use('/tokeninfo', tokeninfo)
 
 export default router
