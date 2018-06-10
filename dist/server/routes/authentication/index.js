@@ -29,15 +29,15 @@ router.post('/', createAccount);
 function createAccount(req, res) {
   _unirest2.default.get(_config2.default.gwHost + '/tokeninfo').headers({ Authorization: 'Bearer ' + req.body.apiKey }).end(function (data) {
     if (data.ok) {
-      var _key = JSON.stringify(req.body);
+      var _token = JSON.stringify(data.body);
       if (!_fs2.default.existsSync('userDb')) {
         _fs2.default.mkdirSync('userDb');
       }
-      _fs2.default.writeFile('./userDb/apiKey', _key, function (err) {
+      _fs2.default.writeFile('./userDb/apiKey', _token, function (err) {
         if (err) {
           return res.status(500).send(err);
         }
-        res.status(200).send('API Key Created');
+        res.status(200).send(data.body);
       });
     } else {
       res.status(403).send(data.body);
