@@ -13,11 +13,11 @@ function createAccount (req, res) {
     .headers({ Authorization: `Bearer ${req.body.apiKey}` })
     .end(data => {
       if (data.ok) {
-        const _key = JSON.stringify(req.body)
+        const _token = JSON.stringify(data.body)
         if (!fs.existsSync('userDb')) { fs.mkdirSync('userDb') }
-        fs.writeFile('./userDb/apiKey', _key, err => {
+        fs.writeFile('./userDb/apiKey', _token, err => {
           if (err) { return res.status(500).send(err) }
-          res.status(200).send('API Key Created')
+          res.status(200).send(data.body)
         })
       } else {
         res.status(403).send(data.body)
