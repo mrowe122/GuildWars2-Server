@@ -11,6 +11,7 @@ const start = () => {
     res.jsonp(db[character])
   })
 	server.use('/api/characters', (req, res) => res.jsonp(db.characters))
+	server.use('/api/tokeninfo', (req, res) => res.jsonp(db.tokeninfo))
 
 	server.use(middlewares)
 	server.listen(PORT, () => {

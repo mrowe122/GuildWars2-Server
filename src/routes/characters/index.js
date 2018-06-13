@@ -1,7 +1,7 @@
 import express from 'express'
 import unirest from 'unirest'
 import fs from 'fs'
-import { map, flatMap, reduce, get } from 'lodash/fp'
+import { map, flatMap, get } from 'lodash/fp'
 import config from '../../config'
 import { getItems, getSkins, getGuild, getSpecializations } from '../../lib'
 import { parseData } from '../../util'
@@ -13,17 +13,17 @@ router.use((req, res, next) => {
     if (err) {
       res.status(401).send('no api key stored')
     } else {
-      req.apiKey = JSON.parse(data).apiKey
+      req.apiKey = JSON.parse(data).id
       next()
     }
   })
 })
 
 router
-  .get('/', request)
-  .get('/:id', charData)
+  .get('/', requestAllCharacters)
+  .get('/:id', requestCharacter)
 
-function request (req, res) {
+function requestAllCharacters (req, res) {
   unirest.get(`${config.gwHost}/characters`)
     .headers({ Authorization: `Bearer ${req.apiKey}` })
     .end(data => {
@@ -35,7 +35,7 @@ function request (req, res) {
     })
 }
 
-function charData (req, res) {
+function requestCharacter (req, res) {
   unirest.get(`${config.gwHost}/characters${req.url}`)
     .headers({ Authorization: `Bearer ${req.apiKey}` })
     .end(data => {

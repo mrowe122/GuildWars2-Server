@@ -15,6 +15,9 @@ var start = function start() {
 	server.use('/api/characters', function (req, res) {
 		return res.jsonp(db.characters);
 	});
+	server.use('/api/tokeninfo', function (req, res) {
+		return res.jsonp(db.tokeninfo);
+	});
 
 	server.use(middlewares);
 	server.listen(PORT, function () {

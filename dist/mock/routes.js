@@ -1,6 +1,7 @@
 'use strict';
 
 module.exports = {
+  tokeninfo: require('./api/tokeninfo/index.json'),
   characters: require('./api/characters/index.json'),
   CorruptedCreed: require('./api/characters/CorruptedCreed.json'),
   CorruptedFear: require('./api/characters/CorruptedFear.json'),

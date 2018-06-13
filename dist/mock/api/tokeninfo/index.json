@@ -1,0 +1,18 @@
+{
+	"body": {
+		"id": "E8F4232E-7A73-A945-A8F9-415D2E5E4820",
+		"name": "dev",
+		"permissions": [
+			"tradingpost",
+			"characters",
+			"pvp",
+			"progression",
+			"wallet",
+			"guilds",
+			"builds",
+			"account",
+			"inventories",
+			"unlocks"
+		]
+	}
+}

@@ -37,15 +37,15 @@ router.use(function (req, res, next) {
     if (err) {
       res.status(401).send('no api key stored');
     } else {
-      req.apiKey = JSON.parse(data).apiKey;
+      req.apiKey = JSON.parse(data).id;
       next();
     }
   });
 });
 
-router.get('/', request).get('/:id', charData);
+router.get('/', requestAllCharacters).get('/:id', requestCharacter);
 
-function request(req, res) {
+function requestAllCharacters(req, res) {
   _unirest2.default.get(_config2.default.gwHost + '/characters').headers({ Authorization: 'Bearer ' + req.apiKey }).end(function (data) {
     if (data.ok) {
       return res.send({ body: data.body, statusCode: data.statusCode });
@@ -55,7 +55,7 @@ function request(req, res) {
   });
 }
 
-function charData(req, res) {
+function requestCharacter(req, res) {
   _unirest2.default.get(_config2.default.gwHost + '/characters' + req.url).headers({ Authorization: 'Bearer ' + req.apiKey }).end(function (data) {
     if (!data.ok) {
       return res.status(data.statusCode).send(data.body);
