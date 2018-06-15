@@ -3,9 +3,15 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.parseData = undefined;
+exports.checkSession = exports.parseData = undefined;
 
 var _fp = require('lodash/fp');
+
+var _fs = require('fs');
+
+var _fs2 = _interopRequireDefault(_fs);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
@@ -60,5 +66,17 @@ var mergeSpecialization = function mergeSpecialization(data, ids) {
       return s ? (0, _fp.assign)(s, { data: _itemIdKey[s.id] }) : null;
     }))(data);
     resolve({ specializations: _specialization });
+  });
+};
+
+var checkSession = exports.checkSession = function checkSession(req, res, next) {
+  _fs2.default.readFile('./userDb/sessions/' + req.headers['x-session-token'], 'utf8', function (err, file) {
+    if (err) {
+      return res.status(404).send('Session not found');
+    }
+
+    var session = JSON.parse(file);
+    req.user = session.user;
+    next();
   });
 };

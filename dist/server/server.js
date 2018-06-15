@@ -12,6 +12,10 @@ var _bodyParser = require('body-parser');
 
 var _bodyParser2 = _interopRequireDefault(_bodyParser);
 
+var _fs = require('fs');
+
+var _fs2 = _interopRequireDefault(_fs);
+
 var _routes = require('./routes');
 
 var _routes2 = _interopRequireDefault(_routes);
@@ -31,6 +35,16 @@ var start = function start() {
   app.use('/api', _routes2.default);
   app.listen(_config2.default.port, function () {
     console.log('Express router listening on port: ' + _config2.default.port);
+    if (!_fs2.default.existsSync('userDb')) {
+      _fs2.default.mkdir('userDb', function () {
+        _fs2.default.mkdir('userDb/users', function () {
+          console.log('created users db');
+        });
+        _fs2.default.mkdir('userDb/sessions', function () {
+          console.log('created sessions db');
+        });
+      });
+    }
   });
 };
 
