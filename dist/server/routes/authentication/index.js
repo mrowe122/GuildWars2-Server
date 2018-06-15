@@ -33,13 +33,13 @@ function createAccount(req, res) {
   };
   var id = UUID();
 
-  _fs2.default.writeFile('./userDb/users/' + req.body.user, JSON.stringify(user), 'utf8', function (err) {
+  _fs2.default.writeFile('./userDb/users/' + req.body.username, JSON.stringify(user), 'utf8', function (err) {
     if (err) {
       return res.status(500).send(err);
     }
 
     var session = {
-      user: req.body.user
+      user: req.body.username
     };
     _fs2.default.writeFile('./userDb/sessions/' + id, JSON.stringify(session), 'utf8', function (err) {
       if (err) {
@@ -51,7 +51,7 @@ function createAccount(req, res) {
 }
 
 function authenticate(req, res) {
-  _fs2.default.readFile('./userDb/users/' + req.body.user, 'utf8', function (err, file) {
+  _fs2.default.readFile('./userDb/users/' + req.body.username, 'utf8', function (err, file) {
     if (err) {
       res.status(404).send('user does not exist');
     } else {
@@ -59,7 +59,7 @@ function authenticate(req, res) {
       if (user.password === req.body.password) {
         var id = UUID();
         var session = {
-          user: req.body.user
+          user: req.body.username
         };
         _fs2.default.writeFile('./userDb/sessions/' + id, JSON.stringify(session), 'utf8', function (err) {
           if (err) {

@@ -22,13 +22,13 @@ function createAccount (req, res) {
   }
   const id = UUID()
 
-  fs.writeFile(`./userDb/users/${req.body.user}`, JSON.stringify(user), 'utf8', err => {
+  fs.writeFile(`./userDb/users/${req.body.username}`, JSON.stringify(user), 'utf8', err => {
     if (err) {
       return res.status(500).send(err)
     }
 
     const session = {
-      user: req.body.user
+      user: req.body.username
     }
     fs.writeFile(`./userDb/sessions/${id}`, JSON.stringify(session), 'utf8', err => {
       if (err) {
@@ -40,7 +40,7 @@ function createAccount (req, res) {
 }
 
 function authenticate (req, res) {
-  fs.readFile(`./userDb/users/${req.body.user}`, 'utf8',  (err, file) => {
+  fs.readFile(`./userDb/users/${req.body.username}`, 'utf8',  (err, file) => {
     if (err) {
       res.status(404).send('user does not exist')
     } else {
@@ -48,7 +48,7 @@ function authenticate (req, res) {
       if (user.password === req.body.password) {
         const id = UUID()
         const session = {
-          user: req.body.user
+          user: req.body.username
         }
         fs.writeFile(`./userDb/sessions/${id}`, JSON.stringify(session), 'utf8', err => {
           if (err) {
