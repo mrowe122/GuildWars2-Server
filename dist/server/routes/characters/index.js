@@ -12,10 +12,6 @@ var _unirest = require('unirest');
 
 var _unirest2 = _interopRequireDefault(_unirest);
 
-var _fs = require('fs');
-
-var _fs2 = _interopRequireDefault(_fs);
-
 var _fp = require('lodash/fp');
 
 var _config = require('../../config');
@@ -32,21 +28,10 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
 var router = _express2.default.Router();
 
-router.use(function (req, res, next) {
-  _fs2.default.readFile('./userDb/apiKey', 'utf8', function (err, data) {
-    if (err) {
-      res.status(401).send('no api key stored');
-    } else {
-      req.apiKey = JSON.parse(data).id;
-      next();
-    }
-  });
-});
-
-router.get('/', requestAllCharacters).get('/:id', requestCharacter);
+router.use('/', _util.checkSession).get('/', requestAllCharacters).get('/:id', requestCharacter);
 
 function requestAllCharacters(req, res) {
-  _unirest2.default.get(_config2.default.gwHost + '/characters').headers({ Authorization: 'Bearer ' + req.apiKey }).end(function (data) {
+  _unirest2.default.get(_config2.default.gwHost + '/characters').headers({ Authorization: 'Bearer ' + req.user.apiKey }).end(function (data) {
     if (data.ok) {
       return res.send({ body: data.body, statusCode: data.statusCode });
     } else {
@@ -56,7 +41,7 @@ function requestAllCharacters(req, res) {
 }
 
 function requestCharacter(req, res) {
-  _unirest2.default.get(_config2.default.gwHost + '/characters' + req.url).headers({ Authorization: 'Bearer ' + req.apiKey }).end(function (data) {
+  _unirest2.default.get(_config2.default.gwHost + '/characters' + req.url).headers({ Authorization: 'Bearer ' + req.user.apiKey }).end(function (data) {
     if (!data.ok) {
       return res.status(data.statusCode).send(data.body);
     }

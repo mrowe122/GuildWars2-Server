@@ -18,6 +18,7 @@ router
 
 function createAccount (req, res) {
   const user = {
+    username: req.body.username,
     password: req.body.password
   }
   const id = UUID()
@@ -40,11 +41,11 @@ function createAccount (req, res) {
 }
 
 function authenticate (req, res) {
-  fs.readFile(`./userDb/users/${req.body.username}`, 'utf8',  (err, file) => {
+  fs.readFile(`./userDb/users/${req.body.username}`, 'utf8',  (err, userFile) => {
     if (err) {
       res.status(404).send('user does not exist')
     } else {
-      const user = JSON.parse(file)
+      const user = JSON.parse(userFile)
       if (user.password === req.body.password) {
         const id = UUID()
         const session = {
@@ -54,7 +55,7 @@ function authenticate (req, res) {
           if (err) {
             return res.status(500).send(err)
           }
-          return res.status(200).send(id)
+          return res.status(200).send({ sessionId: id, permissions: user.tokenInfo.permissions })
         })
       } else {
         res.status(403).send('password did not match')

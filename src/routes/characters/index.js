@@ -1,31 +1,20 @@
 import express from 'express'
 import unirest from 'unirest'
-import fs from 'fs'
 import { map, flatMap, get } from 'lodash/fp'
 import config from '../../config'
 import { getItems, getSkins, getGuild, getSpecializations } from '../../lib'
-import { parseData } from '../../util'
+import { parseData, checkSession } from '../../util'
 
 const router = express.Router()
 
-router.use((req, res, next) => {
-  fs.readFile('./userDb/apiKey', 'utf8', (err, data) => {
-    if (err) {
-      res.status(401).send('no api key stored')
-    } else {
-      req.apiKey = JSON.parse(data).id
-      next()
-    }
-  })
-})
-
 router
+  .use('/', checkSession)
   .get('/', requestAllCharacters)
   .get('/:id', requestCharacter)
 
 function requestAllCharacters (req, res) {
   unirest.get(`${config.gwHost}/characters`)
-    .headers({ Authorization: `Bearer ${req.apiKey}` })
+    .headers({ Authorization: `Bearer ${req.user.apiKey}` })
     .end(data => {
       if (data.ok) {
         return res.send({ body: data.body, statusCode: data.statusCode })
@@ -37,7 +26,7 @@ function requestAllCharacters (req, res) {
 
 function requestCharacter (req, res) {
   unirest.get(`${config.gwHost}/characters${req.url}`)
-    .headers({ Authorization: `Bearer ${req.apiKey}` })
+    .headers({ Authorization: `Bearer ${req.user.apiKey}` })
     .end(data => {
       if (!data.ok) {
         return res.status(data.statusCode).send(data.body)

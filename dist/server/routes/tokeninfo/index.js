@@ -31,13 +31,14 @@ router.use('/', _util.checkSession).post('/', addToken);
 function addToken(req, res) {
   _unirest2.default.get(_config2.default.gwHost + '/tokeninfo').headers({ Authorization: 'Bearer ' + req.body.apiKey }).end(function (data) {
     if (data.ok) {
-      _fs2.default.readFile('./userDb/users/' + req.user, 'utf8', function (err, file) {
+      _fs2.default.readFile('./userDb/users/' + req.user.username, 'utf8', function (err, file) {
         if (err) {
           return res.status(500).send(err);
         }
         var user = JSON.parse(file);
         user.tokenInfo = data.body;
-        _fs2.default.writeFile('./userDb/users/' + req.user, JSON.stringify(user), 'utf8', function (err) {
+        user.apiKey = req.body.apiKey;
+        _fs2.default.writeFile('./userDb/users/' + req.user.username, JSON.stringify(user), 'utf8', function (err) {
           if (err) {
             return res.status(500).send(err);
           }

@@ -32,13 +32,20 @@ const mergeSpecialization = (data, ids) => new Promise(resolve => {
 })
 
 export const checkSession = (req, res, next) => {
-  fs.readFile(`./userDb/sessions/${req.headers['x-session-token']}`, 'utf8', (err, file) => {
+  fs.readFile(`./userDb/sessions/${req.headers['x-session-token']}`, 'utf8', (err, sessionFile) => {
     if (err) {
-      return res.status(404).send('Session not found')
+      return res.sendStatus(404)
     }
 
-    const session = JSON.parse(file)
-    req.user = session.user
-    next()
+    const session = JSON.parse(sessionFile)
+
+    fs.readFile(`./userDb/users/${session.user}`, 'utf8', (err, userFile) => {
+      if (err) {
+        return res.sendStatus(404)
+      }
+
+      req.user = JSON.parse(userFile)
+      next()
+    })
   })
 }

@@ -70,13 +70,20 @@ var mergeSpecialization = function mergeSpecialization(data, ids) {
 };
 
 var checkSession = exports.checkSession = function checkSession(req, res, next) {
-  _fs2.default.readFile('./userDb/sessions/' + req.headers['x-session-token'], 'utf8', function (err, file) {
+  _fs2.default.readFile('./userDb/sessions/' + req.headers['x-session-token'], 'utf8', function (err, sessionFile) {
     if (err) {
-      return res.status(404).send('Session not found');
+      return res.sendStatus(404);
     }
 
-    var session = JSON.parse(file);
-    req.user = session.user;
-    next();
+    var session = JSON.parse(sessionFile);
+
+    _fs2.default.readFile('./userDb/users/' + session.user, 'utf8', function (err, userFile) {
+      if (err) {
+        return res.sendStatus(404);
+      }
+
+      req.user = JSON.parse(userFile);
+      next();
+    });
   });
 };

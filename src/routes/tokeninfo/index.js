@@ -15,13 +15,14 @@ function addToken (req, res) {
     .headers({ Authorization: `Bearer ${req.body.apiKey}` })
     .end(data => {
       if (data.ok) {
-        fs.readFile(`./userDb/users/${req.user}`, 'utf8', (err, file) => {
+        fs.readFile(`./userDb/users/${req.user.username}`, 'utf8', (err, file) => {
           if (err) {
             return res.status(500).send(err)
           }
           const user = JSON.parse(file)
           user.tokenInfo = data.body
-          fs.writeFile(`./userDb/users/${req.user}`, JSON.stringify(user), 'utf8', err => {
+          user.apiKey = req.body.apiKey
+          fs.writeFile(`./userDb/users/${req.user.username}`, JSON.stringify(user), 'utf8', err => {
             if (err) {
               return res.status(500).send(err)
             }

@@ -29,6 +29,7 @@ router.post('/create', createAccount).post('/', authenticate);
 
 function createAccount(req, res) {
   var user = {
+    username: req.body.username,
     password: req.body.password
   };
   var id = UUID();
@@ -51,11 +52,11 @@ function createAccount(req, res) {
 }
 
 function authenticate(req, res) {
-  _fs2.default.readFile('./userDb/users/' + req.body.username, 'utf8', function (err, file) {
+  _fs2.default.readFile('./userDb/users/' + req.body.username, 'utf8', function (err, userFile) {
     if (err) {
       res.status(404).send('user does not exist');
     } else {
-      var user = JSON.parse(file);
+      var user = JSON.parse(userFile);
       if (user.password === req.body.password) {
         var id = UUID();
         var session = {
@@ -65,7 +66,7 @@ function authenticate(req, res) {
           if (err) {
             return res.status(500).send(err);
           }
-          return res.status(200).send(id);
+          return res.status(200).send({ sessionId: id, permissions: user.tokenInfo.permissions });
         });
       } else {
         res.status(403).send('password did not match');
