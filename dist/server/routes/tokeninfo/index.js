@@ -43,7 +43,7 @@ function addToken(req, res) {
             return res.status(500).send(err);
           }
 
-          return res.status(200).send({ apiKey: req.body.apiKey, permissions: user.tokenInfo });
+          return res.status(200).send({ permissions: user.tokenInfo.permissions });
         });
       });
     } else {
