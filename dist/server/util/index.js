@@ -3,15 +3,9 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.checkSession = exports.parseData = undefined;
+exports.parseData = undefined;
 
 var _fp = require('lodash/fp');
-
-var _fs = require('fs');
-
-var _fs2 = _interopRequireDefault(_fs);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
@@ -66,24 +60,5 @@ var mergeSpecialization = function mergeSpecialization(data, ids) {
       return s ? (0, _fp.assign)(s, { data: _itemIdKey[s.id] }) : null;
     }))(data);
     resolve({ specializations: _specialization });
-  });
-};
-
-var checkSession = exports.checkSession = function checkSession(req, res, next) {
-  _fs2.default.readFile('./userDb/sessions/' + req.headers['x-session-token'], 'utf8', function (err, sessionFile) {
-    if (err) {
-      return res.sendStatus(404);
-    }
-
-    var session = JSON.parse(sessionFile);
-
-    _fs2.default.readFile('./userDb/users/' + session.user, 'utf8', function (err, userFile) {
-      if (err) {
-        return res.sendStatus(404);
-      }
-
-      req.user = JSON.parse(userFile);
-      next();
-    });
   });
 };

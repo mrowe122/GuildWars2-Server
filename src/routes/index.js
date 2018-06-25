@@ -1,7 +1,8 @@
 import express from 'express'
 import character from './characters'
-import authentication from './authentication'
 import tokeninfo from './tokeninfo'
+import permissions from './permissions'
+import { checkToken, getApiKey } from '../lib'
 
 const router = express.Router()
 
@@ -13,11 +14,12 @@ const enableCors = (req, res, next) => {
   next()
 }
 
-router.use(enableCors)
-
-router.use('/characters', character)
-// TODO: The entirety of this authentication is temporary
-router.use('/authenticate', authentication)
-router.use('/tokeninfo', tokeninfo)
+router
+  .use(enableCors)
+  .use(checkToken)
+  .use(getApiKey)
+  .use('/characters', character)
+  .use('/tokeninfo', tokeninfo)
+  .use('/permissions', permissions)
 
 export default router

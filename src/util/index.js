@@ -1,5 +1,4 @@
 import { keyBy, assign, assignAll, flatMap, map, mapValues } from 'lodash/fp'
-import fs from 'fs'
 
 export const parseData = data => ids => {
   return Promise.all([
@@ -30,22 +29,3 @@ const mergeSpecialization = (data, ids) => new Promise(resolve => {
   const _specialization = mapValues(map(s => s ? assign(s, { data: _itemIdKey[s.id] }) : null))(data)
   resolve({ specializations: _specialization })
 })
-
-export const checkSession = (req, res, next) => {
-  fs.readFile(`./userDb/sessions/${req.headers['x-session-token']}`, 'utf8', (err, sessionFile) => {
-    if (err) {
-      return res.sendStatus(404)
-    }
-
-    const session = JSON.parse(sessionFile)
-
-    fs.readFile(`./userDb/users/${session.user}`, 'utf8', (err, userFile) => {
-      if (err) {
-        return res.sendStatus(404)
-      }
-
-      req.user = JSON.parse(userFile)
-      next()
-    })
-  })
-}

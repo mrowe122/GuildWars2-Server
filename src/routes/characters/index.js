@@ -3,30 +3,29 @@ import unirest from 'unirest'
 import { map, flatMap, get } from 'lodash/fp'
 import config from '../../config'
 import { getItems, getSkins, getGuild, getSpecializations } from '../../lib'
-import { parseData, checkSession } from '../../util'
+import { parseData } from '../../util'
 
 const router = express.Router()
 
 router
-  .use('/', checkSession)
   .get('/', requestAllCharacters)
   .get('/:id', requestCharacter)
 
 function requestAllCharacters (req, res) {
   unirest.get(`${config.gwHost}/characters`)
-    .headers({ Authorization: `Bearer ${req.user.apiKey}` })
-    .end(data => {
-      if (data.ok) {
-        return res.send({ body: data.body, statusCode: data.statusCode })
-      } else {
-        return res.status(data.statusCode).send(data.body)
-      }
-    })
+  .headers({ Authorization: `Bearer ${req.apiKey}` })
+  .end(data => {
+    if (data.ok) {
+      return res.send({ body: data.body, statusCode: data.statusCode })
+    } else {
+      return res.status(data.statusCode).send(data.body)
+    }
+  })
 }
 
 function requestCharacter (req, res) {
   unirest.get(`${config.gwHost}/characters${req.url}`)
-    .headers({ Authorization: `Bearer ${req.user.apiKey}` })
+    .headers({ Authorization: `Bearer ${req.apiKey}` })
     .end(data => {
       if (!data.ok) {
         return res.status(data.statusCode).send(data.body)

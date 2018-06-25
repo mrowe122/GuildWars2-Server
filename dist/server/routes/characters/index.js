@@ -28,10 +28,10 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
 var router = _express2.default.Router();
 
-router.use('/', _util.checkSession).get('/', requestAllCharacters).get('/:id', requestCharacter);
+router.get('/', requestAllCharacters).get('/:id', requestCharacter);
 
 function requestAllCharacters(req, res) {
-  _unirest2.default.get(_config2.default.gwHost + '/characters').headers({ Authorization: 'Bearer ' + req.user.apiKey }).end(function (data) {
+  _unirest2.default.get(_config2.default.gwHost + '/characters').headers({ Authorization: 'Bearer ' + req.apiKey }).end(function (data) {
     if (data.ok) {
       return res.send({ body: data.body, statusCode: data.statusCode });
     } else {
@@ -41,7 +41,7 @@ function requestAllCharacters(req, res) {
 }
 
 function requestCharacter(req, res) {
-  _unirest2.default.get(_config2.default.gwHost + '/characters' + req.url).headers({ Authorization: 'Bearer ' + req.user.apiKey }).end(function (data) {
+  _unirest2.default.get(_config2.default.gwHost + '/characters' + req.url).headers({ Authorization: 'Bearer ' + req.apiKey }).end(function (data) {
     if (!data.ok) {
       return res.status(data.statusCode).send(data.body);
     }
