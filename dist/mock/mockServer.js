@@ -15,8 +15,8 @@ var start = function start() {
 	server.use('/api/characters', function (req, res) {
 		return res.jsonp(db.characters);
 	});
-	server.use('/api/tokeninfo', function (req, res) {
-		return res.jsonp(db.tokeninfo);
+	server.use('/api/permissions', function (req, res) {
+		return res.jsonp(db.permissions);
 	});
 
 	server.use(middlewares);
