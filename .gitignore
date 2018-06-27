@@ -3,3 +3,4 @@ node_modules/
 userDb/
 *.log
 serviceAccountKey.json
+nginx.conf
