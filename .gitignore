@@ -4,3 +4,4 @@ userDb/
 *.log
 serviceAccountKey.json
 nginx.conf
+.env

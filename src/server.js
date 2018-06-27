@@ -1,15 +1,14 @@
 import express from 'express'
 import bodyParser from 'body-parser'
 import * as admin from 'firebase-admin'
-import credentials from '../serviceAccountKey.json'
 import routes from './routes'
 import config from './config'
 const app = express()
 
 const start = () => {
   admin.initializeApp({
-    credential: admin.credential.cert(credentials),
-    databaseURL: 'https://gw2tracker-d615c.firebaseio.com'
+    credential: admin.credential.cert(config.firebaseCredentials),
+    databaseURL: process.env.DATABASE_URL
   })
 
   app.use(bodyParser.urlencoded({ extended: false }))
