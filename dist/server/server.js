@@ -16,10 +16,6 @@ var _firebaseAdmin = require('firebase-admin');
 
 var admin = _interopRequireWildcard(_firebaseAdmin);
 
-var _serviceAccountKey = require('../serviceAccountKey.json');
-
-var _serviceAccountKey2 = _interopRequireDefault(_serviceAccountKey);
-
 var _routes = require('./routes');
 
 var _routes2 = _interopRequireDefault(_routes);
@@ -36,8 +32,8 @@ var app = (0, _express2.default)();
 
 var start = function start() {
   admin.initializeApp({
-    credential: admin.credential.cert(_serviceAccountKey2.default),
-    databaseURL: 'https://gw2tracker-d615c.firebaseio.com'
+    credential: admin.credential.cert(_config2.default.firebaseCredentials),
+    databaseURL: process.env.DATABASE_URL
   });
 
   app.use(_bodyParser2.default.urlencoded({ extended: false }));
