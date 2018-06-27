@@ -34,6 +34,6 @@ var enableCors = function enableCors(req, res, next) {
   next();
 };
 
-router.use(enableCors).use(_lib.checkToken).use(_lib.getApiKey).use('/characters', _characters2.default).use('/tokeninfo', _tokeninfo2.default).use('/permissions', _permissions2.default);
+router.use(enableCors).use(_lib.checkToken).use('/tokeninfo', _tokeninfo2.default).use(_lib.getApiKey).use('/characters', _characters2.default).use('/permissions', _permissions2.default);
 
 exports.default = router;

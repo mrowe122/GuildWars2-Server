@@ -17,9 +17,9 @@ const enableCors = (req, res, next) => {
 router
   .use(enableCors)
   .use(checkToken)
+  .use('/tokeninfo', tokeninfo)
   .use(getApiKey)
   .use('/characters', character)
-  .use('/tokeninfo', tokeninfo)
   .use('/permissions', permissions)
 
 export default router
