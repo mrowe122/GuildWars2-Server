@@ -58,17 +58,16 @@ var checkToken = exports.checkToken = function checkToken(req, res, next) {
   admin.auth().verifyIdToken(token).then(function (decodedToken) {
     req.uid = decodedToken.uid;
     next();
-  }).catch(function (err) {
-    console.log(err);
+  }).catch(function () {
     res.sendStatus(500);
   });
 };
 
 var getApiKey = exports.getApiKey = function getApiKey(req, res, next) {
   admin.database().ref('users/' + req.uid).once('value').then(function (snapshot) {
-    var uuid = snapshot.val().apiKey;
+    var uuid = snapshot.val();
     if (uuid) {
-      req.apiKey = uuid;
+      req.apiKey = uuid.apiKey;
       next();
     } else {
       res.status(403).send({ message: 'No Api Key' });

@@ -32,17 +32,16 @@ export const checkToken = (req, res, next) => {
     .then(decodedToken => {
       req.uid = decodedToken.uid
       next()
-    }).catch(err => {
-      console.log(err)
+    }).catch(() => {
       res.sendStatus(500)
     })
 }
 
 export const getApiKey = (req, res, next) => {
   admin.database().ref(`users/${req.uid}`).once('value').then(snapshot => {
-    const uuid = snapshot.val().apiKey
+    const uuid = snapshot.val()
     if (uuid) {
-      req.apiKey = uuid
+      req.apiKey = uuid.apiKey
       next()
     } else {
       res.status(403).send({ message: 'No Api Key' })
