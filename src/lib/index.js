@@ -40,7 +40,7 @@ export const checkToken = (req, res, next) => {
 export const getApiKey = (req, res, next) => {
   admin.database().ref(`users/${req.uid}`).once('value').then(snapshot => {
     const uuid = snapshot.val()
-    if (uuid) {
+    if (uuid && uuid.apiKey) {
       req.apiKey = uuid.apiKey
       next()
     } else {

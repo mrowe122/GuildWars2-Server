@@ -66,7 +66,7 @@ var checkToken = exports.checkToken = function checkToken(req, res, next) {
 var getApiKey = exports.getApiKey = function getApiKey(req, res, next) {
   admin.database().ref('users/' + req.uid).once('value').then(function (snapshot) {
     var uuid = snapshot.val();
-    if (uuid) {
+    if (uuid && uuid.apiKey) {
       req.apiKey = uuid.apiKey;
       next();
     } else {
