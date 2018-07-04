@@ -18,12 +18,14 @@
     "mock": "./node_modules/.bin/babel-watch mockDb",
     "build": "./node_modules/.bin/npm-run-all clean --parallel build:server build:mockServer",
     "clean": "./node_modules/.bin/rimraf dist",
-    "build:server": "./node_modules/.bin/babel src --out-dir dist/server",
+    "build:server": "./node_modules/.bin/webpack --config ./webpack/webpack.config.js",
     "build:mockServer": "./node_modules/.bin/babel mockDb --out-dir dist/mock --copy-files"
   },
   "dependencies": {
+    "babel-loader": "^7.1.4",
     "body-parser": "^1.18.3",
     "dotenv": "^6.0.0",
+    "dotenv-webpack": "^1.5.7",
     "express": "^4.16.3",
     "firebase-admin": "^5.12.1",
     "json-server": "^0.14.0",
@@ -34,6 +36,7 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.5",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-watch": "^2.0.7",
@@ -45,6 +48,9 @@
     "eslint-plugin-standard": "^3.1.0",
     "npm-run-all": "^4.1.3",
     "path": "^0.12.7",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "webpack": "^4.14.0",
+    "webpack-cli": "^3.0.8",
+    "webpack-node-externals": "^1.7.2"
   }
 }

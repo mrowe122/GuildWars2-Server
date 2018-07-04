@@ -1,4 +1,4 @@
 #!/usr/bin/env node
 
-const server = require('../dist/server/server')
+const server = require('../dist/main')
 server.default()
