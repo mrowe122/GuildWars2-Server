@@ -10,7 +10,6 @@
     "url": "git@github.com:mrowe122/GuildWars2-Server.git"
   },
   "bin": {
-    "gw2_server": "bin/gw2_server",
     "gw2_mock_server": "bin/gw2_mock_server"
   },
   "scripts": {
@@ -22,7 +21,7 @@
     "build:mockServer": "./node_modules/.bin/babel mockDb --out-dir dist/mock --copy-files"
   },
   "dependencies": {
-    "babel-loader": "^7.1.4",
+    "babel-loader": "^7.1.5",
     "body-parser": "^1.18.3",
     "dotenv": "^6.0.0",
     "dotenv-webpack": "^1.5.7",
@@ -49,7 +48,7 @@
     "npm-run-all": "^4.1.3",
     "path": "^0.12.7",
     "rimraf": "^2.6.2",
-    "webpack": "^4.14.0",
+    "webpack": "^4.15.1",
     "webpack-cli": "^3.0.8",
     "webpack-node-externals": "^1.7.2"
   }
