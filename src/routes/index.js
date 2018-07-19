@@ -2,6 +2,7 @@ import express from 'express'
 import character from './characters'
 import tokeninfo from './tokeninfo'
 import permissions from './permissions'
+import wallet from './wallet'
 import { checkToken, getApiKey } from '../lib'
 
 const router = express.Router()
@@ -21,5 +22,6 @@ router
   .use(getApiKey)
   .use('/characters', character)
   .use('/permissions', permissions)
+  .use('/account/wallet', wallet)
 
 export default router
