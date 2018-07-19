@@ -26,6 +26,12 @@ export const getSpecializations = ids => new Promise(resolve => {
     .end(data => resolve(data))
 })
 
+export const getCurrencies = ids => new Promise(resolve => {
+  unirest
+    .get(`${config.gwHost}/currencies?ids=${ids}`)
+    .end(data => resolve(data))
+})
+
 export const checkToken = (req, res, next) => {
   const token = req.body.token || req.query.token
   admin.auth().verifyIdToken(token)
