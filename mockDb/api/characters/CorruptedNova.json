@@ -905,12 +905,12 @@
             "secondary_suffix_item_id": ""
           },
           "upgrades_into": [{
-              "upgrade": "Attunement",
-              "item_id": 76953
-            },
-            {
               "upgrade": "Infusion",
               "item_id": 49394
+            },
+            {
+              "upgrade": "Attunement",
+              "item_id": 76953
             }
           ]
         },
@@ -975,12 +975,12 @@
             "secondary_suffix_item_id": ""
           },
           "upgrades_into": [{
-              "upgrade": "Attunement",
-              "item_id": 74610
-            },
-            {
               "upgrade": "Infusion",
               "item_id": 49395
+            },
+            {
+              "upgrade": "Attunement",
+              "item_id": 74610
             }
           ]
         },

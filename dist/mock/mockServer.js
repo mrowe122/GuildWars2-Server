@@ -18,6 +18,9 @@ var start = function start() {
 	server.use('/api/permissions', function (req, res) {
 		return res.jsonp(db.permissions);
 	});
+	server.use('/api/account/wallet', function (req, res) {
+		return res.jsonp(db.wallet);
+	});
 
 	server.use(middlewares);
 	server.listen(PORT, function () {

@@ -12,6 +12,7 @@ const start = () => {
   })
 	server.use('/api/characters', (req, res) => res.jsonp(db.characters))
 	server.use('/api/permissions', (req, res) => res.jsonp(db.permissions))
+	server.use('/api/account/wallet', (req, res) => res.jsonp(db.wallet))
 
 	server.use(middlewares)
 	server.listen(PORT, () => {

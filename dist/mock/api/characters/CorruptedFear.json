@@ -27,7 +27,7 @@
         "flags": []
       }
     },
-    "age": 2293890,
+    "age": 2294040,
     "created": "2014-03-28T02:29:00Z",
     "deaths": 1096,
     "crafting": [{
@@ -684,15 +684,15 @@
             "weight_class": "Light",
             "dye_slots": {
               "default": [{
-                  "color_id": 19,
+                  "color_id": 1,
                   "material": "cloth"
                 },
                 {
-                  "color_id": 19,
+                  "color_id": 1,
                   "material": "cloth"
                 },
                 {
-                  "color_id": 107,
+                  "color_id": 1,
                   "material": "cloth"
                 },
                 null
@@ -920,11 +920,11 @@
             "weight_class": "Light",
             "dye_slots": {
               "default": [{
-                  "color_id": 19,
+                  "color_id": 1,
                   "material": "cloth"
                 },
                 {
-                  "color_id": 19,
+                  "color_id": 1,
                   "material": "cloth"
                 },
                 null,
@@ -1177,15 +1177,15 @@
             "weight_class": "Light",
             "dye_slots": {
               "default": [{
-                  "color_id": 19,
+                  "color_id": 1,
                   "material": "cloth"
                 },
                 {
-                  "color_id": 19,
+                  "color_id": 1,
                   "material": "cloth"
                 },
                 {
-                  "color_id": 107,
+                  "color_id": 1,
                   "material": "cloth"
                 },
                 null
@@ -1637,12 +1637,12 @@
             "secondary_suffix_item_id": ""
           },
           "upgrades_into": [{
-              "upgrade": "Attunement",
-              "item_id": 76953
-            },
-            {
               "upgrade": "Infusion",
               "item_id": 49394
+            },
+            {
+              "upgrade": "Attunement",
+              "item_id": 76953
             }
           ]
         },
@@ -1779,12 +1779,12 @@
             "secondary_suffix_item_id": ""
           },
           "upgrades_into": [{
-              "upgrade": "Attunement",
-              "item_id": 74610
-            },
-            {
               "upgrade": "Infusion",
               "item_id": 49395
+            },
+            {
+              "upgrade": "Attunement",
+              "item_id": 74610
             }
           ]
         },

@@ -438,45 +438,6 @@
           19,
           null
         ],
-        "data": {
-          "name": "Mighty Rawhide Mask",
-          "description": "",
-          "type": "Armor",
-          "level": 10,
-          "rarity": "Masterwork",
-          "vendor_value": 38,
-          "default_skin": 89,
-          "game_types": [
-            "Activity",
-            "Wvw",
-            "Dungeon",
-            "Pve"
-          ],
-          "flags": [
-            "NoSalvage",
-            "NoSell",
-            "SoulbindOnAcquire",
-            "SoulBindOnUse"
-          ],
-          "restrictions": [],
-          "id": 64666,
-          "chat_link": "[&AgGa/AAA]",
-          "icon": "https://render.guildwars2.com/file/F804E912B12B14C11309C7B6CB7F0113C4D4270E/218899.png",
-          "details": {
-            "type": "Helm",
-            "weight_class": "Medium",
-            "defense": 13,
-            "infusion_slots": [],
-            "infix_upgrade": {
-              "id": 137,
-              "attributes": [{
-                "attribute": "Power",
-                "modifier": 5
-              }]
-            },
-            "secondary_suffix_item_id": ""
-          }
-        },
         "infusions": [],
         "upgrades": [{
           "name": "Malachite Pebble",
@@ -596,44 +557,6 @@
         "slot": "Ring1",
         "binding": "Character",
         "bound_to": "Corrupted Creed",
-        "data": {
-          "name": "Iron Ring",
-          "description": "",
-          "type": "Trinket",
-          "level": 17,
-          "rarity": "Masterwork",
-          "vendor_value": 63,
-          "game_types": [
-            "Activity",
-            "Wvw",
-            "Dungeon",
-            "Pve"
-          ],
-          "flags": [
-            "HideSuffix",
-            "NoSalvage",
-            "NoSell",
-            "SoulbindOnAcquire",
-            "SoulBindOnUse"
-          ],
-          "restrictions": [],
-          "id": 64127,
-          "chat_link": "[&AgF/+gAA]",
-          "icon": "https://render.guildwars2.com/file/16B2A4F155EB737271041C79124F2BDC537300D2/63603.png",
-          "details": {
-            "type": "Ring",
-            "infusion_slots": [],
-            "infix_upgrade": {
-              "id": 137,
-              "attributes": [{
-                "attribute": "Power",
-                "modifier": 11
-              }]
-            },
-            "suffix_item_id": 24464,
-            "secondary_suffix_item_id": ""
-          }
-        },
         "infusions": [],
         "upgrades": [{
           "name": "Garnet Pebble",
@@ -701,43 +624,6 @@
         "slot": "Amulet",
         "binding": "Character",
         "bound_to": "Corrupted Creed",
-        "data": {
-          "name": "Mighty Amulet",
-          "description": "",
-          "type": "Trinket",
-          "level": 20,
-          "rarity": "Masterwork",
-          "vendor_value": 96,
-          "game_types": [
-            "Activity",
-            "Wvw",
-            "Dungeon",
-            "Pve"
-          ],
-          "flags": [
-            "HideSuffix",
-            "NoSalvage",
-            "NoSell",
-            "SoulbindOnAcquire",
-            "SoulBindOnUse"
-          ],
-          "restrictions": [],
-          "id": 64130,
-          "chat_link": "[&AgGC+gAA]",
-          "icon": "https://render.guildwars2.com/file/4D9C6F58C20F052359BA5D1D10B9E4B97ED5F012/66791.png",
-          "details": {
-            "type": "Amulet",
-            "infusion_slots": [],
-            "infix_upgrade": {
-              "id": 137,
-              "attributes": [{
-                "attribute": "Power",
-                "modifier": 16
-              }]
-            },
-            "secondary_suffix_item_id": ""
-          }
-        },
         "infusions": [],
         "upgrades": []
       },
