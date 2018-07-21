@@ -70,7 +70,419 @@
               1440
             ],
             "icon": "https://render.guildwars2.com/file/0D48C40A1C042B0BC6DAA4B91AB272E5E90C934C/1012032.png",
-            "background": "https://render.guildwars2.com/file/09160450B40ED777650F632F2CE82504B90F5644/1012109.png"
+            "background": "https://render.guildwars2.com/file/09160450B40ED777650F632F2CE82504B90F5644/1012109.png",
+            "traitData": {
+              "1338": {
+                "id": 1338,
+                "tier": 2,
+                "order": 1,
+                "name": "Forceful Greatsword",
+                "description": "Gain might on a critical hit with a greatsword or spear. Greatsword and spear skills deal more damage and recharge faster.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+                    "duration": 5,
+                    "status": "Might",
+                    "description": "Increased outgoing damage; stacks intensity.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Recharge Reduced",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+                    "percent": 20
+                  },
+                  {
+                    "text": "Damage Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 10
+                  }
+                ],
+                "specialization": 4,
+                "icon": "https://render.guildwars2.com/file/CDAE0E5A05570A05917304122E52C71BF5474FC5/1012814.png"
+              },
+              "1437": {
+                "id": 1437,
+                "tier": 3,
+                "order": 0,
+                "name": "Berserker's Power",
+                "description": "Gain increased damage when you use a <c=@abilitytype>burst</c> skill; this damage increase is based on your adrenaline.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/A795EE78B8DAA836F3C0650CFC037BB71D3517BA/1012816.png",
+                    "duration": 15,
+                    "status": "Berserker's Power",
+                    "description": "7% damage per stack.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/A795EE78B8DAA836F3C0650CFC037BB71D3517BA/1012816.png",
+                    "duration": 15,
+                    "status": "Berserker's Power",
+                    "description": "7% damage per stack.",
+                    "apply_count": 2
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/A795EE78B8DAA836F3C0650CFC037BB71D3517BA/1012816.png",
+                    "duration": 15,
+                    "status": "Berserker's Power",
+                    "description": "7% damage per stack.",
+                    "apply_count": 3
+                  },
+                  {
+                    "text": "Maximum Stacks",
+                    "type": "Number",
+                    "icon": "https://render.guildwars2.com/file/B4490FB81AA1E7C06F1B22056AE09A0F54CBE2C4/1770201.png",
+                    "value": 3
+                  }
+                ],
+                "specialization": 4,
+                "icon": "https://render.guildwars2.com/file/A795EE78B8DAA836F3C0650CFC037BB71D3517BA/1012816.png"
+              },
+              "1440": {
+                "id": 1440,
+                "tier": 3,
+                "order": 2,
+                "name": "Merciless Hammer",
+                "description": "Deal increased damage with a hammer when striking a foe that is dazed, knocked downed, launched, or stunned. Hammer skills gain reduced recharge. Inflict confusion when you interrupt enemy skills.<br><c=@reminder>This trait can only confuse enemies with defiance bars once per interval.</c>",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/289AA0A4644F0E044DED3D3F39CED958E1DDFF53/102880.png",
+                    "duration": 8,
+                    "status": "Confusion",
+                    "description": "Damage received on skill activation; stacks intensity.",
+                    "apply_count": 4
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/289AA0A4644F0E044DED3D3F39CED958E1DDFF53/102880.png",
+                    "duration": 4,
+                    "status": "Confusion",
+                    "description": "Damage received on skill activation; stacks intensity.",
+                    "apply_count": 6
+                  },
+                  {
+                    "text": "Damage Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 20
+                  },
+                  {
+                    "text": "Recharge Reduced",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+                    "percent": 20
+                  },
+                  {
+                    "text": "Interval",
+                    "type": "Time",
+                    "icon": "https://render.guildwars2.com/file/B75E91EB22E0DFCC1D08030204055946506D56F6/1770206.png",
+                    "duration": 3
+                  }
+                ],
+                "specialization": 4,
+                "icon": "https://render.guildwars2.com/file/203E0DEC94900B5305F309A1337D03D70FF9426E/1012804.png"
+              },
+              "1444": {
+                "id": 1444,
+                "tier": 1,
+                "order": 2,
+                "name": "Peak Performance",
+                "description": "<c=@abilitytype>Physical</c> skills have reduced recharge and increase all outgoing physical damage for a period of time. Receive less damage from falling, and launch nearby foes when you take fall damage.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge Reduced",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+                    "percent": 20
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/08F60C11F460F3236DE65A445337290B7AAED96F/1012812.png",
+                    "duration": 6,
+                    "status": "Peak Performance",
+                    "description": "Outgoing physical damage is increased.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/08F60C11F460F3236DE65A445337290B7AAED96F/1012812.png",
+                    "duration": 6,
+                    "status": "Peak Performance",
+                    "description": "Outgoing physical damage is increased.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Falling Damage Reduction",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 50
+                  }
+                ],
+                "skills": [{
+                  "name": "Death from Above",
+                  "facts": [{
+                      "text": "Recharge",
+                      "type": "Recharge",
+                      "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                      "value": 1
+                    },
+                    {
+                      "text": "Unblockable",
+                      "type": "Unblockable",
+                      "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                      "value": true
+                    },
+                    {
+                      "text": "Damage",
+                      "type": "Damage",
+                      "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                      "hit_count": 1,
+                      "dmg_multiplier": 2
+                    },
+                    {
+                      "text": "Launch",
+                      "type": "Distance",
+                      "icon": "https://render.guildwars2.com/file/CB330EF25C62C05F1800A1C507B6AE4944551746/156653.png",
+                      "distance": 450
+                    },
+                    {
+                      "text": "Radius",
+                      "type": "Distance",
+                      "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                      "distance": 240
+                    },
+                    {
+                      "text": "Combo Finisher",
+                      "type": "ComboFinisher",
+                      "icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png",
+                      "percent": 100,
+                      "finisher_type": "Blast"
+                    }
+                  ],
+                  "description": "Launch nearby foes into the air with a powerful stomp.",
+                  "icon": "https://render.guildwars2.com/file/D7040004B112A4075A1038917CEF5FFA0BC100A2/102788.png",
+                  "flags": [],
+                  "id": 14267,
+                  "chat_link": "[&Brs3AAA=]"
+                }],
+                "specialization": 4,
+                "icon": "https://render.guildwars2.com/file/08F60C11F460F3236DE65A445337290B7AAED96F/1012812.png"
+              },
+              "1446": {
+                "id": 1446,
+                "tier": 1,
+                "order": 0,
+                "name": "Reckless Dodge",
+                "description": "Damage foes at the end of a dodge roll.",
+                "slot": "Minor",
+                "facts": [{
+                  "text": "Combat Only",
+                  "type": "NoData",
+                  "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+                }],
+                "skills": [{
+                  "name": "Reckless Impact",
+                  "facts": [{
+                      "text": "Unblockable",
+                      "type": "Unblockable",
+                      "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                      "value": true
+                    },
+                    {
+                      "text": "Damage",
+                      "type": "Damage",
+                      "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                      "hit_count": 1,
+                      "dmg_multiplier": 1.5
+                    },
+                    {
+                      "text": "Radius",
+                      "type": "Distance",
+                      "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                      "distance": 180
+                    },
+                    {
+                      "text": "Number of Targets",
+                      "type": "Number",
+                      "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+                      "value": 5
+                    },
+                    {
+                      "text": "Apply Buff/Condition",
+                      "type": "Buff",
+                      "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+                      "duration": 5,
+                      "status": "Might",
+                      "description": "Increased outgoing damage; stacks intensity.",
+                      "apply_count": 1
+                    }
+                  ],
+                  "description": "Damage foes at the end of your dodge roll. Gain might for each foe struck by this attack.",
+                  "icon": "https://render.guildwars2.com/file/D7040004B112A4075A1038917CEF5FFA0BC100A2/102788.png",
+                  "flags": [],
+                  "id": 14268,
+                  "chat_link": "[&Brw3AAA=]"
+                }],
+                "specialization": 4,
+                "icon": "https://render.guildwars2.com/file/4D0864C3335DC7A7046713714ED0FD0D57F4021E/1012819.png"
+              },
+              "1447": {
+                "id": 1447,
+                "tier": 1,
+                "order": 0,
+                "name": "Brave Stride",
+                "description": "Your first strike when entering combat grants stability.",
+                "slot": "Major",
+                "facts": [{
+                  "text": "Apply Buff/Condition",
+                  "type": "Buff",
+                  "icon": "https://render.guildwars2.com/file/3D3A1C2D6D791C05179AB871902D28782C65C244/415959.png",
+                  "duration": 8,
+                  "status": "Stability",
+                  "description": "Cannot be knocked down, pushed back, pulled, launched, stunned, dazed, floated, sunk, feared, or taunted.",
+                  "apply_count": 1
+                }],
+                "specialization": 4,
+                "icon": "https://render.guildwars2.com/file/01FAE5A3B0A851F579FE6BCD2C27E8CD610BB49B/1012810.png"
+              },
+              "1448": {
+                "id": 1448,
+                "tier": 2,
+                "order": 0,
+                "name": "Building Momentum",
+                "description": "<c=@abilitytype>Burst</c> skills restore endurance on hit.",
+                "slot": "Minor",
+                "facts": [{
+                  "text": "Endurance Gained",
+                  "type": "Number",
+                  "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                  "value": 15
+                }],
+                "specialization": 4,
+                "icon": "https://render.guildwars2.com/file/7255D994BB1A14AE2B6CB55BA121B0597ABC6415/1012820.png"
+              },
+              "1449": {
+                "id": 1449,
+                "tier": 2,
+                "order": 2,
+                "name": "Great Fortitude",
+                "description": "Gain vitality based on a percentage of your power.",
+                "slot": "Major",
+                "facts": [{
+                  "text": "Attribute Conversion",
+                  "type": "BuffConversion",
+                  "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                  "percent": 10,
+                  "source": "Power",
+                  "target": "Vitality"
+                }],
+                "specialization": 4,
+                "icon": "https://render.guildwars2.com/file/424B39CE4BFF056F3B2ED25F186A7FC5E69538E5/1012815.png"
+              },
+              "1451": {
+                "id": 1451,
+                "tier": 1,
+                "order": 1,
+                "name": "Restorative Strength",
+                "description": "Using a heal skill grants might.",
+                "slot": "Major",
+                "facts": [{
+                  "text": "Apply Buff/Condition",
+                  "type": "Buff",
+                  "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+                  "duration": 6,
+                  "status": "Might",
+                  "description": "Increased outgoing damage; stacks intensity.",
+                  "apply_count": 5
+                }],
+                "specialization": 4,
+                "icon": "https://render.guildwars2.com/file/13610709076E473C03D42303AD2E913A1ED65344/1012811.png"
+              },
+              "1453": {
+                "id": 1453,
+                "tier": 3,
+                "order": 0,
+                "name": "Pinnacle of Strength",
+                "description": "Might applied to you grants more power.",
+                "slot": "Minor",
+                "facts": [{
+                  "type": "AttributeAdjust",
+                  "icon": "https://render.guildwars2.com/file/E1E7C4D3A6E62F3D5C9F627CE8175BFB0C614CBE/156652.png",
+                  "value": 10,
+                  "target": "Power"
+                }],
+                "specialization": 4,
+                "icon": "https://render.guildwars2.com/file/73003EC83C79150BAB1578A1F067F37C0F472D60/1012821.png"
+              },
+              "1454": {
+                "id": 1454,
+                "tier": 3,
+                "order": 1,
+                "name": "Might Makes Right",
+                "description": "Gain health and endurance whenever you apply might to yourself.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Endurance Gained",
+                    "type": "Number",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                    "value": 2
+                  },
+                  {
+                    "text": "Healing",
+                    "type": "AttributeAdjust",
+                    "icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png",
+                    "value": 133,
+                    "target": "Healing"
+                  }
+                ],
+                "specialization": 4,
+                "icon": "https://render.guildwars2.com/file/6BBC5D5AB0B0E72DA33631E1A57B525CC0460D61/1012817.png"
+              },
+              "2000": {
+                "id": 2000,
+                "tier": 2,
+                "order": 0,
+                "name": "Body Blow",
+                "description": "Stuns, dazes, knockbacks, pulls, pushes, and launches inflict bleeding and weakness.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/6CB0E64AF9AA292E332A38C1770CE577E2CDE0E8/102853.png",
+                    "duration": 3,
+                    "status": "Weakness",
+                    "description": "Endurance regeneration decreased by 50%. 50% of hits are Glancing Blows (50% damage). Stacks duration.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/79FF0046A5F9ADA3B4C4EC19ADB4CB124D5F0021/102848.png",
+                    "duration": 12,
+                    "status": "Bleeding",
+                    "description": "Deals damage every second; stacks intensity.",
+                    "apply_count": 1
+                  }
+                ],
+                "specialization": 4,
+                "icon": "https://render.guildwars2.com/file/537FCF3A01560702E5C5554E03DEBEA40580A309/1012813.png"
+              }
+            }
           }
         },
         {
@@ -102,7 +514,484 @@
               1708
             ],
             "icon": "https://render.guildwars2.com/file/5F0B793A5479007078067CD71D0E01B30602189B/1012030.png",
-            "background": "https://render.guildwars2.com/file/E0190E3B3745AA61D32CFF92C1FEFFFB56A90D4C/1012107.png"
+            "background": "https://render.guildwars2.com/file/E0190E3B3745AA61D32CFF92C1FEFFFB56A90D4C/1012107.png",
+            "traitData": {
+              "1348": {
+                "id": 1348,
+                "tier": 2,
+                "order": 0,
+                "name": "Adrenal Health",
+                "description": "Gain health based on adrenaline spent.",
+                "slot": "Minor",
+                "facts": [{
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/32A8CA56381F242642D7193B24284F922D23A2E3/1012796.png",
+                    "duration": 15,
+                    "status": "Adrenal Health",
+                    "description": "Regain health by spending adrenaline.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Interval",
+                    "type": "Time",
+                    "icon": "https://render.guildwars2.com/file/B75E91EB22E0DFCC1D08030204055946506D56F6/1770206.png",
+                    "duration": 1
+                  },
+                  {
+                    "text": "Maximum Stacks",
+                    "type": "Number",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                    "value": 3
+                  }
+                ],
+                "specialization": 22,
+                "icon": "https://render.guildwars2.com/file/32A8CA56381F242642D7193B24284F922D23A2E3/1012796.png"
+              },
+              "1350": {
+                "id": 1350,
+                "tier": 1,
+                "order": 0,
+                "name": "Thick Skin",
+                "description": "Gain toughness while your health is above the threshold.",
+                "slot": "Minor",
+                "facts": [{
+                    "type": "AttributeAdjust",
+                    "icon": "https://render.guildwars2.com/file/E1E7C4D3A6E62F3D5C9F627CE8175BFB0C614CBE/156652.png",
+                    "value": 180,
+                    "target": "Toughness"
+                  },
+                  {
+                    "text": "Health Threshold",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                    "percent": 75
+                  }
+                ],
+                "specialization": 22,
+                "icon": "https://render.guildwars2.com/file/59197BA1552B93AD7C71A5014A0F130FBA936B01/1012795.png"
+              },
+              "1367": {
+                "id": 1367,
+                "tier": 2,
+                "order": 2,
+                "name": "Sundering Mace",
+                "description": "Stuns, dazes, and knock downs applied by mace skills last longer against vulnerable foes. Mace skills gain reduced recharge.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge Reduced",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+                    "percent": 20
+                  },
+                  {
+                    "text": "Duration Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+                    "percent": 20
+                  }
+                ],
+                "specialization": 22,
+                "icon": "https://render.guildwars2.com/file/0CE13DF2315967C19B000E4FF407351B32BF0E3E/1012792.png"
+              },
+              "1368": {
+                "id": 1368,
+                "tier": 2,
+                "order": 0,
+                "name": "Defy Pain",
+                "description": "Cast Lesser Endure Pain when struck while below the health threshold.",
+                "slot": "Major",
+                "facts": [{
+                  "text": "Health Threshold",
+                  "type": "Percent",
+                  "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                  "percent": 50
+                }],
+                "skills": [{
+                  "name": "Lesser Endure Pain",
+                  "facts": [{
+                      "text": "Recharge",
+                      "type": "Recharge",
+                      "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                      "value": 60
+                    },
+                    {
+                      "text": "StunBreak",
+                      "type": "StunBreak",
+                      "icon": "https://render.guildwars2.com/file/DCF0719729165FD8910E034CA4E0780F90582D15/156654.png",
+                      "value": true
+                    },
+                    {
+                      "text": "Apply Buff/Condition",
+                      "type": "Buff",
+                      "icon": "https://render.guildwars2.com/file/9D66F0BCCEC7A7C344170659D4CF7C7E3ECF0C60/102867.png",
+                      "duration": 4,
+                      "status": "Enduring Pain",
+                      "description": "You take no damage from incoming attacks. You are still susceptible to conditions and control effects.",
+                      "apply_count": 1
+                    },
+                    {
+                      "text": "Apply Buff/Condition",
+                      "type": "Buff",
+                      "icon": "https://render.guildwars2.com/file/9D66F0BCCEC7A7C344170659D4CF7C7E3ECF0C60/102867.png",
+                      "duration": 2,
+                      "status": "Enduring Pain",
+                      "description": "You take no damage from incoming attacks. You are still susceptible to conditions and control effects.",
+                      "apply_count": 1
+                    }
+                  ],
+                  "description": "Stance. Take no damage from attacks. You are still susceptible to conditions and control effects.",
+                  "icon": "https://render.guildwars2.com/file/9D66F0BCCEC7A7C344170659D4CF7C7E3ECF0C60/102867.png",
+                  "flags": [],
+                  "id": 21813,
+                  "chat_link": "[&BjVVAAA=]",
+                  "categories": [
+                    "Stance"
+                  ],
+                  "traited_facts": [{
+                      "text": "Apply Buff/Condition",
+                      "type": "Buff",
+                      "icon": "https://render.guildwars2.com/file/9D66F0BCCEC7A7C344170659D4CF7C7E3ECF0C60/102867.png",
+                      "duration": 5,
+                      "status": "Enduring Pain",
+                      "description": "You take no damage from incoming attacks. You are still susceptible to conditions and control effects.",
+                      "apply_count": 1,
+                      "requires_trait": 1375,
+                      "overrides": 2
+                    },
+                    {
+                      "text": "Apply Buff/Condition",
+                      "type": "Buff",
+                      "icon": "https://render.guildwars2.com/file/9D66F0BCCEC7A7C344170659D4CF7C7E3ECF0C60/102867.png",
+                      "duration": 3,
+                      "status": "Enduring Pain",
+                      "description": "You take no damage from incoming attacks. You are still susceptible to conditions and control effects.",
+                      "apply_count": 1,
+                      "requires_trait": 1375,
+                      "overrides": 3
+                    }
+                  ]
+                }],
+                "specialization": 22,
+                "icon": "https://render.guildwars2.com/file/3225C41AA337BF4B2FCA310D9F5AD70D94ACC074/1012793.png"
+              },
+              "1372": {
+                "id": 1372,
+                "tier": 1,
+                "order": 2,
+                "name": "Cull the Weak",
+                "description": "Increases damage to weakened foes. Striking a foe below the health threshold inflicts weakness.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 5
+                  },
+                  {
+                    "text": "Damage Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 7
+                  },
+                  {
+                    "text": "Health Threshold",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                    "percent": 50
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/6CB0E64AF9AA292E332A38C1770CE577E2CDE0E8/102853.png",
+                    "duration": 5,
+                    "status": "Weakness",
+                    "description": "Endurance regeneration decreased by 50%. 50% of hits are Glancing Blows (50% damage). Stacks duration.",
+                    "apply_count": 1
+                  }
+                ],
+                "specialization": 22,
+                "icon": "https://render.guildwars2.com/file/30A2CFB00C436ACEC5C513360916B5AE030AFCDC/1012788.png"
+              },
+              "1375": {
+                "id": 1375,
+                "tier": 3,
+                "order": 0,
+                "name": "Last Stand",
+                "description": "Cast Lesser Balanced Stance when you are disabled. <c=@abilitytype>Stances</c> grant vigor when activated and have increased duration.<br><c=@reminder>Disables include stun, daze, knockback, pull, knockdown, sink, float, launch, taunt, and fear.</c>",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Duration Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+                    "percent": 25
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/58E92EBAF0DB4DA7C4AC04D9B22BCA5ECF0100DE/102843.png",
+                    "duration": 6,
+                    "status": "Vigor",
+                    "description": "Endurance regeneration increased by 50%; stacks duration.",
+                    "apply_count": 1
+                  }
+                ],
+                "skills": [{
+                  "name": "Lesser Balanced Stance",
+                  "facts": [{
+                      "text": "Recharge",
+                      "type": "Recharge",
+                      "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                      "value": 40
+                    },
+                    {
+                      "text": "StunBreak",
+                      "type": "StunBreak",
+                      "icon": "https://render.guildwars2.com/file/DCF0719729165FD8910E034CA4E0780F90582D15/156654.png",
+                      "value": true
+                    },
+                    {
+                      "text": "Apply Buff/Condition",
+                      "type": "Buff",
+                      "icon": "https://render.guildwars2.com/file/EE276A936FB880E44B2B310D56E6A9E22034E301/104112.png",
+                      "duration": 4,
+                      "status": "Balanced Stance",
+                      "description": "Periodically gain stability. Immune to critical hits.",
+                      "apply_count": 1
+                    },
+                    {
+                      "text": "Apply Buff/Condition",
+                      "type": "Buff",
+                      "icon": "https://render.guildwars2.com/file/3D3A1C2D6D791C05179AB871902D28782C65C244/415959.png",
+                      "duration": 1,
+                      "status": "Stability",
+                      "description": "Cannot be knocked down, pushed back, pulled, launched, stunned, dazed, floated, sunk, feared, or taunted.",
+                      "apply_count": 2
+                    },
+                    {
+                      "text": "Apply Buff/Condition",
+                      "type": "Buff",
+                      "icon": "https://render.guildwars2.com/file/20CFC14967E67F7A3FD4A4B8722B4CF5B8565E11/102836.png",
+                      "duration": 3,
+                      "status": "Swiftness",
+                      "description": "Movement speed increased by 33%; stacks duration.",
+                      "apply_count": 1
+                    },
+                    {
+                      "text": "Boon Application Interval",
+                      "type": "Time",
+                      "icon": "https://render.guildwars2.com/file/B75E91EB22E0DFCC1D08030204055946506D56F6/1770206.png",
+                      "duration": 1
+                    }
+                  ],
+                  "description": "Stance. Gain stability and swiftness on an interval. Become immune to critical hits.",
+                  "icon": "https://render.guildwars2.com/file/EE276A936FB880E44B2B310D56E6A9E22034E301/104112.png",
+                  "flags": [],
+                  "id": 14330,
+                  "chat_link": "[&Bvo3AAA=]",
+                  "categories": [
+                    "Stance"
+                  ],
+                  "traited_facts": [{
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/EE276A936FB880E44B2B310D56E6A9E22034E301/104112.png",
+                    "duration": 5,
+                    "status": "Balanced Stance",
+                    "description": "Periodically gain stability. Immune to critical hits.",
+                    "apply_count": 1,
+                    "requires_trait": 1375,
+                    "overrides": 2
+                  }]
+                }],
+                "specialization": 22,
+                "icon": "https://render.guildwars2.com/file/E8BE056A0835F61B5672F4229D6022CA6E213857/1012789.png"
+              },
+              "1376": {
+                "id": 1376,
+                "tier": 1,
+                "order": 0,
+                "name": "Shield Master",
+                "description": "Reflect missiles whenever you are blocking. Gain might when you block an attack. Shield skills gain reduced recharge.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Reflects Missiles",
+                    "type": "NoData",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+                    "duration": 8,
+                    "status": "Might",
+                    "description": "Increased outgoing damage; stacks intensity.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Recharge Reduced",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+                    "percent": 20
+                  }
+                ],
+                "specialization": 22,
+                "icon": "https://render.guildwars2.com/file/6B4F13BB430F77C130FFD8E827E3D7337CCC52B1/1012786.png"
+              },
+              "1379": {
+                "id": 1379,
+                "tier": 2,
+                "order": 1,
+                "name": "Armored Attack",
+                "description": "Gain power based on your toughness.",
+                "slot": "Major",
+                "facts": [{
+                  "text": "Attribute Conversion",
+                  "type": "BuffConversion",
+                  "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                  "percent": 10,
+                  "source": "Toughness",
+                  "target": "Power"
+                }],
+                "specialization": 22,
+                "icon": "https://render.guildwars2.com/file/2BA7BE3562A3A9DDE14DE6D9A40C650379A71918/1012790.png"
+              },
+              "1380": {
+                "id": 1380,
+                "tier": 3,
+                "order": 0,
+                "name": "Spiked Armor",
+                "description": "Gain retaliation when you block or are struck by a critical hit. Retaliation gives you bonus toughness.",
+                "slot": "Minor",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 15
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/27F233F7D4CE4E9EFE040E3D665B7B0643557B6E/102883.png",
+                    "duration": 5,
+                    "status": "Retaliation",
+                    "description": "Reflect incoming damage back to its source; stacks duration.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Toughness",
+                    "type": "AttributeAdjust",
+                    "icon": "https://render.guildwars2.com/file/E1E7C4D3A6E62F3D5C9F627CE8175BFB0C614CBE/156652.png",
+                    "value": 150,
+                    "target": "Toughness"
+                  }
+                ],
+                "specialization": 22,
+                "icon": "https://render.guildwars2.com/file/10055830259435E5B2B1B2EC1E63FCDC9648CC4D/1012797.png"
+              },
+              "1488": {
+                "id": 1488,
+                "tier": 1,
+                "order": 1,
+                "name": "Dogged March",
+                "description": "Reduce the duration of movement-impeding conditions and gain regeneration when you are affected by one of these conditions.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 10
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/F69996772B9E18FD18AD0AABAB25D7E3FC42F261/102835.png",
+                    "duration": 6,
+                    "status": "Regeneration",
+                    "description": "Gain health every second; stacks duration.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/397A613651BFCA2832B6469CE34735580A2C120E/102844.png",
+                    "duration": 0,
+                    "status": "Immobile",
+                    "description": "Unable to move; stacks duration.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/070325E519C178D502A8160523766070D30C0C19/102838.png",
+                    "duration": 0,
+                    "status": "Crippled",
+                    "description": "Movement speed decreased by 50%; stacks duration.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/28C4EC547A3516AF0242E826772DA43A5EAC3DF3/102839.png",
+                    "duration": 0,
+                    "status": "Chilled",
+                    "description": "Movement speed decreased by 66%; skill cooldown increased by 66%; stacks duration.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Duration Decreased",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+                    "percent": 33
+                  }
+                ],
+                "specialization": 22,
+                "icon": "https://render.guildwars2.com/file/1208F72B415BE25E1D98194418A591AAC7D476E2/1012787.png"
+              },
+              "1649": {
+                "id": 1649,
+                "tier": 3,
+                "order": 1,
+                "name": "Cleansing Ire",
+                "description": "Gain adrenaline when hit. Remove a condition for every bar of adrenaline spent when you hit with a <c=@abilitytype>burst</c> skill.",
+                "slot": "Major",
+                "facts": [{
+                  "text": "Adrenaline",
+                  "type": "Number",
+                  "icon": "https://render.guildwars2.com/file/E1E7C4D3A6E62F3D5C9F627CE8175BFB0C614CBE/156652.png",
+                  "value": 1
+                }],
+                "specialization": 22,
+                "icon": "https://render.guildwars2.com/file/C8CA1665D0ECE10CF8DC66030C22A20957595B32/1012791.png"
+              },
+              "1708": {
+                "id": 1708,
+                "tier": 3,
+                "order": 2,
+                "name": "Rousing Resilience",
+                "description": "Gain toughness and health when you break out of a stun.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/630279C914D8BF414C2358281F1A37EDF86B203B/1012794.png",
+                    "duration": 8,
+                    "status": "Rousing Resilience",
+                    "description": "Gain up to 1,000 toughness based on your level.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Healing",
+                    "type": "AttributeAdjust",
+                    "icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png",
+                    "value": 2536,
+                    "target": "Healing"
+                  }
+                ],
+                "specialization": 22,
+                "icon": "https://render.guildwars2.com/file/630279C914D8BF414C2358281F1A37EDF86B203B/1012794.png"
+              }
+            }
           }
         },
         {
@@ -134,7 +1023,348 @@
               1657
             ],
             "icon": "https://render.guildwars2.com/file/D10B771D01C85DA404472EE90F35EF15B0B36240/1012031.png",
-            "background": "https://render.guildwars2.com/file/2B80CF6504DA1B0DC8470D45ED5BE9992BEEC2B7/1012108.png"
+            "background": "https://render.guildwars2.com/file/2B80CF6504DA1B0DC8470D45ED5BE9992BEEC2B7/1012108.png",
+            "traitData": {
+              "1317": {
+                "id": 1317,
+                "tier": 3,
+                "order": 1,
+                "name": "Heightened Focus",
+                "description": "Gain quickness when you strike a foe that is below the health threshold.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 15
+                  },
+                  {
+                    "text": "Health Threshold",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                    "percent": 50
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/D4AB6401A6D6917C3D4F230764452BCCE1035B0D/1012835.png",
+                    "duration": 4,
+                    "status": "Quickness",
+                    "description": "Skills and actions are faster.",
+                    "apply_count": 1
+                  }
+                ],
+                "specialization": 51,
+                "icon": "https://render.guildwars2.com/file/FC5A1E5591B670A175ED01297B48C7F2B1DC1FED/1012806.png"
+              },
+              "1329": {
+                "id": 1329,
+                "tier": 1,
+                "order": 0,
+                "name": "Crack Shot",
+                "description": "Base rifle and harpoon gun shots gain bonus adrenaline. Rifle and harpoon gun skills gain reduced recharge.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge Reduced",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+                    "percent": 20
+                  },
+                  {
+                    "text": "Adrenaline",
+                    "type": "Number",
+                    "icon": "https://render.guildwars2.com/file/E1E7C4D3A6E62F3D5C9F627CE8175BFB0C614CBE/156652.png",
+                    "value": 1
+                  }
+                ],
+                "specialization": 51,
+                "icon": "https://render.guildwars2.com/file/505DE7D46224C105D2E953FDFC6807E30EBCA733/1012798.png"
+              },
+              "1369": {
+                "id": 1369,
+                "tier": 3,
+                "order": 0,
+                "name": "Axe Mastery",
+                "description": "Get ferocity while wielding an axe in either hand. Axe skills gain reduced recharge and grant adrenaline when you critically strike with one.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Ferocity",
+                    "type": "AttributeAdjust",
+                    "icon": "https://render.guildwars2.com/file/E1E7C4D3A6E62F3D5C9F627CE8175BFB0C614CBE/156652.png",
+                    "value": 300,
+                    "target": "CritDamage"
+                  },
+                  {
+                    "text": "Adrenaline",
+                    "type": "Number",
+                    "icon": "https://render.guildwars2.com/file/E1E7C4D3A6E62F3D5C9F627CE8175BFB0C614CBE/156652.png",
+                    "value": 2
+                  },
+                  {
+                    "text": "Recharge Reduced",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+                    "percent": 20
+                  }
+                ],
+                "specialization": 51,
+                "icon": "https://render.guildwars2.com/file/DC444D0B05F5BDB3D096480617E7DF40C54D0E0A/1012818.png"
+              },
+              "1381": {
+                "id": 1381,
+                "tier": 1,
+                "order": 2,
+                "name": "Vengeful Return",
+                "description": "Vengeance has an increased chance to rally and gain more health and endurance when you rally.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Percent",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                    "percent": 100
+                  },
+                  {
+                    "text": "Health Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                    "percent": 25
+                  },
+                  {
+                    "text": "Endurance Gained",
+                    "type": "Number",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                    "value": 100
+                  }
+                ],
+                "specialization": 51,
+                "icon": "https://render.guildwars2.com/file/20A8F34554C69CC12A6013AF002114F008557C0F/1012800.png"
+              },
+              "1413": {
+                "id": 1413,
+                "tier": 1,
+                "order": 1,
+                "name": "Warrior's Sprint",
+                "description": "Run faster while wielding melee weapons, and deal increased damage while you have swiftness. Movement skills break immobilization when used.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/397A613651BFCA2832B6469CE34735580A2C120E/102844.png",
+                    "status": "Immobile",
+                    "description": "Unable to move; stacks duration."
+                  },
+                  {
+                    "text": "Movement Speed Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                    "percent": 25
+                  },
+                  {
+                    "text": "Damage Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 7
+                  },
+                  {
+                    "text": "Damage Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 3
+                  }
+                ],
+                "specialization": 51,
+                "icon": "https://render.guildwars2.com/file/0D0DD0E0002F5ED423FF01A85E9890D32CE7960E/1012799.png"
+              },
+              "1415": {
+                "id": 1415,
+                "tier": 1,
+                "order": 0,
+                "name": "Versatile Rage",
+                "description": "Gain adrenaline on weapon swap.",
+                "slot": "Minor",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 4
+                  },
+                  {
+                    "text": "Adrenaline",
+                    "type": "Number",
+                    "icon": "https://render.guildwars2.com/file/E1E7C4D3A6E62F3D5C9F627CE8175BFB0C614CBE/156652.png",
+                    "value": 5
+                  },
+                  {
+                    "text": "Combat Only",
+                    "type": "NoData",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+                  }
+                ],
+                "specialization": 51,
+                "icon": "https://render.guildwars2.com/file/43326D076ABE56ADA04A0D051016E5E1F9225301/1012807.png"
+              },
+              "1416": {
+                "id": 1416,
+                "tier": 2,
+                "order": 0,
+                "name": "Fast Hands",
+                "description": "Weapon-swapping recharges faster.",
+                "slot": "Minor",
+                "facts": [{
+                  "text": "Recharge Time",
+                  "type": "Time",
+                  "icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+                  "duration": 5
+                }],
+                "specialization": 51,
+                "icon": "https://render.guildwars2.com/file/E411053E9A4BCE69750DA02AB1CDC5D6260E9560/1012808.png"
+              },
+              "1417": {
+                "id": 1417,
+                "tier": 3,
+                "order": 0,
+                "name": "Versatile Power",
+                "description": "Gain might on weapon swap. <c=@abilitytype>Burst</c> skills gain reduced recharge.",
+                "slot": "Minor",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 4
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+                    "duration": 10,
+                    "status": "Might",
+                    "description": "Increased outgoing damage; stacks intensity.",
+                    "apply_count": 2
+                  },
+                  {
+                    "text": "Recharge Reduced",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+                    "percent": 15
+                  },
+                  {
+                    "text": "Combat Only",
+                    "type": "NoData",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+                  }
+                ],
+                "specialization": 51,
+                "icon": "https://render.guildwars2.com/file/9C4B111C63D603BD0F73EA0015DE0ABDEE0D107A/1012809.png"
+              },
+              "1484": {
+                "id": 1484,
+                "tier": 2,
+                "order": 0,
+                "name": "Inspiring Battle Standard",
+                "description": "<c=@abilitytype>Banners.</c> Banners also grant regeneration to allies. Unique banner buffs applied to you are stronger.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/F69996772B9E18FD18AD0AABAB25D7E3FC42F261/102835.png",
+                    "duration": 3,
+                    "status": "Regeneration",
+                    "description": "Gain health every second; stacks duration.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Interval",
+                    "type": "Time",
+                    "icon": "https://render.guildwars2.com/file/B75E91EB22E0DFCC1D08030204055946506D56F6/1770206.png",
+                    "duration": 3
+                  },
+                  {
+                    "text": "Banner Effect Improvement",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                    "percent": 50
+                  }
+                ],
+                "specialization": 51,
+                "icon": "https://render.guildwars2.com/file/3DD095F41404F7F043C70854AB944116F45570F7/1012801.png"
+              },
+              "1489": {
+                "id": 1489,
+                "tier": 2,
+                "order": 1,
+                "name": "Destruction of the Empowered",
+                "description": "Deal increased damage per boon on your target.",
+                "slot": "Major",
+                "facts": [{
+                  "text": "Damage Increase",
+                  "type": "Percent",
+                  "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                  "percent": 3
+                }],
+                "specialization": 51,
+                "icon": "https://render.guildwars2.com/file/663A52BDEEBF0AE40DC8995D0234EE196DFDECB5/1012802.png"
+              },
+              "1657": {
+                "id": 1657,
+                "tier": 3,
+                "order": 2,
+                "name": "Burst Mastery",
+                "description": "<c=@abilitytype>Burst</c> skills deal more damage, grant swiftness, and restore a portion of adrenaline spent.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Damage Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 7
+                  },
+                  {
+                    "text": "Adrenaline Restored",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                    "percent": 33
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/20CFC14967E67F7A3FD4A4B8722B4CF5B8565E11/102836.png",
+                    "duration": 3,
+                    "status": "Swiftness",
+                    "description": "Movement speed increased by 33%; stacks duration.",
+                    "apply_count": 1
+                  }
+                ],
+                "specialization": 51,
+                "icon": "https://render.guildwars2.com/file/4E393624960EF6AA7D5C9CF27902FAFC180B5DB5/1012805.png"
+              },
+              "1709": {
+                "id": 1709,
+                "tier": 2,
+                "order": 2,
+                "name": "Brawler's Recovery",
+                "description": "Remove conditions when you swap weapons.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 4
+                  },
+                  {
+                    "text": "Conditions Removed",
+                    "type": "Number",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                    "value": 1
+                  },
+                  {
+                    "text": "Combat Only",
+                    "type": "NoData",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+                  }
+                ],
+                "specialization": 51,
+                "icon": "https://render.guildwars2.com/file/751DB3B9700B6B14CAE9D2BE77D32795056DB665/1012803.png"
+              }
+            }
           }
         }
       ],
@@ -167,7 +1397,484 @@
               1708
             ],
             "icon": "https://render.guildwars2.com/file/5F0B793A5479007078067CD71D0E01B30602189B/1012030.png",
-            "background": "https://render.guildwars2.com/file/E0190E3B3745AA61D32CFF92C1FEFFFB56A90D4C/1012107.png"
+            "background": "https://render.guildwars2.com/file/E0190E3B3745AA61D32CFF92C1FEFFFB56A90D4C/1012107.png",
+            "traitData": {
+              "1348": {
+                "id": 1348,
+                "tier": 2,
+                "order": 0,
+                "name": "Adrenal Health",
+                "description": "Gain health based on adrenaline spent.",
+                "slot": "Minor",
+                "facts": [{
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/32A8CA56381F242642D7193B24284F922D23A2E3/1012796.png",
+                    "duration": 15,
+                    "status": "Adrenal Health",
+                    "description": "Regain health by spending adrenaline.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Interval",
+                    "type": "Time",
+                    "icon": "https://render.guildwars2.com/file/B75E91EB22E0DFCC1D08030204055946506D56F6/1770206.png",
+                    "duration": 1
+                  },
+                  {
+                    "text": "Maximum Stacks",
+                    "type": "Number",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                    "value": 3
+                  }
+                ],
+                "specialization": 22,
+                "icon": "https://render.guildwars2.com/file/32A8CA56381F242642D7193B24284F922D23A2E3/1012796.png"
+              },
+              "1350": {
+                "id": 1350,
+                "tier": 1,
+                "order": 0,
+                "name": "Thick Skin",
+                "description": "Gain toughness while your health is above the threshold.",
+                "slot": "Minor",
+                "facts": [{
+                    "type": "AttributeAdjust",
+                    "icon": "https://render.guildwars2.com/file/E1E7C4D3A6E62F3D5C9F627CE8175BFB0C614CBE/156652.png",
+                    "value": 180,
+                    "target": "Toughness"
+                  },
+                  {
+                    "text": "Health Threshold",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                    "percent": 75
+                  }
+                ],
+                "specialization": 22,
+                "icon": "https://render.guildwars2.com/file/59197BA1552B93AD7C71A5014A0F130FBA936B01/1012795.png"
+              },
+              "1367": {
+                "id": 1367,
+                "tier": 2,
+                "order": 2,
+                "name": "Sundering Mace",
+                "description": "Stuns, dazes, and knock downs applied by mace skills last longer against vulnerable foes. Mace skills gain reduced recharge.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge Reduced",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+                    "percent": 20
+                  },
+                  {
+                    "text": "Duration Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+                    "percent": 20
+                  }
+                ],
+                "specialization": 22,
+                "icon": "https://render.guildwars2.com/file/0CE13DF2315967C19B000E4FF407351B32BF0E3E/1012792.png"
+              },
+              "1368": {
+                "id": 1368,
+                "tier": 2,
+                "order": 0,
+                "name": "Defy Pain",
+                "description": "Cast Lesser Endure Pain when struck while below the health threshold.",
+                "slot": "Major",
+                "facts": [{
+                  "text": "Health Threshold",
+                  "type": "Percent",
+                  "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                  "percent": 50
+                }],
+                "skills": [{
+                  "name": "Lesser Endure Pain",
+                  "facts": [{
+                      "text": "Recharge",
+                      "type": "Recharge",
+                      "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                      "value": 60
+                    },
+                    {
+                      "text": "StunBreak",
+                      "type": "StunBreak",
+                      "icon": "https://render.guildwars2.com/file/DCF0719729165FD8910E034CA4E0780F90582D15/156654.png",
+                      "value": true
+                    },
+                    {
+                      "text": "Apply Buff/Condition",
+                      "type": "Buff",
+                      "icon": "https://render.guildwars2.com/file/9D66F0BCCEC7A7C344170659D4CF7C7E3ECF0C60/102867.png",
+                      "duration": 4,
+                      "status": "Enduring Pain",
+                      "description": "You take no damage from incoming attacks. You are still susceptible to conditions and control effects.",
+                      "apply_count": 1
+                    },
+                    {
+                      "text": "Apply Buff/Condition",
+                      "type": "Buff",
+                      "icon": "https://render.guildwars2.com/file/9D66F0BCCEC7A7C344170659D4CF7C7E3ECF0C60/102867.png",
+                      "duration": 2,
+                      "status": "Enduring Pain",
+                      "description": "You take no damage from incoming attacks. You are still susceptible to conditions and control effects.",
+                      "apply_count": 1
+                    }
+                  ],
+                  "description": "Stance. Take no damage from attacks. You are still susceptible to conditions and control effects.",
+                  "icon": "https://render.guildwars2.com/file/9D66F0BCCEC7A7C344170659D4CF7C7E3ECF0C60/102867.png",
+                  "flags": [],
+                  "id": 21813,
+                  "chat_link": "[&BjVVAAA=]",
+                  "categories": [
+                    "Stance"
+                  ],
+                  "traited_facts": [{
+                      "text": "Apply Buff/Condition",
+                      "type": "Buff",
+                      "icon": "https://render.guildwars2.com/file/9D66F0BCCEC7A7C344170659D4CF7C7E3ECF0C60/102867.png",
+                      "duration": 5,
+                      "status": "Enduring Pain",
+                      "description": "You take no damage from incoming attacks. You are still susceptible to conditions and control effects.",
+                      "apply_count": 1,
+                      "requires_trait": 1375,
+                      "overrides": 2
+                    },
+                    {
+                      "text": "Apply Buff/Condition",
+                      "type": "Buff",
+                      "icon": "https://render.guildwars2.com/file/9D66F0BCCEC7A7C344170659D4CF7C7E3ECF0C60/102867.png",
+                      "duration": 3,
+                      "status": "Enduring Pain",
+                      "description": "You take no damage from incoming attacks. You are still susceptible to conditions and control effects.",
+                      "apply_count": 1,
+                      "requires_trait": 1375,
+                      "overrides": 3
+                    }
+                  ]
+                }],
+                "specialization": 22,
+                "icon": "https://render.guildwars2.com/file/3225C41AA337BF4B2FCA310D9F5AD70D94ACC074/1012793.png"
+              },
+              "1372": {
+                "id": 1372,
+                "tier": 1,
+                "order": 2,
+                "name": "Cull the Weak",
+                "description": "Increases damage to weakened foes. Striking a foe below the health threshold inflicts weakness.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 5
+                  },
+                  {
+                    "text": "Damage Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 7
+                  },
+                  {
+                    "text": "Health Threshold",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                    "percent": 50
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/6CB0E64AF9AA292E332A38C1770CE577E2CDE0E8/102853.png",
+                    "duration": 5,
+                    "status": "Weakness",
+                    "description": "Endurance regeneration decreased by 50%. 50% of hits are Glancing Blows (50% damage). Stacks duration.",
+                    "apply_count": 1
+                  }
+                ],
+                "specialization": 22,
+                "icon": "https://render.guildwars2.com/file/30A2CFB00C436ACEC5C513360916B5AE030AFCDC/1012788.png"
+              },
+              "1375": {
+                "id": 1375,
+                "tier": 3,
+                "order": 0,
+                "name": "Last Stand",
+                "description": "Cast Lesser Balanced Stance when you are disabled. <c=@abilitytype>Stances</c> grant vigor when activated and have increased duration.<br><c=@reminder>Disables include stun, daze, knockback, pull, knockdown, sink, float, launch, taunt, and fear.</c>",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Duration Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+                    "percent": 25
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/58E92EBAF0DB4DA7C4AC04D9B22BCA5ECF0100DE/102843.png",
+                    "duration": 6,
+                    "status": "Vigor",
+                    "description": "Endurance regeneration increased by 50%; stacks duration.",
+                    "apply_count": 1
+                  }
+                ],
+                "skills": [{
+                  "name": "Lesser Balanced Stance",
+                  "facts": [{
+                      "text": "Recharge",
+                      "type": "Recharge",
+                      "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                      "value": 40
+                    },
+                    {
+                      "text": "StunBreak",
+                      "type": "StunBreak",
+                      "icon": "https://render.guildwars2.com/file/DCF0719729165FD8910E034CA4E0780F90582D15/156654.png",
+                      "value": true
+                    },
+                    {
+                      "text": "Apply Buff/Condition",
+                      "type": "Buff",
+                      "icon": "https://render.guildwars2.com/file/EE276A936FB880E44B2B310D56E6A9E22034E301/104112.png",
+                      "duration": 4,
+                      "status": "Balanced Stance",
+                      "description": "Periodically gain stability. Immune to critical hits.",
+                      "apply_count": 1
+                    },
+                    {
+                      "text": "Apply Buff/Condition",
+                      "type": "Buff",
+                      "icon": "https://render.guildwars2.com/file/3D3A1C2D6D791C05179AB871902D28782C65C244/415959.png",
+                      "duration": 1,
+                      "status": "Stability",
+                      "description": "Cannot be knocked down, pushed back, pulled, launched, stunned, dazed, floated, sunk, feared, or taunted.",
+                      "apply_count": 2
+                    },
+                    {
+                      "text": "Apply Buff/Condition",
+                      "type": "Buff",
+                      "icon": "https://render.guildwars2.com/file/20CFC14967E67F7A3FD4A4B8722B4CF5B8565E11/102836.png",
+                      "duration": 3,
+                      "status": "Swiftness",
+                      "description": "Movement speed increased by 33%; stacks duration.",
+                      "apply_count": 1
+                    },
+                    {
+                      "text": "Boon Application Interval",
+                      "type": "Time",
+                      "icon": "https://render.guildwars2.com/file/B75E91EB22E0DFCC1D08030204055946506D56F6/1770206.png",
+                      "duration": 1
+                    }
+                  ],
+                  "description": "Stance. Gain stability and swiftness on an interval. Become immune to critical hits.",
+                  "icon": "https://render.guildwars2.com/file/EE276A936FB880E44B2B310D56E6A9E22034E301/104112.png",
+                  "flags": [],
+                  "id": 14330,
+                  "chat_link": "[&Bvo3AAA=]",
+                  "categories": [
+                    "Stance"
+                  ],
+                  "traited_facts": [{
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/EE276A936FB880E44B2B310D56E6A9E22034E301/104112.png",
+                    "duration": 5,
+                    "status": "Balanced Stance",
+                    "description": "Periodically gain stability. Immune to critical hits.",
+                    "apply_count": 1,
+                    "requires_trait": 1375,
+                    "overrides": 2
+                  }]
+                }],
+                "specialization": 22,
+                "icon": "https://render.guildwars2.com/file/E8BE056A0835F61B5672F4229D6022CA6E213857/1012789.png"
+              },
+              "1376": {
+                "id": 1376,
+                "tier": 1,
+                "order": 0,
+                "name": "Shield Master",
+                "description": "Reflect missiles whenever you are blocking. Gain might when you block an attack. Shield skills gain reduced recharge.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Reflects Missiles",
+                    "type": "NoData",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+                    "duration": 8,
+                    "status": "Might",
+                    "description": "Increased outgoing damage; stacks intensity.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Recharge Reduced",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+                    "percent": 20
+                  }
+                ],
+                "specialization": 22,
+                "icon": "https://render.guildwars2.com/file/6B4F13BB430F77C130FFD8E827E3D7337CCC52B1/1012786.png"
+              },
+              "1379": {
+                "id": 1379,
+                "tier": 2,
+                "order": 1,
+                "name": "Armored Attack",
+                "description": "Gain power based on your toughness.",
+                "slot": "Major",
+                "facts": [{
+                  "text": "Attribute Conversion",
+                  "type": "BuffConversion",
+                  "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                  "percent": 10,
+                  "source": "Toughness",
+                  "target": "Power"
+                }],
+                "specialization": 22,
+                "icon": "https://render.guildwars2.com/file/2BA7BE3562A3A9DDE14DE6D9A40C650379A71918/1012790.png"
+              },
+              "1380": {
+                "id": 1380,
+                "tier": 3,
+                "order": 0,
+                "name": "Spiked Armor",
+                "description": "Gain retaliation when you block or are struck by a critical hit. Retaliation gives you bonus toughness.",
+                "slot": "Minor",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 15
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/27F233F7D4CE4E9EFE040E3D665B7B0643557B6E/102883.png",
+                    "duration": 5,
+                    "status": "Retaliation",
+                    "description": "Reflect incoming damage back to its source; stacks duration.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Toughness",
+                    "type": "AttributeAdjust",
+                    "icon": "https://render.guildwars2.com/file/E1E7C4D3A6E62F3D5C9F627CE8175BFB0C614CBE/156652.png",
+                    "value": 150,
+                    "target": "Toughness"
+                  }
+                ],
+                "specialization": 22,
+                "icon": "https://render.guildwars2.com/file/10055830259435E5B2B1B2EC1E63FCDC9648CC4D/1012797.png"
+              },
+              "1488": {
+                "id": 1488,
+                "tier": 1,
+                "order": 1,
+                "name": "Dogged March",
+                "description": "Reduce the duration of movement-impeding conditions and gain regeneration when you are affected by one of these conditions.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 10
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/F69996772B9E18FD18AD0AABAB25D7E3FC42F261/102835.png",
+                    "duration": 6,
+                    "status": "Regeneration",
+                    "description": "Gain health every second; stacks duration.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/397A613651BFCA2832B6469CE34735580A2C120E/102844.png",
+                    "duration": 0,
+                    "status": "Immobile",
+                    "description": "Unable to move; stacks duration.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/070325E519C178D502A8160523766070D30C0C19/102838.png",
+                    "duration": 0,
+                    "status": "Crippled",
+                    "description": "Movement speed decreased by 50%; stacks duration.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/28C4EC547A3516AF0242E826772DA43A5EAC3DF3/102839.png",
+                    "duration": 0,
+                    "status": "Chilled",
+                    "description": "Movement speed decreased by 66%; skill cooldown increased by 66%; stacks duration.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Duration Decreased",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+                    "percent": 33
+                  }
+                ],
+                "specialization": 22,
+                "icon": "https://render.guildwars2.com/file/1208F72B415BE25E1D98194418A591AAC7D476E2/1012787.png"
+              },
+              "1649": {
+                "id": 1649,
+                "tier": 3,
+                "order": 1,
+                "name": "Cleansing Ire",
+                "description": "Gain adrenaline when hit. Remove a condition for every bar of adrenaline spent when you hit with a <c=@abilitytype>burst</c> skill.",
+                "slot": "Major",
+                "facts": [{
+                  "text": "Adrenaline",
+                  "type": "Number",
+                  "icon": "https://render.guildwars2.com/file/E1E7C4D3A6E62F3D5C9F627CE8175BFB0C614CBE/156652.png",
+                  "value": 1
+                }],
+                "specialization": 22,
+                "icon": "https://render.guildwars2.com/file/C8CA1665D0ECE10CF8DC66030C22A20957595B32/1012791.png"
+              },
+              "1708": {
+                "id": 1708,
+                "tier": 3,
+                "order": 2,
+                "name": "Rousing Resilience",
+                "description": "Gain toughness and health when you break out of a stun.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/630279C914D8BF414C2358281F1A37EDF86B203B/1012794.png",
+                    "duration": 8,
+                    "status": "Rousing Resilience",
+                    "description": "Gain up to 1,000 toughness based on your level.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Healing",
+                    "type": "AttributeAdjust",
+                    "icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png",
+                    "value": 2536,
+                    "target": "Healing"
+                  }
+                ],
+                "specialization": 22,
+                "icon": "https://render.guildwars2.com/file/630279C914D8BF414C2358281F1A37EDF86B203B/1012794.png"
+              }
+            }
           }
         },
         {
@@ -199,7 +1906,419 @@
               1440
             ],
             "icon": "https://render.guildwars2.com/file/0D48C40A1C042B0BC6DAA4B91AB272E5E90C934C/1012032.png",
-            "background": "https://render.guildwars2.com/file/09160450B40ED777650F632F2CE82504B90F5644/1012109.png"
+            "background": "https://render.guildwars2.com/file/09160450B40ED777650F632F2CE82504B90F5644/1012109.png",
+            "traitData": {
+              "1338": {
+                "id": 1338,
+                "tier": 2,
+                "order": 1,
+                "name": "Forceful Greatsword",
+                "description": "Gain might on a critical hit with a greatsword or spear. Greatsword and spear skills deal more damage and recharge faster.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+                    "duration": 5,
+                    "status": "Might",
+                    "description": "Increased outgoing damage; stacks intensity.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Recharge Reduced",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+                    "percent": 20
+                  },
+                  {
+                    "text": "Damage Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 10
+                  }
+                ],
+                "specialization": 4,
+                "icon": "https://render.guildwars2.com/file/CDAE0E5A05570A05917304122E52C71BF5474FC5/1012814.png"
+              },
+              "1437": {
+                "id": 1437,
+                "tier": 3,
+                "order": 0,
+                "name": "Berserker's Power",
+                "description": "Gain increased damage when you use a <c=@abilitytype>burst</c> skill; this damage increase is based on your adrenaline.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/A795EE78B8DAA836F3C0650CFC037BB71D3517BA/1012816.png",
+                    "duration": 15,
+                    "status": "Berserker's Power",
+                    "description": "7% damage per stack.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/A795EE78B8DAA836F3C0650CFC037BB71D3517BA/1012816.png",
+                    "duration": 15,
+                    "status": "Berserker's Power",
+                    "description": "7% damage per stack.",
+                    "apply_count": 2
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/A795EE78B8DAA836F3C0650CFC037BB71D3517BA/1012816.png",
+                    "duration": 15,
+                    "status": "Berserker's Power",
+                    "description": "7% damage per stack.",
+                    "apply_count": 3
+                  },
+                  {
+                    "text": "Maximum Stacks",
+                    "type": "Number",
+                    "icon": "https://render.guildwars2.com/file/B4490FB81AA1E7C06F1B22056AE09A0F54CBE2C4/1770201.png",
+                    "value": 3
+                  }
+                ],
+                "specialization": 4,
+                "icon": "https://render.guildwars2.com/file/A795EE78B8DAA836F3C0650CFC037BB71D3517BA/1012816.png"
+              },
+              "1440": {
+                "id": 1440,
+                "tier": 3,
+                "order": 2,
+                "name": "Merciless Hammer",
+                "description": "Deal increased damage with a hammer when striking a foe that is dazed, knocked downed, launched, or stunned. Hammer skills gain reduced recharge. Inflict confusion when you interrupt enemy skills.<br><c=@reminder>This trait can only confuse enemies with defiance bars once per interval.</c>",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/289AA0A4644F0E044DED3D3F39CED958E1DDFF53/102880.png",
+                    "duration": 8,
+                    "status": "Confusion",
+                    "description": "Damage received on skill activation; stacks intensity.",
+                    "apply_count": 4
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/289AA0A4644F0E044DED3D3F39CED958E1DDFF53/102880.png",
+                    "duration": 4,
+                    "status": "Confusion",
+                    "description": "Damage received on skill activation; stacks intensity.",
+                    "apply_count": 6
+                  },
+                  {
+                    "text": "Damage Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 20
+                  },
+                  {
+                    "text": "Recharge Reduced",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+                    "percent": 20
+                  },
+                  {
+                    "text": "Interval",
+                    "type": "Time",
+                    "icon": "https://render.guildwars2.com/file/B75E91EB22E0DFCC1D08030204055946506D56F6/1770206.png",
+                    "duration": 3
+                  }
+                ],
+                "specialization": 4,
+                "icon": "https://render.guildwars2.com/file/203E0DEC94900B5305F309A1337D03D70FF9426E/1012804.png"
+              },
+              "1444": {
+                "id": 1444,
+                "tier": 1,
+                "order": 2,
+                "name": "Peak Performance",
+                "description": "<c=@abilitytype>Physical</c> skills have reduced recharge and increase all outgoing physical damage for a period of time. Receive less damage from falling, and launch nearby foes when you take fall damage.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge Reduced",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+                    "percent": 20
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/08F60C11F460F3236DE65A445337290B7AAED96F/1012812.png",
+                    "duration": 6,
+                    "status": "Peak Performance",
+                    "description": "Outgoing physical damage is increased.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/08F60C11F460F3236DE65A445337290B7AAED96F/1012812.png",
+                    "duration": 6,
+                    "status": "Peak Performance",
+                    "description": "Outgoing physical damage is increased.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Falling Damage Reduction",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 50
+                  }
+                ],
+                "skills": [{
+                  "name": "Death from Above",
+                  "facts": [{
+                      "text": "Recharge",
+                      "type": "Recharge",
+                      "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                      "value": 1
+                    },
+                    {
+                      "text": "Unblockable",
+                      "type": "Unblockable",
+                      "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                      "value": true
+                    },
+                    {
+                      "text": "Damage",
+                      "type": "Damage",
+                      "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                      "hit_count": 1,
+                      "dmg_multiplier": 2
+                    },
+                    {
+                      "text": "Launch",
+                      "type": "Distance",
+                      "icon": "https://render.guildwars2.com/file/CB330EF25C62C05F1800A1C507B6AE4944551746/156653.png",
+                      "distance": 450
+                    },
+                    {
+                      "text": "Radius",
+                      "type": "Distance",
+                      "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                      "distance": 240
+                    },
+                    {
+                      "text": "Combo Finisher",
+                      "type": "ComboFinisher",
+                      "icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png",
+                      "percent": 100,
+                      "finisher_type": "Blast"
+                    }
+                  ],
+                  "description": "Launch nearby foes into the air with a powerful stomp.",
+                  "icon": "https://render.guildwars2.com/file/D7040004B112A4075A1038917CEF5FFA0BC100A2/102788.png",
+                  "flags": [],
+                  "id": 14267,
+                  "chat_link": "[&Brs3AAA=]"
+                }],
+                "specialization": 4,
+                "icon": "https://render.guildwars2.com/file/08F60C11F460F3236DE65A445337290B7AAED96F/1012812.png"
+              },
+              "1446": {
+                "id": 1446,
+                "tier": 1,
+                "order": 0,
+                "name": "Reckless Dodge",
+                "description": "Damage foes at the end of a dodge roll.",
+                "slot": "Minor",
+                "facts": [{
+                  "text": "Combat Only",
+                  "type": "NoData",
+                  "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+                }],
+                "skills": [{
+                  "name": "Reckless Impact",
+                  "facts": [{
+                      "text": "Unblockable",
+                      "type": "Unblockable",
+                      "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                      "value": true
+                    },
+                    {
+                      "text": "Damage",
+                      "type": "Damage",
+                      "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                      "hit_count": 1,
+                      "dmg_multiplier": 1.5
+                    },
+                    {
+                      "text": "Radius",
+                      "type": "Distance",
+                      "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                      "distance": 180
+                    },
+                    {
+                      "text": "Number of Targets",
+                      "type": "Number",
+                      "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+                      "value": 5
+                    },
+                    {
+                      "text": "Apply Buff/Condition",
+                      "type": "Buff",
+                      "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+                      "duration": 5,
+                      "status": "Might",
+                      "description": "Increased outgoing damage; stacks intensity.",
+                      "apply_count": 1
+                    }
+                  ],
+                  "description": "Damage foes at the end of your dodge roll. Gain might for each foe struck by this attack.",
+                  "icon": "https://render.guildwars2.com/file/D7040004B112A4075A1038917CEF5FFA0BC100A2/102788.png",
+                  "flags": [],
+                  "id": 14268,
+                  "chat_link": "[&Brw3AAA=]"
+                }],
+                "specialization": 4,
+                "icon": "https://render.guildwars2.com/file/4D0864C3335DC7A7046713714ED0FD0D57F4021E/1012819.png"
+              },
+              "1447": {
+                "id": 1447,
+                "tier": 1,
+                "order": 0,
+                "name": "Brave Stride",
+                "description": "Your first strike when entering combat grants stability.",
+                "slot": "Major",
+                "facts": [{
+                  "text": "Apply Buff/Condition",
+                  "type": "Buff",
+                  "icon": "https://render.guildwars2.com/file/3D3A1C2D6D791C05179AB871902D28782C65C244/415959.png",
+                  "duration": 8,
+                  "status": "Stability",
+                  "description": "Cannot be knocked down, pushed back, pulled, launched, stunned, dazed, floated, sunk, feared, or taunted.",
+                  "apply_count": 1
+                }],
+                "specialization": 4,
+                "icon": "https://render.guildwars2.com/file/01FAE5A3B0A851F579FE6BCD2C27E8CD610BB49B/1012810.png"
+              },
+              "1448": {
+                "id": 1448,
+                "tier": 2,
+                "order": 0,
+                "name": "Building Momentum",
+                "description": "<c=@abilitytype>Burst</c> skills restore endurance on hit.",
+                "slot": "Minor",
+                "facts": [{
+                  "text": "Endurance Gained",
+                  "type": "Number",
+                  "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                  "value": 15
+                }],
+                "specialization": 4,
+                "icon": "https://render.guildwars2.com/file/7255D994BB1A14AE2B6CB55BA121B0597ABC6415/1012820.png"
+              },
+              "1449": {
+                "id": 1449,
+                "tier": 2,
+                "order": 2,
+                "name": "Great Fortitude",
+                "description": "Gain vitality based on a percentage of your power.",
+                "slot": "Major",
+                "facts": [{
+                  "text": "Attribute Conversion",
+                  "type": "BuffConversion",
+                  "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                  "percent": 10,
+                  "source": "Power",
+                  "target": "Vitality"
+                }],
+                "specialization": 4,
+                "icon": "https://render.guildwars2.com/file/424B39CE4BFF056F3B2ED25F186A7FC5E69538E5/1012815.png"
+              },
+              "1451": {
+                "id": 1451,
+                "tier": 1,
+                "order": 1,
+                "name": "Restorative Strength",
+                "description": "Using a heal skill grants might.",
+                "slot": "Major",
+                "facts": [{
+                  "text": "Apply Buff/Condition",
+                  "type": "Buff",
+                  "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+                  "duration": 6,
+                  "status": "Might",
+                  "description": "Increased outgoing damage; stacks intensity.",
+                  "apply_count": 5
+                }],
+                "specialization": 4,
+                "icon": "https://render.guildwars2.com/file/13610709076E473C03D42303AD2E913A1ED65344/1012811.png"
+              },
+              "1453": {
+                "id": 1453,
+                "tier": 3,
+                "order": 0,
+                "name": "Pinnacle of Strength",
+                "description": "Might applied to you grants more power.",
+                "slot": "Minor",
+                "facts": [{
+                  "type": "AttributeAdjust",
+                  "icon": "https://render.guildwars2.com/file/E1E7C4D3A6E62F3D5C9F627CE8175BFB0C614CBE/156652.png",
+                  "value": 10,
+                  "target": "Power"
+                }],
+                "specialization": 4,
+                "icon": "https://render.guildwars2.com/file/73003EC83C79150BAB1578A1F067F37C0F472D60/1012821.png"
+              },
+              "1454": {
+                "id": 1454,
+                "tier": 3,
+                "order": 1,
+                "name": "Might Makes Right",
+                "description": "Gain health and endurance whenever you apply might to yourself.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Endurance Gained",
+                    "type": "Number",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                    "value": 2
+                  },
+                  {
+                    "text": "Healing",
+                    "type": "AttributeAdjust",
+                    "icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png",
+                    "value": 133,
+                    "target": "Healing"
+                  }
+                ],
+                "specialization": 4,
+                "icon": "https://render.guildwars2.com/file/6BBC5D5AB0B0E72DA33631E1A57B525CC0460D61/1012817.png"
+              },
+              "2000": {
+                "id": 2000,
+                "tier": 2,
+                "order": 0,
+                "name": "Body Blow",
+                "description": "Stuns, dazes, knockbacks, pulls, pushes, and launches inflict bleeding and weakness.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/6CB0E64AF9AA292E332A38C1770CE577E2CDE0E8/102853.png",
+                    "duration": 3,
+                    "status": "Weakness",
+                    "description": "Endurance regeneration decreased by 50%. 50% of hits are Glancing Blows (50% damage). Stacks duration.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/79FF0046A5F9ADA3B4C4EC19ADB4CB124D5F0021/102848.png",
+                    "duration": 12,
+                    "status": "Bleeding",
+                    "description": "Deals damage every second; stacks intensity.",
+                    "apply_count": 1
+                  }
+                ],
+                "specialization": 4,
+                "icon": "https://render.guildwars2.com/file/537FCF3A01560702E5C5554E03DEBEA40580A309/1012813.png"
+              }
+            }
           }
         },
         {
@@ -231,7 +2350,348 @@
               1657
             ],
             "icon": "https://render.guildwars2.com/file/D10B771D01C85DA404472EE90F35EF15B0B36240/1012031.png",
-            "background": "https://render.guildwars2.com/file/2B80CF6504DA1B0DC8470D45ED5BE9992BEEC2B7/1012108.png"
+            "background": "https://render.guildwars2.com/file/2B80CF6504DA1B0DC8470D45ED5BE9992BEEC2B7/1012108.png",
+            "traitData": {
+              "1317": {
+                "id": 1317,
+                "tier": 3,
+                "order": 1,
+                "name": "Heightened Focus",
+                "description": "Gain quickness when you strike a foe that is below the health threshold.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 15
+                  },
+                  {
+                    "text": "Health Threshold",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                    "percent": 50
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/D4AB6401A6D6917C3D4F230764452BCCE1035B0D/1012835.png",
+                    "duration": 4,
+                    "status": "Quickness",
+                    "description": "Skills and actions are faster.",
+                    "apply_count": 1
+                  }
+                ],
+                "specialization": 51,
+                "icon": "https://render.guildwars2.com/file/FC5A1E5591B670A175ED01297B48C7F2B1DC1FED/1012806.png"
+              },
+              "1329": {
+                "id": 1329,
+                "tier": 1,
+                "order": 0,
+                "name": "Crack Shot",
+                "description": "Base rifle and harpoon gun shots gain bonus adrenaline. Rifle and harpoon gun skills gain reduced recharge.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge Reduced",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+                    "percent": 20
+                  },
+                  {
+                    "text": "Adrenaline",
+                    "type": "Number",
+                    "icon": "https://render.guildwars2.com/file/E1E7C4D3A6E62F3D5C9F627CE8175BFB0C614CBE/156652.png",
+                    "value": 1
+                  }
+                ],
+                "specialization": 51,
+                "icon": "https://render.guildwars2.com/file/505DE7D46224C105D2E953FDFC6807E30EBCA733/1012798.png"
+              },
+              "1369": {
+                "id": 1369,
+                "tier": 3,
+                "order": 0,
+                "name": "Axe Mastery",
+                "description": "Get ferocity while wielding an axe in either hand. Axe skills gain reduced recharge and grant adrenaline when you critically strike with one.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Ferocity",
+                    "type": "AttributeAdjust",
+                    "icon": "https://render.guildwars2.com/file/E1E7C4D3A6E62F3D5C9F627CE8175BFB0C614CBE/156652.png",
+                    "value": 300,
+                    "target": "CritDamage"
+                  },
+                  {
+                    "text": "Adrenaline",
+                    "type": "Number",
+                    "icon": "https://render.guildwars2.com/file/E1E7C4D3A6E62F3D5C9F627CE8175BFB0C614CBE/156652.png",
+                    "value": 2
+                  },
+                  {
+                    "text": "Recharge Reduced",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+                    "percent": 20
+                  }
+                ],
+                "specialization": 51,
+                "icon": "https://render.guildwars2.com/file/DC444D0B05F5BDB3D096480617E7DF40C54D0E0A/1012818.png"
+              },
+              "1381": {
+                "id": 1381,
+                "tier": 1,
+                "order": 2,
+                "name": "Vengeful Return",
+                "description": "Vengeance has an increased chance to rally and gain more health and endurance when you rally.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Percent",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                    "percent": 100
+                  },
+                  {
+                    "text": "Health Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                    "percent": 25
+                  },
+                  {
+                    "text": "Endurance Gained",
+                    "type": "Number",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                    "value": 100
+                  }
+                ],
+                "specialization": 51,
+                "icon": "https://render.guildwars2.com/file/20A8F34554C69CC12A6013AF002114F008557C0F/1012800.png"
+              },
+              "1413": {
+                "id": 1413,
+                "tier": 1,
+                "order": 1,
+                "name": "Warrior's Sprint",
+                "description": "Run faster while wielding melee weapons, and deal increased damage while you have swiftness. Movement skills break immobilization when used.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/397A613651BFCA2832B6469CE34735580A2C120E/102844.png",
+                    "status": "Immobile",
+                    "description": "Unable to move; stacks duration."
+                  },
+                  {
+                    "text": "Movement Speed Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                    "percent": 25
+                  },
+                  {
+                    "text": "Damage Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 7
+                  },
+                  {
+                    "text": "Damage Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 3
+                  }
+                ],
+                "specialization": 51,
+                "icon": "https://render.guildwars2.com/file/0D0DD0E0002F5ED423FF01A85E9890D32CE7960E/1012799.png"
+              },
+              "1415": {
+                "id": 1415,
+                "tier": 1,
+                "order": 0,
+                "name": "Versatile Rage",
+                "description": "Gain adrenaline on weapon swap.",
+                "slot": "Minor",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 4
+                  },
+                  {
+                    "text": "Adrenaline",
+                    "type": "Number",
+                    "icon": "https://render.guildwars2.com/file/E1E7C4D3A6E62F3D5C9F627CE8175BFB0C614CBE/156652.png",
+                    "value": 5
+                  },
+                  {
+                    "text": "Combat Only",
+                    "type": "NoData",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+                  }
+                ],
+                "specialization": 51,
+                "icon": "https://render.guildwars2.com/file/43326D076ABE56ADA04A0D051016E5E1F9225301/1012807.png"
+              },
+              "1416": {
+                "id": 1416,
+                "tier": 2,
+                "order": 0,
+                "name": "Fast Hands",
+                "description": "Weapon-swapping recharges faster.",
+                "slot": "Minor",
+                "facts": [{
+                  "text": "Recharge Time",
+                  "type": "Time",
+                  "icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+                  "duration": 5
+                }],
+                "specialization": 51,
+                "icon": "https://render.guildwars2.com/file/E411053E9A4BCE69750DA02AB1CDC5D6260E9560/1012808.png"
+              },
+              "1417": {
+                "id": 1417,
+                "tier": 3,
+                "order": 0,
+                "name": "Versatile Power",
+                "description": "Gain might on weapon swap. <c=@abilitytype>Burst</c> skills gain reduced recharge.",
+                "slot": "Minor",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 4
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+                    "duration": 10,
+                    "status": "Might",
+                    "description": "Increased outgoing damage; stacks intensity.",
+                    "apply_count": 2
+                  },
+                  {
+                    "text": "Recharge Reduced",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+                    "percent": 15
+                  },
+                  {
+                    "text": "Combat Only",
+                    "type": "NoData",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+                  }
+                ],
+                "specialization": 51,
+                "icon": "https://render.guildwars2.com/file/9C4B111C63D603BD0F73EA0015DE0ABDEE0D107A/1012809.png"
+              },
+              "1484": {
+                "id": 1484,
+                "tier": 2,
+                "order": 0,
+                "name": "Inspiring Battle Standard",
+                "description": "<c=@abilitytype>Banners.</c> Banners also grant regeneration to allies. Unique banner buffs applied to you are stronger.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/F69996772B9E18FD18AD0AABAB25D7E3FC42F261/102835.png",
+                    "duration": 3,
+                    "status": "Regeneration",
+                    "description": "Gain health every second; stacks duration.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Interval",
+                    "type": "Time",
+                    "icon": "https://render.guildwars2.com/file/B75E91EB22E0DFCC1D08030204055946506D56F6/1770206.png",
+                    "duration": 3
+                  },
+                  {
+                    "text": "Banner Effect Improvement",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                    "percent": 50
+                  }
+                ],
+                "specialization": 51,
+                "icon": "https://render.guildwars2.com/file/3DD095F41404F7F043C70854AB944116F45570F7/1012801.png"
+              },
+              "1489": {
+                "id": 1489,
+                "tier": 2,
+                "order": 1,
+                "name": "Destruction of the Empowered",
+                "description": "Deal increased damage per boon on your target.",
+                "slot": "Major",
+                "facts": [{
+                  "text": "Damage Increase",
+                  "type": "Percent",
+                  "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                  "percent": 3
+                }],
+                "specialization": 51,
+                "icon": "https://render.guildwars2.com/file/663A52BDEEBF0AE40DC8995D0234EE196DFDECB5/1012802.png"
+              },
+              "1657": {
+                "id": 1657,
+                "tier": 3,
+                "order": 2,
+                "name": "Burst Mastery",
+                "description": "<c=@abilitytype>Burst</c> skills deal more damage, grant swiftness, and restore a portion of adrenaline spent.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Damage Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 7
+                  },
+                  {
+                    "text": "Adrenaline Restored",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                    "percent": 33
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/20CFC14967E67F7A3FD4A4B8722B4CF5B8565E11/102836.png",
+                    "duration": 3,
+                    "status": "Swiftness",
+                    "description": "Movement speed increased by 33%; stacks duration.",
+                    "apply_count": 1
+                  }
+                ],
+                "specialization": 51,
+                "icon": "https://render.guildwars2.com/file/4E393624960EF6AA7D5C9CF27902FAFC180B5DB5/1012805.png"
+              },
+              "1709": {
+                "id": 1709,
+                "tier": 2,
+                "order": 2,
+                "name": "Brawler's Recovery",
+                "description": "Remove conditions when you swap weapons.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 4
+                  },
+                  {
+                    "text": "Conditions Removed",
+                    "type": "Number",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                    "value": 1
+                  },
+                  {
+                    "text": "Combat Only",
+                    "type": "NoData",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+                  }
+                ],
+                "specialization": 51,
+                "icon": "https://render.guildwars2.com/file/751DB3B9700B6B14CAE9D2BE77D32795056DB665/1012803.png"
+              }
+            }
           }
         }
       ],
@@ -264,7 +2724,419 @@
               1440
             ],
             "icon": "https://render.guildwars2.com/file/0D48C40A1C042B0BC6DAA4B91AB272E5E90C934C/1012032.png",
-            "background": "https://render.guildwars2.com/file/09160450B40ED777650F632F2CE82504B90F5644/1012109.png"
+            "background": "https://render.guildwars2.com/file/09160450B40ED777650F632F2CE82504B90F5644/1012109.png",
+            "traitData": {
+              "1338": {
+                "id": 1338,
+                "tier": 2,
+                "order": 1,
+                "name": "Forceful Greatsword",
+                "description": "Gain might on a critical hit with a greatsword or spear. Greatsword and spear skills deal more damage and recharge faster.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+                    "duration": 5,
+                    "status": "Might",
+                    "description": "Increased outgoing damage; stacks intensity.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Recharge Reduced",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+                    "percent": 20
+                  },
+                  {
+                    "text": "Damage Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 10
+                  }
+                ],
+                "specialization": 4,
+                "icon": "https://render.guildwars2.com/file/CDAE0E5A05570A05917304122E52C71BF5474FC5/1012814.png"
+              },
+              "1437": {
+                "id": 1437,
+                "tier": 3,
+                "order": 0,
+                "name": "Berserker's Power",
+                "description": "Gain increased damage when you use a <c=@abilitytype>burst</c> skill; this damage increase is based on your adrenaline.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/A795EE78B8DAA836F3C0650CFC037BB71D3517BA/1012816.png",
+                    "duration": 15,
+                    "status": "Berserker's Power",
+                    "description": "7% damage per stack.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/A795EE78B8DAA836F3C0650CFC037BB71D3517BA/1012816.png",
+                    "duration": 15,
+                    "status": "Berserker's Power",
+                    "description": "7% damage per stack.",
+                    "apply_count": 2
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/A795EE78B8DAA836F3C0650CFC037BB71D3517BA/1012816.png",
+                    "duration": 15,
+                    "status": "Berserker's Power",
+                    "description": "7% damage per stack.",
+                    "apply_count": 3
+                  },
+                  {
+                    "text": "Maximum Stacks",
+                    "type": "Number",
+                    "icon": "https://render.guildwars2.com/file/B4490FB81AA1E7C06F1B22056AE09A0F54CBE2C4/1770201.png",
+                    "value": 3
+                  }
+                ],
+                "specialization": 4,
+                "icon": "https://render.guildwars2.com/file/A795EE78B8DAA836F3C0650CFC037BB71D3517BA/1012816.png"
+              },
+              "1440": {
+                "id": 1440,
+                "tier": 3,
+                "order": 2,
+                "name": "Merciless Hammer",
+                "description": "Deal increased damage with a hammer when striking a foe that is dazed, knocked downed, launched, or stunned. Hammer skills gain reduced recharge. Inflict confusion when you interrupt enemy skills.<br><c=@reminder>This trait can only confuse enemies with defiance bars once per interval.</c>",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/289AA0A4644F0E044DED3D3F39CED958E1DDFF53/102880.png",
+                    "duration": 8,
+                    "status": "Confusion",
+                    "description": "Damage received on skill activation; stacks intensity.",
+                    "apply_count": 4
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/289AA0A4644F0E044DED3D3F39CED958E1DDFF53/102880.png",
+                    "duration": 4,
+                    "status": "Confusion",
+                    "description": "Damage received on skill activation; stacks intensity.",
+                    "apply_count": 6
+                  },
+                  {
+                    "text": "Damage Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 20
+                  },
+                  {
+                    "text": "Recharge Reduced",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+                    "percent": 20
+                  },
+                  {
+                    "text": "Interval",
+                    "type": "Time",
+                    "icon": "https://render.guildwars2.com/file/B75E91EB22E0DFCC1D08030204055946506D56F6/1770206.png",
+                    "duration": 3
+                  }
+                ],
+                "specialization": 4,
+                "icon": "https://render.guildwars2.com/file/203E0DEC94900B5305F309A1337D03D70FF9426E/1012804.png"
+              },
+              "1444": {
+                "id": 1444,
+                "tier": 1,
+                "order": 2,
+                "name": "Peak Performance",
+                "description": "<c=@abilitytype>Physical</c> skills have reduced recharge and increase all outgoing physical damage for a period of time. Receive less damage from falling, and launch nearby foes when you take fall damage.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge Reduced",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+                    "percent": 20
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/08F60C11F460F3236DE65A445337290B7AAED96F/1012812.png",
+                    "duration": 6,
+                    "status": "Peak Performance",
+                    "description": "Outgoing physical damage is increased.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/08F60C11F460F3236DE65A445337290B7AAED96F/1012812.png",
+                    "duration": 6,
+                    "status": "Peak Performance",
+                    "description": "Outgoing physical damage is increased.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Falling Damage Reduction",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 50
+                  }
+                ],
+                "skills": [{
+                  "name": "Death from Above",
+                  "facts": [{
+                      "text": "Recharge",
+                      "type": "Recharge",
+                      "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                      "value": 1
+                    },
+                    {
+                      "text": "Unblockable",
+                      "type": "Unblockable",
+                      "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                      "value": true
+                    },
+                    {
+                      "text": "Damage",
+                      "type": "Damage",
+                      "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                      "hit_count": 1,
+                      "dmg_multiplier": 2
+                    },
+                    {
+                      "text": "Launch",
+                      "type": "Distance",
+                      "icon": "https://render.guildwars2.com/file/CB330EF25C62C05F1800A1C507B6AE4944551746/156653.png",
+                      "distance": 450
+                    },
+                    {
+                      "text": "Radius",
+                      "type": "Distance",
+                      "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                      "distance": 240
+                    },
+                    {
+                      "text": "Combo Finisher",
+                      "type": "ComboFinisher",
+                      "icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png",
+                      "percent": 100,
+                      "finisher_type": "Blast"
+                    }
+                  ],
+                  "description": "Launch nearby foes into the air with a powerful stomp.",
+                  "icon": "https://render.guildwars2.com/file/D7040004B112A4075A1038917CEF5FFA0BC100A2/102788.png",
+                  "flags": [],
+                  "id": 14267,
+                  "chat_link": "[&Brs3AAA=]"
+                }],
+                "specialization": 4,
+                "icon": "https://render.guildwars2.com/file/08F60C11F460F3236DE65A445337290B7AAED96F/1012812.png"
+              },
+              "1446": {
+                "id": 1446,
+                "tier": 1,
+                "order": 0,
+                "name": "Reckless Dodge",
+                "description": "Damage foes at the end of a dodge roll.",
+                "slot": "Minor",
+                "facts": [{
+                  "text": "Combat Only",
+                  "type": "NoData",
+                  "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+                }],
+                "skills": [{
+                  "name": "Reckless Impact",
+                  "facts": [{
+                      "text": "Unblockable",
+                      "type": "Unblockable",
+                      "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                      "value": true
+                    },
+                    {
+                      "text": "Damage",
+                      "type": "Damage",
+                      "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                      "hit_count": 1,
+                      "dmg_multiplier": 1.5
+                    },
+                    {
+                      "text": "Radius",
+                      "type": "Distance",
+                      "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                      "distance": 180
+                    },
+                    {
+                      "text": "Number of Targets",
+                      "type": "Number",
+                      "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+                      "value": 5
+                    },
+                    {
+                      "text": "Apply Buff/Condition",
+                      "type": "Buff",
+                      "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+                      "duration": 5,
+                      "status": "Might",
+                      "description": "Increased outgoing damage; stacks intensity.",
+                      "apply_count": 1
+                    }
+                  ],
+                  "description": "Damage foes at the end of your dodge roll. Gain might for each foe struck by this attack.",
+                  "icon": "https://render.guildwars2.com/file/D7040004B112A4075A1038917CEF5FFA0BC100A2/102788.png",
+                  "flags": [],
+                  "id": 14268,
+                  "chat_link": "[&Brw3AAA=]"
+                }],
+                "specialization": 4,
+                "icon": "https://render.guildwars2.com/file/4D0864C3335DC7A7046713714ED0FD0D57F4021E/1012819.png"
+              },
+              "1447": {
+                "id": 1447,
+                "tier": 1,
+                "order": 0,
+                "name": "Brave Stride",
+                "description": "Your first strike when entering combat grants stability.",
+                "slot": "Major",
+                "facts": [{
+                  "text": "Apply Buff/Condition",
+                  "type": "Buff",
+                  "icon": "https://render.guildwars2.com/file/3D3A1C2D6D791C05179AB871902D28782C65C244/415959.png",
+                  "duration": 8,
+                  "status": "Stability",
+                  "description": "Cannot be knocked down, pushed back, pulled, launched, stunned, dazed, floated, sunk, feared, or taunted.",
+                  "apply_count": 1
+                }],
+                "specialization": 4,
+                "icon": "https://render.guildwars2.com/file/01FAE5A3B0A851F579FE6BCD2C27E8CD610BB49B/1012810.png"
+              },
+              "1448": {
+                "id": 1448,
+                "tier": 2,
+                "order": 0,
+                "name": "Building Momentum",
+                "description": "<c=@abilitytype>Burst</c> skills restore endurance on hit.",
+                "slot": "Minor",
+                "facts": [{
+                  "text": "Endurance Gained",
+                  "type": "Number",
+                  "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                  "value": 15
+                }],
+                "specialization": 4,
+                "icon": "https://render.guildwars2.com/file/7255D994BB1A14AE2B6CB55BA121B0597ABC6415/1012820.png"
+              },
+              "1449": {
+                "id": 1449,
+                "tier": 2,
+                "order": 2,
+                "name": "Great Fortitude",
+                "description": "Gain vitality based on a percentage of your power.",
+                "slot": "Major",
+                "facts": [{
+                  "text": "Attribute Conversion",
+                  "type": "BuffConversion",
+                  "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                  "percent": 10,
+                  "source": "Power",
+                  "target": "Vitality"
+                }],
+                "specialization": 4,
+                "icon": "https://render.guildwars2.com/file/424B39CE4BFF056F3B2ED25F186A7FC5E69538E5/1012815.png"
+              },
+              "1451": {
+                "id": 1451,
+                "tier": 1,
+                "order": 1,
+                "name": "Restorative Strength",
+                "description": "Using a heal skill grants might.",
+                "slot": "Major",
+                "facts": [{
+                  "text": "Apply Buff/Condition",
+                  "type": "Buff",
+                  "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+                  "duration": 6,
+                  "status": "Might",
+                  "description": "Increased outgoing damage; stacks intensity.",
+                  "apply_count": 5
+                }],
+                "specialization": 4,
+                "icon": "https://render.guildwars2.com/file/13610709076E473C03D42303AD2E913A1ED65344/1012811.png"
+              },
+              "1453": {
+                "id": 1453,
+                "tier": 3,
+                "order": 0,
+                "name": "Pinnacle of Strength",
+                "description": "Might applied to you grants more power.",
+                "slot": "Minor",
+                "facts": [{
+                  "type": "AttributeAdjust",
+                  "icon": "https://render.guildwars2.com/file/E1E7C4D3A6E62F3D5C9F627CE8175BFB0C614CBE/156652.png",
+                  "value": 10,
+                  "target": "Power"
+                }],
+                "specialization": 4,
+                "icon": "https://render.guildwars2.com/file/73003EC83C79150BAB1578A1F067F37C0F472D60/1012821.png"
+              },
+              "1454": {
+                "id": 1454,
+                "tier": 3,
+                "order": 1,
+                "name": "Might Makes Right",
+                "description": "Gain health and endurance whenever you apply might to yourself.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Endurance Gained",
+                    "type": "Number",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                    "value": 2
+                  },
+                  {
+                    "text": "Healing",
+                    "type": "AttributeAdjust",
+                    "icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png",
+                    "value": 133,
+                    "target": "Healing"
+                  }
+                ],
+                "specialization": 4,
+                "icon": "https://render.guildwars2.com/file/6BBC5D5AB0B0E72DA33631E1A57B525CC0460D61/1012817.png"
+              },
+              "2000": {
+                "id": 2000,
+                "tier": 2,
+                "order": 0,
+                "name": "Body Blow",
+                "description": "Stuns, dazes, knockbacks, pulls, pushes, and launches inflict bleeding and weakness.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/6CB0E64AF9AA292E332A38C1770CE577E2CDE0E8/102853.png",
+                    "duration": 3,
+                    "status": "Weakness",
+                    "description": "Endurance regeneration decreased by 50%. 50% of hits are Glancing Blows (50% damage). Stacks duration.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/79FF0046A5F9ADA3B4C4EC19ADB4CB124D5F0021/102848.png",
+                    "duration": 12,
+                    "status": "Bleeding",
+                    "description": "Deals damage every second; stacks intensity.",
+                    "apply_count": 1
+                  }
+                ],
+                "specialization": 4,
+                "icon": "https://render.guildwars2.com/file/537FCF3A01560702E5C5554E03DEBEA40580A309/1012813.png"
+              }
+            }
           }
         },
         {
@@ -296,7 +3168,484 @@
               1708
             ],
             "icon": "https://render.guildwars2.com/file/5F0B793A5479007078067CD71D0E01B30602189B/1012030.png",
-            "background": "https://render.guildwars2.com/file/E0190E3B3745AA61D32CFF92C1FEFFFB56A90D4C/1012107.png"
+            "background": "https://render.guildwars2.com/file/E0190E3B3745AA61D32CFF92C1FEFFFB56A90D4C/1012107.png",
+            "traitData": {
+              "1348": {
+                "id": 1348,
+                "tier": 2,
+                "order": 0,
+                "name": "Adrenal Health",
+                "description": "Gain health based on adrenaline spent.",
+                "slot": "Minor",
+                "facts": [{
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/32A8CA56381F242642D7193B24284F922D23A2E3/1012796.png",
+                    "duration": 15,
+                    "status": "Adrenal Health",
+                    "description": "Regain health by spending adrenaline.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Interval",
+                    "type": "Time",
+                    "icon": "https://render.guildwars2.com/file/B75E91EB22E0DFCC1D08030204055946506D56F6/1770206.png",
+                    "duration": 1
+                  },
+                  {
+                    "text": "Maximum Stacks",
+                    "type": "Number",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                    "value": 3
+                  }
+                ],
+                "specialization": 22,
+                "icon": "https://render.guildwars2.com/file/32A8CA56381F242642D7193B24284F922D23A2E3/1012796.png"
+              },
+              "1350": {
+                "id": 1350,
+                "tier": 1,
+                "order": 0,
+                "name": "Thick Skin",
+                "description": "Gain toughness while your health is above the threshold.",
+                "slot": "Minor",
+                "facts": [{
+                    "type": "AttributeAdjust",
+                    "icon": "https://render.guildwars2.com/file/E1E7C4D3A6E62F3D5C9F627CE8175BFB0C614CBE/156652.png",
+                    "value": 180,
+                    "target": "Toughness"
+                  },
+                  {
+                    "text": "Health Threshold",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                    "percent": 75
+                  }
+                ],
+                "specialization": 22,
+                "icon": "https://render.guildwars2.com/file/59197BA1552B93AD7C71A5014A0F130FBA936B01/1012795.png"
+              },
+              "1367": {
+                "id": 1367,
+                "tier": 2,
+                "order": 2,
+                "name": "Sundering Mace",
+                "description": "Stuns, dazes, and knock downs applied by mace skills last longer against vulnerable foes. Mace skills gain reduced recharge.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge Reduced",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+                    "percent": 20
+                  },
+                  {
+                    "text": "Duration Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+                    "percent": 20
+                  }
+                ],
+                "specialization": 22,
+                "icon": "https://render.guildwars2.com/file/0CE13DF2315967C19B000E4FF407351B32BF0E3E/1012792.png"
+              },
+              "1368": {
+                "id": 1368,
+                "tier": 2,
+                "order": 0,
+                "name": "Defy Pain",
+                "description": "Cast Lesser Endure Pain when struck while below the health threshold.",
+                "slot": "Major",
+                "facts": [{
+                  "text": "Health Threshold",
+                  "type": "Percent",
+                  "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                  "percent": 50
+                }],
+                "skills": [{
+                  "name": "Lesser Endure Pain",
+                  "facts": [{
+                      "text": "Recharge",
+                      "type": "Recharge",
+                      "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                      "value": 60
+                    },
+                    {
+                      "text": "StunBreak",
+                      "type": "StunBreak",
+                      "icon": "https://render.guildwars2.com/file/DCF0719729165FD8910E034CA4E0780F90582D15/156654.png",
+                      "value": true
+                    },
+                    {
+                      "text": "Apply Buff/Condition",
+                      "type": "Buff",
+                      "icon": "https://render.guildwars2.com/file/9D66F0BCCEC7A7C344170659D4CF7C7E3ECF0C60/102867.png",
+                      "duration": 4,
+                      "status": "Enduring Pain",
+                      "description": "You take no damage from incoming attacks. You are still susceptible to conditions and control effects.",
+                      "apply_count": 1
+                    },
+                    {
+                      "text": "Apply Buff/Condition",
+                      "type": "Buff",
+                      "icon": "https://render.guildwars2.com/file/9D66F0BCCEC7A7C344170659D4CF7C7E3ECF0C60/102867.png",
+                      "duration": 2,
+                      "status": "Enduring Pain",
+                      "description": "You take no damage from incoming attacks. You are still susceptible to conditions and control effects.",
+                      "apply_count": 1
+                    }
+                  ],
+                  "description": "Stance. Take no damage from attacks. You are still susceptible to conditions and control effects.",
+                  "icon": "https://render.guildwars2.com/file/9D66F0BCCEC7A7C344170659D4CF7C7E3ECF0C60/102867.png",
+                  "flags": [],
+                  "id": 21813,
+                  "chat_link": "[&BjVVAAA=]",
+                  "categories": [
+                    "Stance"
+                  ],
+                  "traited_facts": [{
+                      "text": "Apply Buff/Condition",
+                      "type": "Buff",
+                      "icon": "https://render.guildwars2.com/file/9D66F0BCCEC7A7C344170659D4CF7C7E3ECF0C60/102867.png",
+                      "duration": 5,
+                      "status": "Enduring Pain",
+                      "description": "You take no damage from incoming attacks. You are still susceptible to conditions and control effects.",
+                      "apply_count": 1,
+                      "requires_trait": 1375,
+                      "overrides": 2
+                    },
+                    {
+                      "text": "Apply Buff/Condition",
+                      "type": "Buff",
+                      "icon": "https://render.guildwars2.com/file/9D66F0BCCEC7A7C344170659D4CF7C7E3ECF0C60/102867.png",
+                      "duration": 3,
+                      "status": "Enduring Pain",
+                      "description": "You take no damage from incoming attacks. You are still susceptible to conditions and control effects.",
+                      "apply_count": 1,
+                      "requires_trait": 1375,
+                      "overrides": 3
+                    }
+                  ]
+                }],
+                "specialization": 22,
+                "icon": "https://render.guildwars2.com/file/3225C41AA337BF4B2FCA310D9F5AD70D94ACC074/1012793.png"
+              },
+              "1372": {
+                "id": 1372,
+                "tier": 1,
+                "order": 2,
+                "name": "Cull the Weak",
+                "description": "Increases damage to weakened foes. Striking a foe below the health threshold inflicts weakness.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 5
+                  },
+                  {
+                    "text": "Damage Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 7
+                  },
+                  {
+                    "text": "Health Threshold",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                    "percent": 50
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/6CB0E64AF9AA292E332A38C1770CE577E2CDE0E8/102853.png",
+                    "duration": 5,
+                    "status": "Weakness",
+                    "description": "Endurance regeneration decreased by 50%. 50% of hits are Glancing Blows (50% damage). Stacks duration.",
+                    "apply_count": 1
+                  }
+                ],
+                "specialization": 22,
+                "icon": "https://render.guildwars2.com/file/30A2CFB00C436ACEC5C513360916B5AE030AFCDC/1012788.png"
+              },
+              "1375": {
+                "id": 1375,
+                "tier": 3,
+                "order": 0,
+                "name": "Last Stand",
+                "description": "Cast Lesser Balanced Stance when you are disabled. <c=@abilitytype>Stances</c> grant vigor when activated and have increased duration.<br><c=@reminder>Disables include stun, daze, knockback, pull, knockdown, sink, float, launch, taunt, and fear.</c>",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Duration Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+                    "percent": 25
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/58E92EBAF0DB4DA7C4AC04D9B22BCA5ECF0100DE/102843.png",
+                    "duration": 6,
+                    "status": "Vigor",
+                    "description": "Endurance regeneration increased by 50%; stacks duration.",
+                    "apply_count": 1
+                  }
+                ],
+                "skills": [{
+                  "name": "Lesser Balanced Stance",
+                  "facts": [{
+                      "text": "Recharge",
+                      "type": "Recharge",
+                      "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                      "value": 40
+                    },
+                    {
+                      "text": "StunBreak",
+                      "type": "StunBreak",
+                      "icon": "https://render.guildwars2.com/file/DCF0719729165FD8910E034CA4E0780F90582D15/156654.png",
+                      "value": true
+                    },
+                    {
+                      "text": "Apply Buff/Condition",
+                      "type": "Buff",
+                      "icon": "https://render.guildwars2.com/file/EE276A936FB880E44B2B310D56E6A9E22034E301/104112.png",
+                      "duration": 4,
+                      "status": "Balanced Stance",
+                      "description": "Periodically gain stability. Immune to critical hits.",
+                      "apply_count": 1
+                    },
+                    {
+                      "text": "Apply Buff/Condition",
+                      "type": "Buff",
+                      "icon": "https://render.guildwars2.com/file/3D3A1C2D6D791C05179AB871902D28782C65C244/415959.png",
+                      "duration": 1,
+                      "status": "Stability",
+                      "description": "Cannot be knocked down, pushed back, pulled, launched, stunned, dazed, floated, sunk, feared, or taunted.",
+                      "apply_count": 2
+                    },
+                    {
+                      "text": "Apply Buff/Condition",
+                      "type": "Buff",
+                      "icon": "https://render.guildwars2.com/file/20CFC14967E67F7A3FD4A4B8722B4CF5B8565E11/102836.png",
+                      "duration": 3,
+                      "status": "Swiftness",
+                      "description": "Movement speed increased by 33%; stacks duration.",
+                      "apply_count": 1
+                    },
+                    {
+                      "text": "Boon Application Interval",
+                      "type": "Time",
+                      "icon": "https://render.guildwars2.com/file/B75E91EB22E0DFCC1D08030204055946506D56F6/1770206.png",
+                      "duration": 1
+                    }
+                  ],
+                  "description": "Stance. Gain stability and swiftness on an interval. Become immune to critical hits.",
+                  "icon": "https://render.guildwars2.com/file/EE276A936FB880E44B2B310D56E6A9E22034E301/104112.png",
+                  "flags": [],
+                  "id": 14330,
+                  "chat_link": "[&Bvo3AAA=]",
+                  "categories": [
+                    "Stance"
+                  ],
+                  "traited_facts": [{
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/EE276A936FB880E44B2B310D56E6A9E22034E301/104112.png",
+                    "duration": 5,
+                    "status": "Balanced Stance",
+                    "description": "Periodically gain stability. Immune to critical hits.",
+                    "apply_count": 1,
+                    "requires_trait": 1375,
+                    "overrides": 2
+                  }]
+                }],
+                "specialization": 22,
+                "icon": "https://render.guildwars2.com/file/E8BE056A0835F61B5672F4229D6022CA6E213857/1012789.png"
+              },
+              "1376": {
+                "id": 1376,
+                "tier": 1,
+                "order": 0,
+                "name": "Shield Master",
+                "description": "Reflect missiles whenever you are blocking. Gain might when you block an attack. Shield skills gain reduced recharge.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Reflects Missiles",
+                    "type": "NoData",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+                    "duration": 8,
+                    "status": "Might",
+                    "description": "Increased outgoing damage; stacks intensity.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Recharge Reduced",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+                    "percent": 20
+                  }
+                ],
+                "specialization": 22,
+                "icon": "https://render.guildwars2.com/file/6B4F13BB430F77C130FFD8E827E3D7337CCC52B1/1012786.png"
+              },
+              "1379": {
+                "id": 1379,
+                "tier": 2,
+                "order": 1,
+                "name": "Armored Attack",
+                "description": "Gain power based on your toughness.",
+                "slot": "Major",
+                "facts": [{
+                  "text": "Attribute Conversion",
+                  "type": "BuffConversion",
+                  "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                  "percent": 10,
+                  "source": "Toughness",
+                  "target": "Power"
+                }],
+                "specialization": 22,
+                "icon": "https://render.guildwars2.com/file/2BA7BE3562A3A9DDE14DE6D9A40C650379A71918/1012790.png"
+              },
+              "1380": {
+                "id": 1380,
+                "tier": 3,
+                "order": 0,
+                "name": "Spiked Armor",
+                "description": "Gain retaliation when you block or are struck by a critical hit. Retaliation gives you bonus toughness.",
+                "slot": "Minor",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 15
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/27F233F7D4CE4E9EFE040E3D665B7B0643557B6E/102883.png",
+                    "duration": 5,
+                    "status": "Retaliation",
+                    "description": "Reflect incoming damage back to its source; stacks duration.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Toughness",
+                    "type": "AttributeAdjust",
+                    "icon": "https://render.guildwars2.com/file/E1E7C4D3A6E62F3D5C9F627CE8175BFB0C614CBE/156652.png",
+                    "value": 150,
+                    "target": "Toughness"
+                  }
+                ],
+                "specialization": 22,
+                "icon": "https://render.guildwars2.com/file/10055830259435E5B2B1B2EC1E63FCDC9648CC4D/1012797.png"
+              },
+              "1488": {
+                "id": 1488,
+                "tier": 1,
+                "order": 1,
+                "name": "Dogged March",
+                "description": "Reduce the duration of movement-impeding conditions and gain regeneration when you are affected by one of these conditions.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 10
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/F69996772B9E18FD18AD0AABAB25D7E3FC42F261/102835.png",
+                    "duration": 6,
+                    "status": "Regeneration",
+                    "description": "Gain health every second; stacks duration.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/397A613651BFCA2832B6469CE34735580A2C120E/102844.png",
+                    "duration": 0,
+                    "status": "Immobile",
+                    "description": "Unable to move; stacks duration.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/070325E519C178D502A8160523766070D30C0C19/102838.png",
+                    "duration": 0,
+                    "status": "Crippled",
+                    "description": "Movement speed decreased by 50%; stacks duration.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/28C4EC547A3516AF0242E826772DA43A5EAC3DF3/102839.png",
+                    "duration": 0,
+                    "status": "Chilled",
+                    "description": "Movement speed decreased by 66%; skill cooldown increased by 66%; stacks duration.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Duration Decreased",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+                    "percent": 33
+                  }
+                ],
+                "specialization": 22,
+                "icon": "https://render.guildwars2.com/file/1208F72B415BE25E1D98194418A591AAC7D476E2/1012787.png"
+              },
+              "1649": {
+                "id": 1649,
+                "tier": 3,
+                "order": 1,
+                "name": "Cleansing Ire",
+                "description": "Gain adrenaline when hit. Remove a condition for every bar of adrenaline spent when you hit with a <c=@abilitytype>burst</c> skill.",
+                "slot": "Major",
+                "facts": [{
+                  "text": "Adrenaline",
+                  "type": "Number",
+                  "icon": "https://render.guildwars2.com/file/E1E7C4D3A6E62F3D5C9F627CE8175BFB0C614CBE/156652.png",
+                  "value": 1
+                }],
+                "specialization": 22,
+                "icon": "https://render.guildwars2.com/file/C8CA1665D0ECE10CF8DC66030C22A20957595B32/1012791.png"
+              },
+              "1708": {
+                "id": 1708,
+                "tier": 3,
+                "order": 2,
+                "name": "Rousing Resilience",
+                "description": "Gain toughness and health when you break out of a stun.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/630279C914D8BF414C2358281F1A37EDF86B203B/1012794.png",
+                    "duration": 8,
+                    "status": "Rousing Resilience",
+                    "description": "Gain up to 1,000 toughness based on your level.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Healing",
+                    "type": "AttributeAdjust",
+                    "icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png",
+                    "value": 2536,
+                    "target": "Healing"
+                  }
+                ],
+                "specialization": 22,
+                "icon": "https://render.guildwars2.com/file/630279C914D8BF414C2358281F1A37EDF86B203B/1012794.png"
+              }
+            }
           }
         },
         {
@@ -328,7 +3677,348 @@
               1657
             ],
             "icon": "https://render.guildwars2.com/file/D10B771D01C85DA404472EE90F35EF15B0B36240/1012031.png",
-            "background": "https://render.guildwars2.com/file/2B80CF6504DA1B0DC8470D45ED5BE9992BEEC2B7/1012108.png"
+            "background": "https://render.guildwars2.com/file/2B80CF6504DA1B0DC8470D45ED5BE9992BEEC2B7/1012108.png",
+            "traitData": {
+              "1317": {
+                "id": 1317,
+                "tier": 3,
+                "order": 1,
+                "name": "Heightened Focus",
+                "description": "Gain quickness when you strike a foe that is below the health threshold.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 15
+                  },
+                  {
+                    "text": "Health Threshold",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                    "percent": 50
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/D4AB6401A6D6917C3D4F230764452BCCE1035B0D/1012835.png",
+                    "duration": 4,
+                    "status": "Quickness",
+                    "description": "Skills and actions are faster.",
+                    "apply_count": 1
+                  }
+                ],
+                "specialization": 51,
+                "icon": "https://render.guildwars2.com/file/FC5A1E5591B670A175ED01297B48C7F2B1DC1FED/1012806.png"
+              },
+              "1329": {
+                "id": 1329,
+                "tier": 1,
+                "order": 0,
+                "name": "Crack Shot",
+                "description": "Base rifle and harpoon gun shots gain bonus adrenaline. Rifle and harpoon gun skills gain reduced recharge.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge Reduced",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+                    "percent": 20
+                  },
+                  {
+                    "text": "Adrenaline",
+                    "type": "Number",
+                    "icon": "https://render.guildwars2.com/file/E1E7C4D3A6E62F3D5C9F627CE8175BFB0C614CBE/156652.png",
+                    "value": 1
+                  }
+                ],
+                "specialization": 51,
+                "icon": "https://render.guildwars2.com/file/505DE7D46224C105D2E953FDFC6807E30EBCA733/1012798.png"
+              },
+              "1369": {
+                "id": 1369,
+                "tier": 3,
+                "order": 0,
+                "name": "Axe Mastery",
+                "description": "Get ferocity while wielding an axe in either hand. Axe skills gain reduced recharge and grant adrenaline when you critically strike with one.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Ferocity",
+                    "type": "AttributeAdjust",
+                    "icon": "https://render.guildwars2.com/file/E1E7C4D3A6E62F3D5C9F627CE8175BFB0C614CBE/156652.png",
+                    "value": 300,
+                    "target": "CritDamage"
+                  },
+                  {
+                    "text": "Adrenaline",
+                    "type": "Number",
+                    "icon": "https://render.guildwars2.com/file/E1E7C4D3A6E62F3D5C9F627CE8175BFB0C614CBE/156652.png",
+                    "value": 2
+                  },
+                  {
+                    "text": "Recharge Reduced",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+                    "percent": 20
+                  }
+                ],
+                "specialization": 51,
+                "icon": "https://render.guildwars2.com/file/DC444D0B05F5BDB3D096480617E7DF40C54D0E0A/1012818.png"
+              },
+              "1381": {
+                "id": 1381,
+                "tier": 1,
+                "order": 2,
+                "name": "Vengeful Return",
+                "description": "Vengeance has an increased chance to rally and gain more health and endurance when you rally.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Percent",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                    "percent": 100
+                  },
+                  {
+                    "text": "Health Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                    "percent": 25
+                  },
+                  {
+                    "text": "Endurance Gained",
+                    "type": "Number",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                    "value": 100
+                  }
+                ],
+                "specialization": 51,
+                "icon": "https://render.guildwars2.com/file/20A8F34554C69CC12A6013AF002114F008557C0F/1012800.png"
+              },
+              "1413": {
+                "id": 1413,
+                "tier": 1,
+                "order": 1,
+                "name": "Warrior's Sprint",
+                "description": "Run faster while wielding melee weapons, and deal increased damage while you have swiftness. Movement skills break immobilization when used.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/397A613651BFCA2832B6469CE34735580A2C120E/102844.png",
+                    "status": "Immobile",
+                    "description": "Unable to move; stacks duration."
+                  },
+                  {
+                    "text": "Movement Speed Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                    "percent": 25
+                  },
+                  {
+                    "text": "Damage Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 7
+                  },
+                  {
+                    "text": "Damage Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 3
+                  }
+                ],
+                "specialization": 51,
+                "icon": "https://render.guildwars2.com/file/0D0DD0E0002F5ED423FF01A85E9890D32CE7960E/1012799.png"
+              },
+              "1415": {
+                "id": 1415,
+                "tier": 1,
+                "order": 0,
+                "name": "Versatile Rage",
+                "description": "Gain adrenaline on weapon swap.",
+                "slot": "Minor",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 4
+                  },
+                  {
+                    "text": "Adrenaline",
+                    "type": "Number",
+                    "icon": "https://render.guildwars2.com/file/E1E7C4D3A6E62F3D5C9F627CE8175BFB0C614CBE/156652.png",
+                    "value": 5
+                  },
+                  {
+                    "text": "Combat Only",
+                    "type": "NoData",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+                  }
+                ],
+                "specialization": 51,
+                "icon": "https://render.guildwars2.com/file/43326D076ABE56ADA04A0D051016E5E1F9225301/1012807.png"
+              },
+              "1416": {
+                "id": 1416,
+                "tier": 2,
+                "order": 0,
+                "name": "Fast Hands",
+                "description": "Weapon-swapping recharges faster.",
+                "slot": "Minor",
+                "facts": [{
+                  "text": "Recharge Time",
+                  "type": "Time",
+                  "icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+                  "duration": 5
+                }],
+                "specialization": 51,
+                "icon": "https://render.guildwars2.com/file/E411053E9A4BCE69750DA02AB1CDC5D6260E9560/1012808.png"
+              },
+              "1417": {
+                "id": 1417,
+                "tier": 3,
+                "order": 0,
+                "name": "Versatile Power",
+                "description": "Gain might on weapon swap. <c=@abilitytype>Burst</c> skills gain reduced recharge.",
+                "slot": "Minor",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 4
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+                    "duration": 10,
+                    "status": "Might",
+                    "description": "Increased outgoing damage; stacks intensity.",
+                    "apply_count": 2
+                  },
+                  {
+                    "text": "Recharge Reduced",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+                    "percent": 15
+                  },
+                  {
+                    "text": "Combat Only",
+                    "type": "NoData",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+                  }
+                ],
+                "specialization": 51,
+                "icon": "https://render.guildwars2.com/file/9C4B111C63D603BD0F73EA0015DE0ABDEE0D107A/1012809.png"
+              },
+              "1484": {
+                "id": 1484,
+                "tier": 2,
+                "order": 0,
+                "name": "Inspiring Battle Standard",
+                "description": "<c=@abilitytype>Banners.</c> Banners also grant regeneration to allies. Unique banner buffs applied to you are stronger.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/F69996772B9E18FD18AD0AABAB25D7E3FC42F261/102835.png",
+                    "duration": 3,
+                    "status": "Regeneration",
+                    "description": "Gain health every second; stacks duration.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Interval",
+                    "type": "Time",
+                    "icon": "https://render.guildwars2.com/file/B75E91EB22E0DFCC1D08030204055946506D56F6/1770206.png",
+                    "duration": 3
+                  },
+                  {
+                    "text": "Banner Effect Improvement",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                    "percent": 50
+                  }
+                ],
+                "specialization": 51,
+                "icon": "https://render.guildwars2.com/file/3DD095F41404F7F043C70854AB944116F45570F7/1012801.png"
+              },
+              "1489": {
+                "id": 1489,
+                "tier": 2,
+                "order": 1,
+                "name": "Destruction of the Empowered",
+                "description": "Deal increased damage per boon on your target.",
+                "slot": "Major",
+                "facts": [{
+                  "text": "Damage Increase",
+                  "type": "Percent",
+                  "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                  "percent": 3
+                }],
+                "specialization": 51,
+                "icon": "https://render.guildwars2.com/file/663A52BDEEBF0AE40DC8995D0234EE196DFDECB5/1012802.png"
+              },
+              "1657": {
+                "id": 1657,
+                "tier": 3,
+                "order": 2,
+                "name": "Burst Mastery",
+                "description": "<c=@abilitytype>Burst</c> skills deal more damage, grant swiftness, and restore a portion of adrenaline spent.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Damage Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 7
+                  },
+                  {
+                    "text": "Adrenaline Restored",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                    "percent": 33
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/20CFC14967E67F7A3FD4A4B8722B4CF5B8565E11/102836.png",
+                    "duration": 3,
+                    "status": "Swiftness",
+                    "description": "Movement speed increased by 33%; stacks duration.",
+                    "apply_count": 1
+                  }
+                ],
+                "specialization": 51,
+                "icon": "https://render.guildwars2.com/file/4E393624960EF6AA7D5C9CF27902FAFC180B5DB5/1012805.png"
+              },
+              "1709": {
+                "id": 1709,
+                "tier": 2,
+                "order": 2,
+                "name": "Brawler's Recovery",
+                "description": "Remove conditions when you swap weapons.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 4
+                  },
+                  {
+                    "text": "Conditions Removed",
+                    "type": "Number",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                    "value": 1
+                  },
+                  {
+                    "text": "Combat Only",
+                    "type": "NoData",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+                  }
+                ],
+                "specialization": 51,
+                "icon": "https://render.guildwars2.com/file/751DB3B9700B6B14CAE9D2BE77D32795056DB665/1012803.png"
+              }
+            }
           }
         }
       ]

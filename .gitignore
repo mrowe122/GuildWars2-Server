@@ -5,3 +5,4 @@ userDb/
 firebase.json
 nginx.conf
 .env
+sandbox/

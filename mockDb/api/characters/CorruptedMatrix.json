@@ -51,7 +51,467 @@
               1790
             ],
             "icon": "https://render.guildwars2.com/file/70B5F7E02769762D5FEE056D0136093BF3F580FF/1029933.png",
-            "background": "https://render.guildwars2.com/file/E6100E7B7704EEC632AD5B399C3BE8A84D7F7CED/1012095.png"
+            "background": "https://render.guildwars2.com/file/E6100E7B7704EEC632AD5B399C3BE8A84D7F7CED/1012095.png",
+            "traitData": {
+              "1713": {
+                "id": 1713,
+                "tier": 3,
+                "order": 0,
+                "name": "Determined Resolution",
+                "description": "Take reduced damage while you have stability. Stability you apply lasts longer.",
+                "slot": "Minor",
+                "facts": [{
+                    "text": "Damage Reduced",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 15
+                  },
+                  {
+                    "text": "Duration Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+                    "percent": 33
+                  }
+                ],
+                "specialization": 9,
+                "icon": "https://render.guildwars2.com/file/F3DB5663A9C9C8630247D463050B05A12C69E542/1012699.png"
+              },
+              "1728": {
+                "id": 1728,
+                "tier": 1,
+                "order": 1,
+                "name": "Close Quarters",
+                "description": "Reduce damage dealt to you from foes beyond the range threshold.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Range Threshold",
+                    "type": "Number",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                    "value": 360
+                  },
+                  {
+                    "text": "Damage Reduced",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 10
+                  }
+                ],
+                "specialization": 9,
+                "icon": "https://render.guildwars2.com/file/4DD75C0C7D64F2A80F24955E0CAE031530554AF7/1012690.png"
+              },
+              "1740": {
+                "id": 1740,
+                "tier": 2,
+                "order": 2,
+                "name": "Dwarven Battle Training",
+                "description": "Chance on hit to apply weakness to your foe. Incoming weakness applied to you has decreased effectiveness.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 10
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/6CB0E64AF9AA292E332A38C1770CE577E2CDE0E8/102853.png",
+                    "duration": 4,
+                    "status": "Weakness",
+                    "description": "Endurance regeneration decreased by 50%. 50% of hits are Glancing Blows (50% damage). Stacks duration.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Chance on Hit",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                    "percent": 100
+                  },
+                  {
+                    "text": "Effectiveness Decreased",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                    "percent": 50
+                  }
+                ],
+                "specialization": 9,
+                "icon": "https://render.guildwars2.com/file/35F67F4090491139F8E7CBDF943596A2CB2CB90A/1012695.png"
+              },
+              "1757": {
+                "id": 1757,
+                "tier": 2,
+                "order": 0,
+                "name": "Unwavering Avoidance",
+                "description": "Gain stability when successfully evading an attack.",
+                "slot": "Minor",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 8
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/3D3A1C2D6D791C05179AB871902D28782C65C244/415959.png",
+                    "duration": 3,
+                    "status": "Stability",
+                    "description": "Cannot be knocked down, pushed back, pulled, launched, stunned, dazed, floated, sunk, feared, or taunted.",
+                    "apply_count": 1
+                  }
+                ],
+                "specialization": 9,
+                "icon": "https://render.guildwars2.com/file/F5F15B63330A9A3DC7581F23120472AB5C676839/1012701.png"
+              },
+              "1766": {
+                "id": 1766,
+                "tier": 2,
+                "order": 0,
+                "name": "Eye for an Eye",
+                "description": "Gain protection and taunt your foe when you are disabled.<br><c=@reminder>Disables include: stun, daze, knockback, pull, knockdown, sink, float, fear, launch, and taunt.</c>",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 45
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/02EED459AD65FAF7DF32A260E479C625070841B9/1228472.png",
+                    "duration": 3,
+                    "status": "Taunt",
+                    "description": "Involuntarily attack foes.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/CD77D1FAB7B270223538A8F8ECDA1CFB044D65F4/102834.png",
+                    "duration": 5,
+                    "status": "Protection",
+                    "description": "Incoming damage decreased by 33%; stacks duration.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Range Threshold",
+                    "type": "Number",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                    "value": 1500
+                  }
+                ],
+                "specialization": 9,
+                "icon": "https://render.guildwars2.com/file/CEBB22E824DE1A024A4DC8907C5C3D795E01AEDA/1012692.png"
+              },
+              "1770": {
+                "id": 1770,
+                "tier": 3,
+                "order": 1,
+                "name": "Versed in Stone",
+                "description": "Rite of the Great Dwarf affects condition damage as well. When struck below the health threshold, cast the Rite of the Great Dwarf. Gain power based on your toughness.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 45
+                  },
+                  {
+                    "text": "Health Threshold",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                    "percent": 50
+                  },
+                  {
+                    "text": "Condition Damage Reduced",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 50
+                  },
+                  {
+                    "text": "Attribute Conversion",
+                    "type": "BuffConversion",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                    "percent": 13,
+                    "source": "Toughness",
+                    "target": "Power"
+                  },
+                  {
+                    "text": "Attribute Conversion",
+                    "type": "BuffConversion",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                    "percent": 4,
+                    "source": "Toughness",
+                    "target": "Power"
+                  }
+                ],
+                "skills": [{
+                  "name": "Rite of the Great Dwarf",
+                  "facts": [{
+                      "text": "Recharge",
+                      "type": "Recharge",
+                      "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                      "value": 45
+                    },
+                    {
+                      "text": "StunBreak",
+                      "type": "StunBreak",
+                      "icon": "https://render.guildwars2.com/file/DCF0719729165FD8910E034CA4E0780F90582D15/156654.png",
+                      "value": true
+                    },
+                    {
+                      "text": "Apply Buff/Condition",
+                      "type": "Buff",
+                      "icon": "https://render.guildwars2.com/file/D8AEB219F1A057F3F4E47E5E54A12BBABFC8474F/961437.png",
+                      "duration": 5,
+                      "status": "Rite of the Great Dwarf",
+                      "description": "Gain 50% damage and condition damage reduction. You are still susceptible control effects.",
+                      "apply_count": 1
+                    },
+                    {
+                      "text": "Number of Targets",
+                      "type": "Number",
+                      "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+                      "value": 5
+                    },
+                    {
+                      "text": "Radius",
+                      "type": "Distance",
+                      "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                      "distance": 600
+                    }
+                  ],
+                  "description": "Legendary Dwarf. Channel the power of the Rite of the Great Dwarf to turn yourself and nearby allies to stone to reduce incoming damage.",
+                  "icon": "https://render.guildwars2.com/file/D8AEB219F1A057F3F4E47E5E54A12BBABFC8474F/961437.png",
+                  "flags": [],
+                  "id": 32588,
+                  "chat_link": "[&Bkx/AAA=]",
+                  "categories": [
+                    "LegendaryDwarf"
+                  ]
+                }],
+                "specialization": 9,
+                "icon": "https://render.guildwars2.com/file/07070DE858DC9D610B0F257F98A347CF2ED1D436/1012696.png"
+              },
+              "1779": {
+                "id": 1779,
+                "tier": 3,
+                "order": 0,
+                "name": "Vicious Reprisal",
+                "description": "While you have retaliation, deal increased damage and gain might when you strike foes.  Retaliation granted to you lasts longer.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 1
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+                    "duration": 8,
+                    "status": "Might",
+                    "description": "Increased outgoing damage; stacks intensity.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Duration Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+                    "percent": 50
+                  },
+                  {
+                    "text": "Damage Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 10
+                  }
+                ],
+                "specialization": 9,
+                "icon": "https://render.guildwars2.com/file/6BAF2CA6D13BABE948BC61BDA3704CD4B045D2C9/1012691.png"
+              },
+              "1782": {
+                "id": 1782,
+                "tier": 2,
+                "order": 1,
+                "name": "Retaliatory Evasion",
+                "description": "Gain retaliation after you dodge.",
+                "slot": "Major",
+                "facts": [{
+                  "text": "Apply Buff/Condition",
+                  "type": "Buff",
+                  "icon": "https://render.guildwars2.com/file/27F233F7D4CE4E9EFE040E3D665B7B0643557B6E/102883.png",
+                  "duration": 2,
+                  "status": "Retaliation",
+                  "description": "Reflect incoming damage back to its source; stacks duration.",
+                  "apply_count": 1
+                }],
+                "specialization": 9,
+                "icon": "https://render.guildwars2.com/file/CA9478C84998F038B949E4BAD01CEFB70811386E/1012697.png"
+              },
+              "1783": {
+                "id": 1783,
+                "tier": 1,
+                "order": 0,
+                "name": "Enduring Recovery",
+                "description": "Gain increased endurance recovery.",
+                "slot": "Minor",
+                "facts": [{
+                  "text": "Endurance Regeneration Increase",
+                  "type": "Percent",
+                  "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                  "percent": 25
+                }],
+                "specialization": 9,
+                "icon": "https://render.guildwars2.com/file/76F4DA7A601A64A30737DC4DBC4A0D2527226857/1012700.png"
+              },
+              "1790": {
+                "id": 1790,
+                "tier": 3,
+                "order": 2,
+                "name": "Steadfast Rejuvenation",
+                "description": "Chance when struck to heal yourself.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 4
+                  },
+                  {
+                    "text": "Trigger Chance",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                    "percent": 100
+                  },
+                  {
+                    "text": "Healing",
+                    "type": "AttributeAdjust",
+                    "icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png",
+                    "value": 485,
+                    "target": "Healing"
+                  }
+                ],
+                "specialization": 9,
+                "icon": "https://render.guildwars2.com/file/4CB0D2FC4C01EBA3D280FFA86C907AE92055AD9B/1012698.png"
+              },
+              "1810": {
+                "id": 1810,
+                "tier": 1,
+                "order": 2,
+                "name": "Improved Aggression",
+                "description": "Gain retaliation when you taunt a foe. Increase the duration of your taunts; foes you taunt deal less damage to you.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Damage Reduced",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 20
+                  },
+                  {
+                    "text": "Duration Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+                    "percent": 100
+                  },
+                  {
+                    "text": "Duration Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+                    "percent": 25
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/27F233F7D4CE4E9EFE040E3D665B7B0643557B6E/102883.png",
+                    "duration": 2,
+                    "status": "Retaliation",
+                    "description": "Reflect incoming damage back to its source; stacks duration.",
+                    "apply_count": 1
+                  }
+                ],
+                "specialization": 9,
+                "icon": "https://render.guildwars2.com/file/3CF2F8DD1BF2DE9E3B673C7A53F208630D6232E1/1012693.png"
+              },
+              "1811": {
+                "id": 1811,
+                "tier": 1,
+                "order": 0,
+                "name": "Planar Protection",
+                "description": "Cast Dome of the Mists when you take damage from falling or use a healing skill. Take less damage from falling.",
+                "slot": "Major",
+                "facts": [{
+                  "text": "Damage Reduced",
+                  "type": "Percent",
+                  "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                  "percent": 50
+                }],
+                "skills": [{
+                  "name": "Dome of the Mists",
+                  "facts": [{
+                      "text": "Recharge",
+                      "type": "Recharge",
+                      "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                      "value": 20
+                    },
+                    {
+                      "text": "Apply Buff/Condition",
+                      "type": "Buff",
+                      "icon": "https://render.guildwars2.com/file/6CB0E64AF9AA292E332A38C1770CE577E2CDE0E8/102853.png",
+                      "duration": 1,
+                      "status": "Weakness",
+                      "description": "Endurance regeneration decreased by 50%. 50% of hits are Glancing Blows (50% damage). Stacks duration.",
+                      "apply_count": 1
+                    },
+                    {
+                      "text": "Duration",
+                      "type": "Time",
+                      "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+                      "duration": 8
+                    },
+                    {
+                      "text": "Duration",
+                      "type": "Time",
+                      "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+                      "duration": 4
+                    },
+                    {
+                      "text": "Number of Targets",
+                      "type": "Number",
+                      "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+                      "value": 5
+                    },
+                    {
+                      "text": "Radius",
+                      "type": "Distance",
+                      "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                      "distance": 240
+                    },
+                    {
+                      "text": "Interval",
+                      "type": "Time",
+                      "icon": "https://render.guildwars2.com/file/B75E91EB22E0DFCC1D08030204055946506D56F6/1770206.png",
+                      "duration": 1
+                    },
+                    {
+                      "text": "Combo Field",
+                      "type": "ComboField",
+                      "icon": "https://render.guildwars2.com/file/59E0DB6A699810641C959926ADFEF73E08CC255B/156655.png",
+                      "field_type": "Dark"
+                    }
+                  ],
+                  "description": "Create an area that blocks projectiles and weakens foes.",
+                  "icon": "https://render.guildwars2.com/file/B744222B69B2E5A27F51C6D005DD4BA5AA17D374/961482.png",
+                  "flags": [],
+                  "id": 27198,
+                  "chat_link": "[&Bj5qAAA=]"
+                }],
+                "specialization": 9,
+                "icon": "https://render.guildwars2.com/file/6FCF4CED0607CA91AD1F2F03FCE118637BDDB5D8/1012694.png"
+              }
+            }
           }
         },
         {
@@ -83,7 +543,674 @@
               1719
             ],
             "icon": "https://render.guildwars2.com/file/2C4DCE5C0C255F32B51DCF9E4360106823EAF926/1012018.png",
-            "background": "https://render.guildwars2.com/file/B73FB47165CB20DE21B1FAE91FE22BDE29B6FB76/1012093.png"
+            "background": "https://render.guildwars2.com/file/B73FB47165CB20DE21B1FAE91FE22BDE29B6FB76/1012093.png",
+            "traitData": {
+              "1719": {
+                "id": 1719,
+                "tier": 3,
+                "order": 2,
+                "name": "Roiling Mists",
+                "description": "Critical-hit chance has increased effectiveness when you are under the effect of fury.",
+                "slot": "Major",
+                "facts": [{
+                  "text": "Effectiveness Increased",
+                  "type": "Percent",
+                  "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                  "percent": 100
+                }],
+                "specialization": 3,
+                "icon": "https://render.guildwars2.com/file/EAEF09AF62A04394DB04BD555D2FEAAEA9E608E5/1012685.png"
+              },
+              "1732": {
+                "id": 1732,
+                "tier": 1,
+                "order": 0,
+                "name": "Cleansing Channel",
+                "description": "Invoking a legend removes a condition.",
+                "slot": "Major",
+                "facts": [{
+                  "text": "Conditions Removed",
+                  "type": "Number",
+                  "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                  "value": 1
+                }],
+                "specialization": 3,
+                "icon": "https://render.guildwars2.com/file/E108DF48F2E31ABCBACBF99B1464303A1E32B3F9/1012679.png"
+              },
+              "1749": {
+                "id": 1749,
+                "tier": 3,
+                "order": 0,
+                "name": "Song of the Mists",
+                "description": "Invoking a legend casts a skill based on the legend you invoked.",
+                "slot": "Major",
+                "facts": [{
+                  "text": "Combat Only",
+                  "type": "NoData",
+                  "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+                }],
+                "skills": [{
+                    "name": "Call of the Assassin",
+                    "facts": [{
+                        "text": "Damage",
+                        "type": "Damage",
+                        "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                        "hit_count": 1,
+                        "dmg_multiplier": 0.93
+                      },
+                      {
+                        "text": "Damage",
+                        "type": "Damage",
+                        "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                        "hit_count": 1,
+                        "dmg_multiplier": 0.93
+                      },
+                      {
+                        "text": "Radius",
+                        "type": "Distance",
+                        "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                        "distance": 180
+                      },
+                      {
+                        "text": "Number of Targets",
+                        "type": "Number",
+                        "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+                        "value": 5
+                      },
+                      {
+                        "text": "Apply Buff/Condition",
+                        "type": "Buff",
+                        "icon": "https://render.guildwars2.com/file/D4AB6401A6D6917C3D4F230764452BCCE1035B0D/1012835.png",
+                        "duration": 1,
+                        "status": "Quickness",
+                        "description": "Skills and actions are faster.",
+                        "apply_count": 1
+                      },
+                      {
+                        "text": "Apply Buff/Condition",
+                        "type": "Buff",
+                        "icon": "https://render.guildwars2.com/file/3A394C1A0A3257EB27A44842DDEEF0DF000E1241/102850.png",
+                        "duration": 5,
+                        "status": "Vulnerability",
+                        "description": "Damage and condition damage taken are increased; stacks intensity.",
+                        "apply_count": 5
+                      }
+                    ],
+                    "description": "Strike enemies around you, inflicting vulnerability and gaining quickness for each foe you hit.",
+                    "icon": "https://render.guildwars2.com/file/67CDD35F6BC3072E0837715A5E0A90646529BAA2/1030005.png",
+                    "flags": [],
+                    "id": 46854,
+                    "chat_link": "[&Bga3AAA=]"
+                  },
+                  {
+                    "name": "Call of the Dwarf",
+                    "facts": [{
+                        "text": "Damage",
+                        "type": "Damage",
+                        "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                        "hit_count": 1,
+                        "dmg_multiplier": 0.5
+                      },
+                      {
+                        "text": "Radius",
+                        "type": "Distance",
+                        "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                        "distance": 180
+                      },
+                      {
+                        "text": "Number of Targets",
+                        "type": "Number",
+                        "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+                        "value": 5
+                      },
+                      {
+                        "text": "Barrier",
+                        "type": "AttributeAdjust",
+                        "icon": "https://render.guildwars2.com/file/357922487919E8E84B914EAC13D5796DDDC42D14/1770209.png",
+                        "value": 778,
+                        "target": "Healing"
+                      },
+                      {
+                        "text": "Apply Buff/Condition",
+                        "type": "Buff",
+                        "icon": "https://render.guildwars2.com/file/6CB0E64AF9AA292E332A38C1770CE577E2CDE0E8/102853.png",
+                        "duration": 5,
+                        "status": "Weakness",
+                        "description": "Endurance regeneration decreased by 50%. 50% of hits are Glancing Blows (50% damage). Stacks duration.",
+                        "apply_count": 1
+                      }
+                    ],
+                    "description": "Strike enemies around you, inflicting weakness and gaining barrier per target hit.",
+                    "icon": "https://render.guildwars2.com/file/03C66FA8A89697A0C4D309484172080E3A1141EF/961410.png",
+                    "flags": [],
+                    "id": 46843,
+                    "chat_link": "[&Bvu2AAA=]"
+                  },
+                  {
+                    "name": "Call of the Demon",
+                    "facts": [{
+                        "text": "Damage",
+                        "type": "Damage",
+                        "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                        "hit_count": 1,
+                        "dmg_multiplier": 0.9
+                      },
+                      {
+                        "text": "Radius",
+                        "type": "Distance",
+                        "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                        "distance": 180
+                      },
+                      {
+                        "text": "Number of Targets",
+                        "type": "Number",
+                        "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+                        "value": 5
+                      },
+                      {
+                        "text": "Apply Buff/Condition",
+                        "type": "Buff",
+                        "icon": "https://render.guildwars2.com/file/F60D1EF5271D7B9319610855676D320CD25F01C6/961397.png",
+                        "duration": 3,
+                        "status": "Slow",
+                        "description": "Skills and actions are slower.",
+                        "apply_count": 1
+                      },
+                      {
+                        "text": "Apply Buff/Condition",
+                        "type": "Buff",
+                        "icon": "https://render.guildwars2.com/file/10BABF2708CA3575730AC662A2E72EC292565B08/598887.png",
+                        "duration": 6,
+                        "status": "Torment",
+                        "description": "Deals damage every second. Deals additional damage to moving foes. Stacks intensity.",
+                        "apply_count": 2
+                      },
+                      {
+                        "text": "Apply Buff/Condition",
+                        "type": "Buff",
+                        "icon": "https://render.guildwars2.com/file/10BABF2708CA3575730AC662A2E72EC292565B08/598887.png",
+                        "duration": 6,
+                        "status": "Torment",
+                        "description": "Deals damage every second. Deals additional damage to moving foes. Stacks intensity.",
+                        "apply_count": 1
+                      }
+                    ],
+                    "description": "Strike enemies around you, inflicting conditions on struck foes.",
+                    "icon": "https://render.guildwars2.com/file/1A1407F7D34E5ED41B59A25F39EBF728CC926423/961413.png",
+                    "flags": [],
+                    "id": 46856,
+                    "chat_link": "[&Bgi3AAA=]"
+                  },
+                  {
+                    "name": "Call of the Centaur",
+                    "facts": [{
+                        "text": "Healing",
+                        "type": "AttributeAdjust",
+                        "icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png",
+                        "value": 1940,
+                        "target": "Healing"
+                      },
+                      {
+                        "text": "Radius",
+                        "type": "Distance",
+                        "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                        "distance": 180
+                      },
+                      {
+                        "text": "Number of Targets",
+                        "type": "Number",
+                        "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+                        "value": 5
+                      }
+                    ],
+                    "description": "Heal yourself and nearby allies.",
+                    "icon": "https://render.guildwars2.com/file/6CFF31B50AA00CAF3D35A02562964802B55AD292/1024105.png",
+                    "flags": [],
+                    "id": 46847,
+                    "chat_link": "[&Bv+2AAA=]"
+                  },
+                  {
+                    "name": "Call of the Dragon",
+                    "facts": [{
+                        "text": "Damage",
+                        "type": "Damage",
+                        "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                        "hit_count": 1,
+                        "dmg_multiplier": 0.525
+                      },
+                      {
+                        "text": "Damage",
+                        "type": "Damage",
+                        "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                        "hit_count": 1,
+                        "dmg_multiplier": 0.3
+                      },
+                      {
+                        "text": "Radius",
+                        "type": "Distance",
+                        "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                        "distance": 180
+                      },
+                      {
+                        "text": "Number of Targets",
+                        "type": "Number",
+                        "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+                        "value": 5
+                      },
+                      {
+                        "text": "Apply Buff/Condition",
+                        "type": "Buff",
+                        "icon": "https://render.guildwars2.com/file/B47BF5803FED2718D7474EAF9617629AD068EE10/102849.png",
+                        "duration": 3,
+                        "status": "Burning",
+                        "description": "Deals damage every second; stacks intensity.",
+                        "apply_count": 1
+                      },
+                      {
+                        "text": "Apply Buff/Condition",
+                        "type": "Buff",
+                        "icon": "https://render.guildwars2.com/file/28C4EC547A3516AF0242E826772DA43A5EAC3DF3/102839.png",
+                        "duration": 3,
+                        "status": "Chilled",
+                        "description": "Movement speed decreased by 66%; skill cooldown increased by 66%; stacks duration.",
+                        "apply_count": 1
+                      }
+                    ],
+                    "description": "Strike enemies around you, inflicting multiple conditions.",
+                    "icon": "https://render.guildwars2.com/file/27B5D1D4127A2EE73866E54F5A43E9102618B90B/1058605.png",
+                    "flags": [],
+                    "id": 46857,
+                    "chat_link": "[&Bgm3AAA=]"
+                  },
+                  {
+                    "name": "Call of the Renegade",
+                    "facts": [{
+                        "text": "Damage",
+                        "type": "Damage",
+                        "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                        "hit_count": 1,
+                        "dmg_multiplier": 0.5
+                      },
+                      {
+                        "text": "Radius",
+                        "type": "Distance",
+                        "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                        "distance": 180
+                      },
+                      {
+                        "text": "Number of Targets",
+                        "type": "Number",
+                        "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+                        "value": 5
+                      },
+                      {
+                        "text": "Apply Buff/Condition",
+                        "type": "Buff",
+                        "icon": "https://render.guildwars2.com/file/4DDE151C71EDB6120E3454036C4C3504EADB02D8/1770161.png",
+                        "duration": 8,
+                        "status": "Kalla's Fervor",
+                        "description": "Kalla's legend inspires you, increasing your critical strike and condition damage; stacks intensity.",
+                        "apply_count": 1
+                      },
+                      {
+                        "text": "Apply Buff/Condition",
+                        "type": "Buff",
+                        "icon": "https://render.guildwars2.com/file/79FF0046A5F9ADA3B4C4EC19ADB4CB124D5F0021/102848.png",
+                        "duration": 8,
+                        "status": "Bleeding",
+                        "description": "Deals damage every second; stacks intensity.",
+                        "apply_count": 2
+                      },
+                      {
+                        "text": "Apply Buff/Condition",
+                        "type": "Buff",
+                        "icon": "https://render.guildwars2.com/file/79FF0046A5F9ADA3B4C4EC19ADB4CB124D5F0021/102848.png",
+                        "duration": 5,
+                        "status": "Bleeding",
+                        "description": "Deals damage every second; stacks intensity.",
+                        "apply_count": 1
+                      }
+                    ],
+                    "description": "Strike enemies around you, inflicting bleeding and gaining Kalla's Fervor for each foe you hit.",
+                    "icon": "https://render.guildwars2.com/file/6B3205EF5ED0802DB74BBF7F0CAE04FAA2089B74/1770592.png",
+                    "flags": [],
+                    "id": 46849,
+                    "chat_link": "[&BgG3AAA=]",
+                    "traited_facts": [{
+                      "text": "Apply Buff/Condition",
+                      "type": "Buff",
+                      "icon": "https://render.guildwars2.com/file/4DDE151C71EDB6120E3454036C4C3504EADB02D8/1770161.png",
+                      "duration": 12,
+                      "status": "Improved Kalla's Fervor",
+                      "description": "Kalla's legend inspires you, increasing your critical strike damage and condition damage; stacks intensity.",
+                      "apply_count": 1,
+                      "requires_trait": 2100,
+                      "overrides": 3
+                    }]
+                  }
+                ],
+                "specialization": 3,
+                "icon": "https://render.guildwars2.com/file/B633049F7DD54DEBF9D83C0356E4BFB3360CD1D5/1012686.png"
+              },
+              "1758": {
+                "id": 1758,
+                "tier": 2,
+                "order": 0,
+                "name": "Ferocious Aggression",
+                "description": "Deal increased damage and condition damage to targets while you have fury.",
+                "slot": "Minor",
+                "facts": [{
+                  "text": "Damage Increase",
+                  "type": "Percent",
+                  "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                  "percent": 7
+                }],
+                "specialization": 3,
+                "icon": "https://render.guildwars2.com/file/566080076076F09618C36E16C0322F139EC44499/1012688.png"
+              },
+              "1760": {
+                "id": 1760,
+                "tier": 2,
+                "order": 1,
+                "name": "Rapid Flow",
+                "description": "Heal yourself and gain swiftness when you use a skill that has an energy cost.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 5
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/20CFC14967E67F7A3FD4A4B8722B4CF5B8565E11/102836.png",
+                    "duration": 5,
+                    "status": "Swiftness",
+                    "description": "Movement speed increased by 33%; stacks duration.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Healing",
+                    "type": "AttributeAdjust",
+                    "icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png",
+                    "value": 332,
+                    "target": "Healing"
+                  }
+                ],
+                "specialization": 3,
+                "icon": "https://render.guildwars2.com/file/ECF6AFAA0B2966663D21755110900ECCFC071208/1012684.png"
+              },
+              "1761": {
+                "id": 1761,
+                "tier": 1,
+                "order": 1,
+                "name": "Forceful Persistence",
+                "description": "Deal increased damage while you have an active upkeep skill.<br><c=@reminder>Herald upkeep skills grant less damage but can be stacked.</c>",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Damage Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 7
+                  },
+                  {
+                    "text": "Herald Skill Damage Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 2
+                  }
+                ],
+                "specialization": 3,
+                "icon": "https://render.guildwars2.com/file/A079965EF4C4DC29C0C1EA115E403FD0DE0A07F3/1012680.png"
+              },
+              "1769": {
+                "id": 1769,
+                "tier": 3,
+                "order": 0,
+                "name": "Empty Vessel",
+                "description": "Invoking a legend will now break stuns.",
+                "slot": "Minor",
+                "facts": [{
+                  "text": "Breaks Stun",
+                  "type": "NoData",
+                  "icon": "https://render.guildwars2.com/file/DCF0719729165FD8910E034CA4E0780F90582D15/156654.png"
+                }],
+                "specialization": 3,
+                "icon": "https://render.guildwars2.com/file/6DD65C66DD0E56A3150AC74D621DE90C260FA5B9/1012687.png"
+              },
+              "1774": {
+                "id": 1774,
+                "tier": 2,
+                "order": 0,
+                "name": "Spirit Boon",
+                "description": "Invoking a legend grants boons to nearby allies based on the legend that was invoked.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Apply Buff/Condition",
+                    "type": "PrefixedBuff",
+                    "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+                    "duration": 10,
+                    "status": "Might",
+                    "description": "Increased outgoing damage; stacks intensity.",
+                    "apply_count": 2,
+                    "prefix": {
+                      "text": "Apply Buff/Condition",
+                      "icon": "https://render.guildwars2.com/file/67CDD35F6BC3072E0837715A5E0A90646529BAA2/1030005.png",
+                      "status": "Legendary Assassin Stance",
+                      "description": "Currently invoking the power of Shiro Tagachi."
+                    }
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "PrefixedBuff",
+                    "icon": "https://render.guildwars2.com/file/50BAC1B8E10CFAB9E749A5D910D4A9DCF29EBB7C/961398.png",
+                    "duration": 2,
+                    "status": "Resistance",
+                    "description": "Conditions currently on you are ineffective; stacks duration.",
+                    "apply_count": 1,
+                    "prefix": {
+                      "text": "Apply Buff/Condition",
+                      "icon": "https://render.guildwars2.com/file/1A1407F7D34E5ED41B59A25F39EBF728CC926423/961413.png",
+                      "status": "Legendary Demon Stance",
+                      "description": "Invoke the power of the legendary demon Mallyx the Unyielding."
+                    }
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "PrefixedBuff",
+                    "icon": "https://render.guildwars2.com/file/3D3A1C2D6D791C05179AB871902D28782C65C244/415959.png",
+                    "duration": 3,
+                    "status": "Stability",
+                    "description": "Cannot be knocked down, pushed back, pulled, launched, stunned, dazed, floated, sunk, feared, or taunted.",
+                    "apply_count": 1,
+                    "prefix": {
+                      "text": "Apply Buff/Condition",
+                      "icon": "https://render.guildwars2.com/file/03C66FA8A89697A0C4D309484172080E3A1141EF/961410.png",
+                      "status": "Legendary Dwarf Stance",
+                      "description": "Currently invoking the power of King Jalis Ironhammer."
+                    }
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "PrefixedBuff",
+                    "icon": "https://render.guildwars2.com/file/F69996772B9E18FD18AD0AABAB25D7E3FC42F261/102835.png",
+                    "duration": 5,
+                    "status": "Regeneration",
+                    "description": "Gain health every second; stacks duration.",
+                    "apply_count": 1,
+                    "prefix": {
+                      "text": "Apply Buff/Condition",
+                      "icon": "https://render.guildwars2.com/file/0E091B41C047DD5A1BCA6B9193C73E6B29524C5D/1983636.png",
+                      "status": "Legendary Centaur Stance",
+                      "description": "Currently invoking the power of Ventari."
+                    }
+                  },
+                  {
+                    "text": "Radius",
+                    "type": "Distance",
+                    "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                    "distance": 240
+                  },
+                  {
+                    "text": "Number of Allied Targets",
+                    "type": "Number",
+                    "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+                    "value": 5
+                  },
+                  {
+                    "text": "Combat Only",
+                    "type": "NoData",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+                  }
+                ],
+                "traited_facts": [{
+                    "text": "Apply Buff/Condition",
+                    "type": "PrefixedBuff",
+                    "icon": "https://render.guildwars2.com/file/CD77D1FAB7B270223538A8F8ECDA1CFB044D65F4/102834.png",
+                    "duration": 3,
+                    "status": "Protection",
+                    "description": "Incoming damage decreased by 33%; stacks duration.",
+                    "apply_count": 1,
+                    "requires_trait": 1777,
+                    "prefix": {
+                      "text": "Apply Buff/Condition",
+                      "icon": "https://render.guildwars2.com/file/32F8A52E3D27E3B404976092AFD7585533B7E77E/1983635.png",
+                      "status": "Legendary Dragon Stance",
+                      "description": "Currently invoking the power of Glint."
+                    }
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "PrefixedBuff",
+                    "icon": "https://render.guildwars2.com/file/27F233F7D4CE4E9EFE040E3D665B7B0643557B6E/102883.png",
+                    "duration": 4,
+                    "status": "Retaliation",
+                    "description": "Reflect incoming damage back to its source; stacks duration.",
+                    "apply_count": 1,
+                    "requires_trait": 2181,
+                    "prefix": {
+                      "text": "Apply Buff/Condition",
+                      "icon": "https://render.guildwars2.com/file/6B3205EF5ED0802DB74BBF7F0CAE04FAA2089B74/1770592.png",
+                      "status": "Legendary Renegade Stance",
+                      "description": "Currently invoking the power of Kalla Scorchrazor."
+                    }
+                  }
+                ],
+                "specialization": 3,
+                "icon": "https://render.guildwars2.com/file/62279406A52F47A00CE7BFFB43D405907A67A60F/1012681.png"
+              },
+              "1778": {
+                "id": 1778,
+                "tier": 1,
+                "order": 0,
+                "name": "Invoker's Rage",
+                "description": "Gain fury when you invoke a legend.",
+                "slot": "Minor",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 10
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/96D90DF84CAFE008233DD1C2606A12C1A0E68048/102842.png",
+                    "duration": 5,
+                    "status": "Fury",
+                    "description": "Critical Chance increased by 20%; stacks duration.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Combat Only",
+                    "type": "NoData",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+                  }
+                ],
+                "specialization": 3,
+                "icon": "https://render.guildwars2.com/file/1C983FECB39112676C09A1F018B9DACC25060C2E/1012689.png"
+              },
+              "1781": {
+                "id": 1781,
+                "tier": 2,
+                "order": 2,
+                "name": "Incensed Response",
+                "description": "Gain might when you grant yourself fury.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+                    "duration": 8,
+                    "status": "Might",
+                    "description": "Increased outgoing damage; stacks intensity.",
+                    "apply_count": 5
+                  },
+                  {
+                    "text": "Combat Only",
+                    "type": "NoData",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+                  }
+                ],
+                "specialization": 3,
+                "icon": "https://render.guildwars2.com/file/06F6A0B293C09DA5225848647EAD0D2CBAE56E09/1012683.png"
+              },
+              "1784": {
+                "id": 1784,
+                "tier": 1,
+                "order": 2,
+                "name": "Fierce Infusion",
+                "description": "Using a healing skill grants you fury.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 10
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/96D90DF84CAFE008233DD1C2606A12C1A0E68048/102842.png",
+                    "duration": 5,
+                    "status": "Fury",
+                    "description": "Critical Chance increased by 20%; stacks duration.",
+                    "apply_count": 1
+                  }
+                ],
+                "specialization": 3,
+                "icon": "https://render.guildwars2.com/file/9B49A55EEF5A2B31C2C0DBE0C10E6FFF3F4E2E5D/1012682.png"
+              },
+              "1791": {
+                "id": 1791,
+                "tier": 3,
+                "order": 1,
+                "name": "Charged Mists",
+                "description": "Invoking a legend while at or below the energy threshold grants extra energy to your new legend.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Energy Gain",
+                    "type": "Number",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                    "value": 25
+                  },
+                  {
+                    "text": "Energy Threshold",
+                    "type": "Number",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                    "value": 10
+                  },
+                  {
+                    "text": "Combat Only",
+                    "type": "NoData",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+                  }
+                ],
+                "specialization": 3,
+                "icon": "https://render.guildwars2.com/file/4F1929DF784D227296A96E03B89154232D0B4856/1012678.png"
+              }
+            }
           }
         },
         {
@@ -115,7 +1242,383 @@
               1754
             ],
             "icon": "https://render.guildwars2.com/file/C95CAFC4DC0D2AF5DB0C66CB0E0B0FA699E45D6C/1029932.png",
-            "background": "https://render.guildwars2.com/file/0744C43591FB9C11A7554C9601215CA8022F4216/1012089.png"
+            "background": "https://render.guildwars2.com/file/0744C43591FB9C11A7554C9601215CA8022F4216/1012089.png",
+            "traitData": {
+              "1715": {
+                "id": 1715,
+                "tier": 3,
+                "order": 0,
+                "name": "Swift Termination",
+                "description": "Deal increased damage to foes below the health threshold.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Health Threshold",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                    "percent": 50
+                  },
+                  {
+                    "text": "Damage Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 20
+                  }
+                ],
+                "specialization": 15,
+                "icon": "https://render.guildwars2.com/file/B0A7D5466C0E20764CB5CA305BD21F35BEE96303/1029961.png"
+              },
+              "1724": {
+                "id": 1724,
+                "tier": 2,
+                "order": 0,
+                "name": "Targeted Destruction",
+                "description": "Deal increased damage to targets with vulnerability.",
+                "slot": "Minor",
+                "facts": [{
+                  "text": "Damage Increase",
+                  "type": "Percent",
+                  "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                  "percent": 7
+                }],
+                "specialization": 15,
+                "icon": "https://render.guildwars2.com/file/37B8029E4AFECE5A70A3D37DC763F61BCCCC1CA9/1029965.png"
+              },
+              "1754": {
+                "id": 1754,
+                "tier": 3,
+                "order": 2,
+                "name": "Assassin's Annihilation",
+                "description": "Siphon life from foes when hitting a foe from behind or the side.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 1
+                  },
+                  {
+                    "text": "Life Siphon Healing",
+                    "type": "AttributeAdjust",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "value": 306,
+                    "target": "Healing"
+                  },
+                  {
+                    "text": "Life Siphon Damage",
+                    "type": "AttributeAdjust",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "value": 189,
+                    "target": "Power"
+                  },
+                  {
+                    "text": "Life Siphon Damage",
+                    "type": "AttributeAdjust",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "value": 159,
+                    "target": "Power"
+                  }
+                ],
+                "specialization": 15,
+                "icon": "https://render.guildwars2.com/file/07CF4A35942A0719B407F439E273F303EB35F137/1029963.png"
+              },
+              "1755": {
+                "id": 1755,
+                "tier": 1,
+                "order": 2,
+                "name": "Jade Echo",
+                "description": "Use Lesser Jade Winds when you are downed. Deal increased damage while downed.",
+                "slot": "Major",
+                "facts": [{
+                  "text": "Damage Increase",
+                  "type": "Percent",
+                  "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                  "percent": 25
+                }],
+                "skills": [{
+                  "name": "Lesser Jade Winds",
+                  "facts": [{
+                      "text": "Recharge",
+                      "type": "Recharge",
+                      "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                      "value": 90
+                    },
+                    {
+                      "text": "Jade Duration",
+                      "type": "Time",
+                      "icon": "https://render.guildwars2.com/file/143F46DEF466062F01C52B69922FFCEF73DCA801/156668.png",
+                      "duration": 3
+                    },
+                    {
+                      "text": "Number of Targets",
+                      "type": "Number",
+                      "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+                      "value": 5
+                    },
+                    {
+                      "text": "Radius",
+                      "type": "Distance",
+                      "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                      "distance": 600
+                    }
+                  ],
+                  "description": "Legendary Assassin Call upon the Jade Wind to turn nearby enemies into jade, stunning them for a short duration.",
+                  "icon": "https://render.guildwars2.com/file/47B374CE3A2C520BD9F1A8EA16030FEB2E0B1602/961435.png",
+                  "flags": [],
+                  "id": 27741,
+                  "chat_link": "[&Bl1sAAA=]",
+                  "categories": [
+                    "LegendaryAssassin"
+                  ]
+                }],
+                "specialization": 15,
+                "icon": "https://render.guildwars2.com/file/1709E0C7035865DB0C785D169C78C40FC630F901/1029958.png"
+              },
+              "1765": {
+                "id": 1765,
+                "tier": 2,
+                "order": 1,
+                "name": "Nefarious Momentum",
+                "description": "Gain might when using a legendary stance skill; gain more when using a <c=@abilitytype>Legendary Assassin</c> skill.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+                    "duration": 10,
+                    "status": "Might",
+                    "description": "Increased outgoing damage; stacks intensity.",
+                    "apply_count": 3
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+                    "duration": 10,
+                    "status": "Might",
+                    "description": "Increased outgoing damage; stacks intensity.",
+                    "apply_count": 2
+                  },
+                  {
+                    "text": "Combat Only",
+                    "type": "NoData",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+                  }
+                ],
+                "specialization": 15,
+                "icon": "https://render.guildwars2.com/file/1A720EC19CEDF654EDECB4616512F6CDF6A4BF06/1029959.png"
+              },
+              "1767": {
+                "id": 1767,
+                "tier": 1,
+                "order": 1,
+                "name": "Vicious Lacerations",
+                "description": "When you attack while wielding a sword, gain a stack of vicious laceration. This can be stacked up to five times.",
+                "slot": "Major",
+                "facts": [{
+                  "text": "Apply Buff/Condition",
+                  "type": "Buff",
+                  "icon": "https://render.guildwars2.com/file/5896E49C6509BCADF1484C693ACBE2F82239AF40/1029956.png",
+                  "duration": 5,
+                  "status": "Vicious Lacerations",
+                  "description": "Increased damage per stack.",
+                  "apply_count": 1
+                }],
+                "specialization": 15,
+                "icon": "https://render.guildwars2.com/file/5896E49C6509BCADF1484C693ACBE2F82239AF40/1029956.png"
+              },
+              "1776": {
+                "id": 1776,
+                "tier": 1,
+                "order": 0,
+                "name": "Ferocious Strikes",
+                "description": "Gain increased ferocity while dual-wielding weapons.",
+                "slot": "Major",
+                "facts": [{
+                  "type": "AttributeAdjust",
+                  "icon": "https://render.guildwars2.com/file/E1E7C4D3A6E62F3D5C9F627CE8175BFB0C614CBE/156652.png",
+                  "value": 150,
+                  "target": "CritDamage"
+                }],
+                "specialization": 15,
+                "icon": "https://render.guildwars2.com/file/03AD0504E0FF280D58A3D4E4DD52DE9351C1E70C/1029960.png"
+              },
+              "1786": {
+                "id": 1786,
+                "tier": 2,
+                "order": 0,
+                "name": "Malicious Reprisal",
+                "description": "When you block or one of your attacks is blocked, your next attacks will be unblockable and deal increased damage.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 20
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/6C9F184D04E3590AC3F4061327BF0A68904D7DED/1013016.png",
+                    "duration": 5,
+                    "status": "Unblockable",
+                    "description": "Your attacks can't be blocked.",
+                    "apply_count": 2
+                  },
+                  {
+                    "text": "Damage Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 25
+                  },
+                  {
+                    "text": "Damage Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 10
+                  }
+                ],
+                "specialization": 15,
+                "icon": "https://render.guildwars2.com/file/94A5B4B3730E4DEB12C5710E7F302D63D9270347/1029957.png"
+              },
+              "1792": {
+                "id": 1792,
+                "tier": 3,
+                "order": 0,
+                "name": "Focused Siphoning",
+                "description": "When you strike foes that have vulnerability, siphon life from them.",
+                "slot": "Minor",
+                "facts": [{
+                    "text": "Life Siphon Healing",
+                    "type": "AttributeAdjust",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "value": 57,
+                    "target": "Healing"
+                  },
+                  {
+                    "text": "Life Siphon Damage",
+                    "type": "AttributeAdjust",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "value": 97,
+                    "target": "Power"
+                  },
+                  {
+                    "text": "Life Siphon Damage",
+                    "type": "AttributeAdjust",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "value": 56,
+                    "target": "Power"
+                  }
+                ],
+                "specialization": 15,
+                "icon": "https://render.guildwars2.com/file/8052FD58EAAA340A7B240FB0DAD8EB9BC391A1D0/1029966.png"
+              },
+              "1800": {
+                "id": 1800,
+                "tier": 3,
+                "order": 1,
+                "name": "Brutality",
+                "description": "Gain quickness when you swap weapons. While you have quickness, your strikes remove stability.<br><c=@reminder>This removal effect can only occur once per interval on each target.</c>",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 9
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/D4AB6401A6D6917C3D4F230764452BCCE1035B0D/1012835.png",
+                    "duration": 3,
+                    "status": "Quickness",
+                    "description": "Skills and actions are faster.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/3D3A1C2D6D791C05179AB871902D28782C65C244/415959.png",
+                    "status": "Stability",
+                    "description": "Cannot be knocked down, pushed back, pulled, launched, stunned, dazed, floated, sunk, feared, or taunted."
+                  },
+                  {
+                    "text": "Stacks Removed per Strike",
+                    "type": "Number",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                    "value": 1
+                  },
+                  {
+                    "text": "Combat Only",
+                    "type": "NoData",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+                  },
+                  {
+                    "text": "Interval",
+                    "type": "Time",
+                    "icon": "https://render.guildwars2.com/file/B75E91EB22E0DFCC1D08030204055946506D56F6/1770206.png",
+                    "duration": 1
+                  }
+                ],
+                "specialization": 15,
+                "icon": "https://render.guildwars2.com/file/B6A10BFFE10708A20EC6019F7607BF04A071770D/1029962.png"
+              },
+              "1802": {
+                "id": 1802,
+                "tier": 2,
+                "order": 2,
+                "name": "Assassin's Presence",
+                "description": "Increase the ferocity of nearby allies.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/54C625037513112F94A93C6F1553447504C5AF60/1029955.png",
+                    "duration": 9,
+                    "status": "Assassin's Presence",
+                    "description": "Increases ferocity of nearby allies.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Radius",
+                    "type": "Distance",
+                    "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                    "distance": 600
+                  },
+                  {
+                    "text": "Combat Only",
+                    "type": "NoData",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+                  },
+                  {
+                    "type": "AttributeAdjust",
+                    "icon": "https://render.guildwars2.com/file/E1E7C4D3A6E62F3D5C9F627CE8175BFB0C614CBE/156652.png",
+                    "value": 150,
+                    "target": "CritDamage"
+                  }
+                ],
+                "specialization": 15,
+                "icon": "https://render.guildwars2.com/file/54C625037513112F94A93C6F1553447504C5AF60/1029955.png"
+              },
+              "1808": {
+                "id": 1808,
+                "tier": 1,
+                "order": 0,
+                "name": "Expose Defenses",
+                "description": "Your first attack when entering combat applies vulnerability. This ability is refreshed when you use an elite skill.",
+                "slot": "Minor",
+                "facts": [{
+                  "text": "Apply Buff/Condition",
+                  "type": "Buff",
+                  "icon": "https://render.guildwars2.com/file/3A394C1A0A3257EB27A44842DDEEF0DF000E1241/102850.png",
+                  "duration": 5,
+                  "status": "Vulnerability",
+                  "description": "Damage and condition damage taken are increased; stacks intensity.",
+                  "apply_count": 5
+                }],
+                "specialization": 15,
+                "icon": "https://render.guildwars2.com/file/B8463001BF6D75546EBB63E094720AF1EEA12E44/1029964.png"
+              }
+            }
           }
         }
       ],
@@ -148,7 +1651,383 @@
               1754
             ],
             "icon": "https://render.guildwars2.com/file/C95CAFC4DC0D2AF5DB0C66CB0E0B0FA699E45D6C/1029932.png",
-            "background": "https://render.guildwars2.com/file/0744C43591FB9C11A7554C9601215CA8022F4216/1012089.png"
+            "background": "https://render.guildwars2.com/file/0744C43591FB9C11A7554C9601215CA8022F4216/1012089.png",
+            "traitData": {
+              "1715": {
+                "id": 1715,
+                "tier": 3,
+                "order": 0,
+                "name": "Swift Termination",
+                "description": "Deal increased damage to foes below the health threshold.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Health Threshold",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                    "percent": 50
+                  },
+                  {
+                    "text": "Damage Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 20
+                  }
+                ],
+                "specialization": 15,
+                "icon": "https://render.guildwars2.com/file/B0A7D5466C0E20764CB5CA305BD21F35BEE96303/1029961.png"
+              },
+              "1724": {
+                "id": 1724,
+                "tier": 2,
+                "order": 0,
+                "name": "Targeted Destruction",
+                "description": "Deal increased damage to targets with vulnerability.",
+                "slot": "Minor",
+                "facts": [{
+                  "text": "Damage Increase",
+                  "type": "Percent",
+                  "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                  "percent": 7
+                }],
+                "specialization": 15,
+                "icon": "https://render.guildwars2.com/file/37B8029E4AFECE5A70A3D37DC763F61BCCCC1CA9/1029965.png"
+              },
+              "1754": {
+                "id": 1754,
+                "tier": 3,
+                "order": 2,
+                "name": "Assassin's Annihilation",
+                "description": "Siphon life from foes when hitting a foe from behind or the side.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 1
+                  },
+                  {
+                    "text": "Life Siphon Healing",
+                    "type": "AttributeAdjust",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "value": 306,
+                    "target": "Healing"
+                  },
+                  {
+                    "text": "Life Siphon Damage",
+                    "type": "AttributeAdjust",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "value": 189,
+                    "target": "Power"
+                  },
+                  {
+                    "text": "Life Siphon Damage",
+                    "type": "AttributeAdjust",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "value": 159,
+                    "target": "Power"
+                  }
+                ],
+                "specialization": 15,
+                "icon": "https://render.guildwars2.com/file/07CF4A35942A0719B407F439E273F303EB35F137/1029963.png"
+              },
+              "1755": {
+                "id": 1755,
+                "tier": 1,
+                "order": 2,
+                "name": "Jade Echo",
+                "description": "Use Lesser Jade Winds when you are downed. Deal increased damage while downed.",
+                "slot": "Major",
+                "facts": [{
+                  "text": "Damage Increase",
+                  "type": "Percent",
+                  "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                  "percent": 25
+                }],
+                "skills": [{
+                  "name": "Lesser Jade Winds",
+                  "facts": [{
+                      "text": "Recharge",
+                      "type": "Recharge",
+                      "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                      "value": 90
+                    },
+                    {
+                      "text": "Jade Duration",
+                      "type": "Time",
+                      "icon": "https://render.guildwars2.com/file/143F46DEF466062F01C52B69922FFCEF73DCA801/156668.png",
+                      "duration": 3
+                    },
+                    {
+                      "text": "Number of Targets",
+                      "type": "Number",
+                      "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+                      "value": 5
+                    },
+                    {
+                      "text": "Radius",
+                      "type": "Distance",
+                      "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                      "distance": 600
+                    }
+                  ],
+                  "description": "Legendary Assassin Call upon the Jade Wind to turn nearby enemies into jade, stunning them for a short duration.",
+                  "icon": "https://render.guildwars2.com/file/47B374CE3A2C520BD9F1A8EA16030FEB2E0B1602/961435.png",
+                  "flags": [],
+                  "id": 27741,
+                  "chat_link": "[&Bl1sAAA=]",
+                  "categories": [
+                    "LegendaryAssassin"
+                  ]
+                }],
+                "specialization": 15,
+                "icon": "https://render.guildwars2.com/file/1709E0C7035865DB0C785D169C78C40FC630F901/1029958.png"
+              },
+              "1765": {
+                "id": 1765,
+                "tier": 2,
+                "order": 1,
+                "name": "Nefarious Momentum",
+                "description": "Gain might when using a legendary stance skill; gain more when using a <c=@abilitytype>Legendary Assassin</c> skill.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+                    "duration": 10,
+                    "status": "Might",
+                    "description": "Increased outgoing damage; stacks intensity.",
+                    "apply_count": 3
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+                    "duration": 10,
+                    "status": "Might",
+                    "description": "Increased outgoing damage; stacks intensity.",
+                    "apply_count": 2
+                  },
+                  {
+                    "text": "Combat Only",
+                    "type": "NoData",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+                  }
+                ],
+                "specialization": 15,
+                "icon": "https://render.guildwars2.com/file/1A720EC19CEDF654EDECB4616512F6CDF6A4BF06/1029959.png"
+              },
+              "1767": {
+                "id": 1767,
+                "tier": 1,
+                "order": 1,
+                "name": "Vicious Lacerations",
+                "description": "When you attack while wielding a sword, gain a stack of vicious laceration. This can be stacked up to five times.",
+                "slot": "Major",
+                "facts": [{
+                  "text": "Apply Buff/Condition",
+                  "type": "Buff",
+                  "icon": "https://render.guildwars2.com/file/5896E49C6509BCADF1484C693ACBE2F82239AF40/1029956.png",
+                  "duration": 5,
+                  "status": "Vicious Lacerations",
+                  "description": "Increased damage per stack.",
+                  "apply_count": 1
+                }],
+                "specialization": 15,
+                "icon": "https://render.guildwars2.com/file/5896E49C6509BCADF1484C693ACBE2F82239AF40/1029956.png"
+              },
+              "1776": {
+                "id": 1776,
+                "tier": 1,
+                "order": 0,
+                "name": "Ferocious Strikes",
+                "description": "Gain increased ferocity while dual-wielding weapons.",
+                "slot": "Major",
+                "facts": [{
+                  "type": "AttributeAdjust",
+                  "icon": "https://render.guildwars2.com/file/E1E7C4D3A6E62F3D5C9F627CE8175BFB0C614CBE/156652.png",
+                  "value": 150,
+                  "target": "CritDamage"
+                }],
+                "specialization": 15,
+                "icon": "https://render.guildwars2.com/file/03AD0504E0FF280D58A3D4E4DD52DE9351C1E70C/1029960.png"
+              },
+              "1786": {
+                "id": 1786,
+                "tier": 2,
+                "order": 0,
+                "name": "Malicious Reprisal",
+                "description": "When you block or one of your attacks is blocked, your next attacks will be unblockable and deal increased damage.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 20
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/6C9F184D04E3590AC3F4061327BF0A68904D7DED/1013016.png",
+                    "duration": 5,
+                    "status": "Unblockable",
+                    "description": "Your attacks can't be blocked.",
+                    "apply_count": 2
+                  },
+                  {
+                    "text": "Damage Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 25
+                  },
+                  {
+                    "text": "Damage Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 10
+                  }
+                ],
+                "specialization": 15,
+                "icon": "https://render.guildwars2.com/file/94A5B4B3730E4DEB12C5710E7F302D63D9270347/1029957.png"
+              },
+              "1792": {
+                "id": 1792,
+                "tier": 3,
+                "order": 0,
+                "name": "Focused Siphoning",
+                "description": "When you strike foes that have vulnerability, siphon life from them.",
+                "slot": "Minor",
+                "facts": [{
+                    "text": "Life Siphon Healing",
+                    "type": "AttributeAdjust",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "value": 57,
+                    "target": "Healing"
+                  },
+                  {
+                    "text": "Life Siphon Damage",
+                    "type": "AttributeAdjust",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "value": 97,
+                    "target": "Power"
+                  },
+                  {
+                    "text": "Life Siphon Damage",
+                    "type": "AttributeAdjust",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "value": 56,
+                    "target": "Power"
+                  }
+                ],
+                "specialization": 15,
+                "icon": "https://render.guildwars2.com/file/8052FD58EAAA340A7B240FB0DAD8EB9BC391A1D0/1029966.png"
+              },
+              "1800": {
+                "id": 1800,
+                "tier": 3,
+                "order": 1,
+                "name": "Brutality",
+                "description": "Gain quickness when you swap weapons. While you have quickness, your strikes remove stability.<br><c=@reminder>This removal effect can only occur once per interval on each target.</c>",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 9
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/D4AB6401A6D6917C3D4F230764452BCCE1035B0D/1012835.png",
+                    "duration": 3,
+                    "status": "Quickness",
+                    "description": "Skills and actions are faster.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/3D3A1C2D6D791C05179AB871902D28782C65C244/415959.png",
+                    "status": "Stability",
+                    "description": "Cannot be knocked down, pushed back, pulled, launched, stunned, dazed, floated, sunk, feared, or taunted."
+                  },
+                  {
+                    "text": "Stacks Removed per Strike",
+                    "type": "Number",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                    "value": 1
+                  },
+                  {
+                    "text": "Combat Only",
+                    "type": "NoData",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+                  },
+                  {
+                    "text": "Interval",
+                    "type": "Time",
+                    "icon": "https://render.guildwars2.com/file/B75E91EB22E0DFCC1D08030204055946506D56F6/1770206.png",
+                    "duration": 1
+                  }
+                ],
+                "specialization": 15,
+                "icon": "https://render.guildwars2.com/file/B6A10BFFE10708A20EC6019F7607BF04A071770D/1029962.png"
+              },
+              "1802": {
+                "id": 1802,
+                "tier": 2,
+                "order": 2,
+                "name": "Assassin's Presence",
+                "description": "Increase the ferocity of nearby allies.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/54C625037513112F94A93C6F1553447504C5AF60/1029955.png",
+                    "duration": 9,
+                    "status": "Assassin's Presence",
+                    "description": "Increases ferocity of nearby allies.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Radius",
+                    "type": "Distance",
+                    "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                    "distance": 600
+                  },
+                  {
+                    "text": "Combat Only",
+                    "type": "NoData",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+                  },
+                  {
+                    "type": "AttributeAdjust",
+                    "icon": "https://render.guildwars2.com/file/E1E7C4D3A6E62F3D5C9F627CE8175BFB0C614CBE/156652.png",
+                    "value": 150,
+                    "target": "CritDamage"
+                  }
+                ],
+                "specialization": 15,
+                "icon": "https://render.guildwars2.com/file/54C625037513112F94A93C6F1553447504C5AF60/1029955.png"
+              },
+              "1808": {
+                "id": 1808,
+                "tier": 1,
+                "order": 0,
+                "name": "Expose Defenses",
+                "description": "Your first attack when entering combat applies vulnerability. This ability is refreshed when you use an elite skill.",
+                "slot": "Minor",
+                "facts": [{
+                  "text": "Apply Buff/Condition",
+                  "type": "Buff",
+                  "icon": "https://render.guildwars2.com/file/3A394C1A0A3257EB27A44842DDEEF0DF000E1241/102850.png",
+                  "duration": 5,
+                  "status": "Vulnerability",
+                  "description": "Damage and condition damage taken are increased; stacks intensity.",
+                  "apply_count": 5
+                }],
+                "specialization": 15,
+                "icon": "https://render.guildwars2.com/file/B8463001BF6D75546EBB63E094720AF1EEA12E44/1029964.png"
+              }
+            }
           }
         },
         {
@@ -180,7 +2059,467 @@
               1790
             ],
             "icon": "https://render.guildwars2.com/file/70B5F7E02769762D5FEE056D0136093BF3F580FF/1029933.png",
-            "background": "https://render.guildwars2.com/file/E6100E7B7704EEC632AD5B399C3BE8A84D7F7CED/1012095.png"
+            "background": "https://render.guildwars2.com/file/E6100E7B7704EEC632AD5B399C3BE8A84D7F7CED/1012095.png",
+            "traitData": {
+              "1713": {
+                "id": 1713,
+                "tier": 3,
+                "order": 0,
+                "name": "Determined Resolution",
+                "description": "Take reduced damage while you have stability. Stability you apply lasts longer.",
+                "slot": "Minor",
+                "facts": [{
+                    "text": "Damage Reduced",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 15
+                  },
+                  {
+                    "text": "Duration Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+                    "percent": 33
+                  }
+                ],
+                "specialization": 9,
+                "icon": "https://render.guildwars2.com/file/F3DB5663A9C9C8630247D463050B05A12C69E542/1012699.png"
+              },
+              "1728": {
+                "id": 1728,
+                "tier": 1,
+                "order": 1,
+                "name": "Close Quarters",
+                "description": "Reduce damage dealt to you from foes beyond the range threshold.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Range Threshold",
+                    "type": "Number",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                    "value": 360
+                  },
+                  {
+                    "text": "Damage Reduced",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 10
+                  }
+                ],
+                "specialization": 9,
+                "icon": "https://render.guildwars2.com/file/4DD75C0C7D64F2A80F24955E0CAE031530554AF7/1012690.png"
+              },
+              "1740": {
+                "id": 1740,
+                "tier": 2,
+                "order": 2,
+                "name": "Dwarven Battle Training",
+                "description": "Chance on hit to apply weakness to your foe. Incoming weakness applied to you has decreased effectiveness.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 10
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/6CB0E64AF9AA292E332A38C1770CE577E2CDE0E8/102853.png",
+                    "duration": 4,
+                    "status": "Weakness",
+                    "description": "Endurance regeneration decreased by 50%. 50% of hits are Glancing Blows (50% damage). Stacks duration.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Chance on Hit",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                    "percent": 100
+                  },
+                  {
+                    "text": "Effectiveness Decreased",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                    "percent": 50
+                  }
+                ],
+                "specialization": 9,
+                "icon": "https://render.guildwars2.com/file/35F67F4090491139F8E7CBDF943596A2CB2CB90A/1012695.png"
+              },
+              "1757": {
+                "id": 1757,
+                "tier": 2,
+                "order": 0,
+                "name": "Unwavering Avoidance",
+                "description": "Gain stability when successfully evading an attack.",
+                "slot": "Minor",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 8
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/3D3A1C2D6D791C05179AB871902D28782C65C244/415959.png",
+                    "duration": 3,
+                    "status": "Stability",
+                    "description": "Cannot be knocked down, pushed back, pulled, launched, stunned, dazed, floated, sunk, feared, or taunted.",
+                    "apply_count": 1
+                  }
+                ],
+                "specialization": 9,
+                "icon": "https://render.guildwars2.com/file/F5F15B63330A9A3DC7581F23120472AB5C676839/1012701.png"
+              },
+              "1766": {
+                "id": 1766,
+                "tier": 2,
+                "order": 0,
+                "name": "Eye for an Eye",
+                "description": "Gain protection and taunt your foe when you are disabled.<br><c=@reminder>Disables include: stun, daze, knockback, pull, knockdown, sink, float, fear, launch, and taunt.</c>",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 45
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/02EED459AD65FAF7DF32A260E479C625070841B9/1228472.png",
+                    "duration": 3,
+                    "status": "Taunt",
+                    "description": "Involuntarily attack foes.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/CD77D1FAB7B270223538A8F8ECDA1CFB044D65F4/102834.png",
+                    "duration": 5,
+                    "status": "Protection",
+                    "description": "Incoming damage decreased by 33%; stacks duration.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Range Threshold",
+                    "type": "Number",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                    "value": 1500
+                  }
+                ],
+                "specialization": 9,
+                "icon": "https://render.guildwars2.com/file/CEBB22E824DE1A024A4DC8907C5C3D795E01AEDA/1012692.png"
+              },
+              "1770": {
+                "id": 1770,
+                "tier": 3,
+                "order": 1,
+                "name": "Versed in Stone",
+                "description": "Rite of the Great Dwarf affects condition damage as well. When struck below the health threshold, cast the Rite of the Great Dwarf. Gain power based on your toughness.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 45
+                  },
+                  {
+                    "text": "Health Threshold",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                    "percent": 50
+                  },
+                  {
+                    "text": "Condition Damage Reduced",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 50
+                  },
+                  {
+                    "text": "Attribute Conversion",
+                    "type": "BuffConversion",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                    "percent": 13,
+                    "source": "Toughness",
+                    "target": "Power"
+                  },
+                  {
+                    "text": "Attribute Conversion",
+                    "type": "BuffConversion",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                    "percent": 4,
+                    "source": "Toughness",
+                    "target": "Power"
+                  }
+                ],
+                "skills": [{
+                  "name": "Rite of the Great Dwarf",
+                  "facts": [{
+                      "text": "Recharge",
+                      "type": "Recharge",
+                      "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                      "value": 45
+                    },
+                    {
+                      "text": "StunBreak",
+                      "type": "StunBreak",
+                      "icon": "https://render.guildwars2.com/file/DCF0719729165FD8910E034CA4E0780F90582D15/156654.png",
+                      "value": true
+                    },
+                    {
+                      "text": "Apply Buff/Condition",
+                      "type": "Buff",
+                      "icon": "https://render.guildwars2.com/file/D8AEB219F1A057F3F4E47E5E54A12BBABFC8474F/961437.png",
+                      "duration": 5,
+                      "status": "Rite of the Great Dwarf",
+                      "description": "Gain 50% damage and condition damage reduction. You are still susceptible control effects.",
+                      "apply_count": 1
+                    },
+                    {
+                      "text": "Number of Targets",
+                      "type": "Number",
+                      "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+                      "value": 5
+                    },
+                    {
+                      "text": "Radius",
+                      "type": "Distance",
+                      "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                      "distance": 600
+                    }
+                  ],
+                  "description": "Legendary Dwarf. Channel the power of the Rite of the Great Dwarf to turn yourself and nearby allies to stone to reduce incoming damage.",
+                  "icon": "https://render.guildwars2.com/file/D8AEB219F1A057F3F4E47E5E54A12BBABFC8474F/961437.png",
+                  "flags": [],
+                  "id": 32588,
+                  "chat_link": "[&Bkx/AAA=]",
+                  "categories": [
+                    "LegendaryDwarf"
+                  ]
+                }],
+                "specialization": 9,
+                "icon": "https://render.guildwars2.com/file/07070DE858DC9D610B0F257F98A347CF2ED1D436/1012696.png"
+              },
+              "1779": {
+                "id": 1779,
+                "tier": 3,
+                "order": 0,
+                "name": "Vicious Reprisal",
+                "description": "While you have retaliation, deal increased damage and gain might when you strike foes.  Retaliation granted to you lasts longer.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 1
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+                    "duration": 8,
+                    "status": "Might",
+                    "description": "Increased outgoing damage; stacks intensity.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Duration Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+                    "percent": 50
+                  },
+                  {
+                    "text": "Damage Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 10
+                  }
+                ],
+                "specialization": 9,
+                "icon": "https://render.guildwars2.com/file/6BAF2CA6D13BABE948BC61BDA3704CD4B045D2C9/1012691.png"
+              },
+              "1782": {
+                "id": 1782,
+                "tier": 2,
+                "order": 1,
+                "name": "Retaliatory Evasion",
+                "description": "Gain retaliation after you dodge.",
+                "slot": "Major",
+                "facts": [{
+                  "text": "Apply Buff/Condition",
+                  "type": "Buff",
+                  "icon": "https://render.guildwars2.com/file/27F233F7D4CE4E9EFE040E3D665B7B0643557B6E/102883.png",
+                  "duration": 2,
+                  "status": "Retaliation",
+                  "description": "Reflect incoming damage back to its source; stacks duration.",
+                  "apply_count": 1
+                }],
+                "specialization": 9,
+                "icon": "https://render.guildwars2.com/file/CA9478C84998F038B949E4BAD01CEFB70811386E/1012697.png"
+              },
+              "1783": {
+                "id": 1783,
+                "tier": 1,
+                "order": 0,
+                "name": "Enduring Recovery",
+                "description": "Gain increased endurance recovery.",
+                "slot": "Minor",
+                "facts": [{
+                  "text": "Endurance Regeneration Increase",
+                  "type": "Percent",
+                  "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                  "percent": 25
+                }],
+                "specialization": 9,
+                "icon": "https://render.guildwars2.com/file/76F4DA7A601A64A30737DC4DBC4A0D2527226857/1012700.png"
+              },
+              "1790": {
+                "id": 1790,
+                "tier": 3,
+                "order": 2,
+                "name": "Steadfast Rejuvenation",
+                "description": "Chance when struck to heal yourself.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 4
+                  },
+                  {
+                    "text": "Trigger Chance",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                    "percent": 100
+                  },
+                  {
+                    "text": "Healing",
+                    "type": "AttributeAdjust",
+                    "icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png",
+                    "value": 485,
+                    "target": "Healing"
+                  }
+                ],
+                "specialization": 9,
+                "icon": "https://render.guildwars2.com/file/4CB0D2FC4C01EBA3D280FFA86C907AE92055AD9B/1012698.png"
+              },
+              "1810": {
+                "id": 1810,
+                "tier": 1,
+                "order": 2,
+                "name": "Improved Aggression",
+                "description": "Gain retaliation when you taunt a foe. Increase the duration of your taunts; foes you taunt deal less damage to you.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Damage Reduced",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 20
+                  },
+                  {
+                    "text": "Duration Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+                    "percent": 100
+                  },
+                  {
+                    "text": "Duration Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+                    "percent": 25
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/27F233F7D4CE4E9EFE040E3D665B7B0643557B6E/102883.png",
+                    "duration": 2,
+                    "status": "Retaliation",
+                    "description": "Reflect incoming damage back to its source; stacks duration.",
+                    "apply_count": 1
+                  }
+                ],
+                "specialization": 9,
+                "icon": "https://render.guildwars2.com/file/3CF2F8DD1BF2DE9E3B673C7A53F208630D6232E1/1012693.png"
+              },
+              "1811": {
+                "id": 1811,
+                "tier": 1,
+                "order": 0,
+                "name": "Planar Protection",
+                "description": "Cast Dome of the Mists when you take damage from falling or use a healing skill. Take less damage from falling.",
+                "slot": "Major",
+                "facts": [{
+                  "text": "Damage Reduced",
+                  "type": "Percent",
+                  "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                  "percent": 50
+                }],
+                "skills": [{
+                  "name": "Dome of the Mists",
+                  "facts": [{
+                      "text": "Recharge",
+                      "type": "Recharge",
+                      "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                      "value": 20
+                    },
+                    {
+                      "text": "Apply Buff/Condition",
+                      "type": "Buff",
+                      "icon": "https://render.guildwars2.com/file/6CB0E64AF9AA292E332A38C1770CE577E2CDE0E8/102853.png",
+                      "duration": 1,
+                      "status": "Weakness",
+                      "description": "Endurance regeneration decreased by 50%. 50% of hits are Glancing Blows (50% damage). Stacks duration.",
+                      "apply_count": 1
+                    },
+                    {
+                      "text": "Duration",
+                      "type": "Time",
+                      "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+                      "duration": 8
+                    },
+                    {
+                      "text": "Duration",
+                      "type": "Time",
+                      "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+                      "duration": 4
+                    },
+                    {
+                      "text": "Number of Targets",
+                      "type": "Number",
+                      "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+                      "value": 5
+                    },
+                    {
+                      "text": "Radius",
+                      "type": "Distance",
+                      "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                      "distance": 240
+                    },
+                    {
+                      "text": "Interval",
+                      "type": "Time",
+                      "icon": "https://render.guildwars2.com/file/B75E91EB22E0DFCC1D08030204055946506D56F6/1770206.png",
+                      "duration": 1
+                    },
+                    {
+                      "text": "Combo Field",
+                      "type": "ComboField",
+                      "icon": "https://render.guildwars2.com/file/59E0DB6A699810641C959926ADFEF73E08CC255B/156655.png",
+                      "field_type": "Dark"
+                    }
+                  ],
+                  "description": "Create an area that blocks projectiles and weakens foes.",
+                  "icon": "https://render.guildwars2.com/file/B744222B69B2E5A27F51C6D005DD4BA5AA17D374/961482.png",
+                  "flags": [],
+                  "id": 27198,
+                  "chat_link": "[&Bj5qAAA=]"
+                }],
+                "specialization": 9,
+                "icon": "https://render.guildwars2.com/file/6FCF4CED0607CA91AD1F2F03FCE118637BDDB5D8/1012694.png"
+              }
+            }
           }
         },
         {
@@ -215,7 +2554,467 @@
             "icon": "https://render.guildwars2.com/file/78496E9E95C46527F8E0B974530A07A017DC9B79/1058520.png",
             "background": "https://render.guildwars2.com/file/F2EEC706430942BEC2D51565AECC13135DF304F8/1012091.png",
             "profession_icon_big": "https://render.guildwars2.com/file/513E3D33671326D32ABD070575017451AA229A08/1128576.png",
-            "profession_icon": "https://render.guildwars2.com/file/0D29C2DC29FFD156082572B41310D00914029E6C/1128577.png"
+            "profession_icon": "https://render.guildwars2.com/file/0D29C2DC29FFD156082572B41310D00914029E6C/1128577.png",
+            "traitData": {
+              "1716": {
+                "id": 1716,
+                "tier": 1,
+                "order": 2,
+                "name": "Hardening Persistence",
+                "description": "Gain toughness for each point of upkeep you are currently using.",
+                "slot": "Major",
+                "facts": [{
+                  "text": "Apply Buff/Condition",
+                  "type": "Buff",
+                  "icon": "https://render.guildwars2.com/file/24682D5C432BB44FE807C5380DA4E8FAFC9FC678/1058537.png",
+                  "duration": 0,
+                  "status": "Hardening Persistence",
+                  "description": "Gain toughness for each point of upkeep you are currently using.",
+                  "apply_count": 1
+                }],
+                "specialization": 52,
+                "icon": "https://render.guildwars2.com/file/24682D5C432BB44FE807C5380DA4E8FAFC9FC678/1058537.png"
+              },
+              "1730": {
+                "id": 1730,
+                "tier": 2,
+                "order": 2,
+                "name": "Harmonize Continuity",
+                "description": "When you successfully stun break, you also stun break nearby allies.",
+                "slot": "Major",
+                "facts": [{
+                  "text": "Radius",
+                  "type": "Distance",
+                  "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                  "distance": 600
+                }],
+                "specialization": 52,
+                "icon": "https://render.guildwars2.com/file/62C2F3EAEF34D71657DB12D5ED6475992D6534F3/1058540.png"
+              },
+              "1737": {
+                "id": 1737,
+                "tier": 2,
+                "order": 0,
+                "name": "Vigorous Persistence",
+                "description": "Gain increased endurance regeneration while you have an active upkeep skill.",
+                "slot": "Minor",
+                "facts": [{
+                    "text": "Endurance Regeneration Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                    "percent": 25
+                  },
+                  {
+                    "text": "Combat Only",
+                    "type": "NoData",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+                  }
+                ],
+                "specialization": 52,
+                "icon": "https://render.guildwars2.com/file/9178A80B7BA73E1EAF47AE12462B5AE5B103E857/1058544.png"
+              },
+              "1738": {
+                "id": 1738,
+                "tier": 2,
+                "order": 0,
+                "name": "Bolster Fortifications",
+                "description": "Grant protection to nearby allies when using a healing skill. Deal increased damage while you have protection.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/CD77D1FAB7B270223538A8F8ECDA1CFB044D65F4/102834.png",
+                    "duration": 2,
+                    "status": "Protection",
+                    "description": "Incoming damage decreased by 33%; stacks duration.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Number of Targets",
+                    "type": "Number",
+                    "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+                    "value": 5
+                  },
+                  {
+                    "text": "Radius",
+                    "type": "Distance",
+                    "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                    "distance": 600
+                  },
+                  {
+                    "text": "Damage Increase",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+                    "percent": 5
+                  }
+                ],
+                "specialization": 52,
+                "icon": "https://render.guildwars2.com/file/9003FBF9A0ED253A97A5DD1599D74F9305135363/1058538.png"
+              },
+              "1743": {
+                "id": 1743,
+                "tier": 2,
+                "order": 1,
+                "name": "Shared Empowerment",
+                "description": "When you apply a boon to an ally, also apply might to nearby allies.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 1
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+                    "duration": 8,
+                    "status": "Might",
+                    "description": "Increased outgoing damage; stacks intensity.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Number of Targets",
+                    "type": "Number",
+                    "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+                    "value": 5
+                  },
+                  {
+                    "text": "Radius",
+                    "type": "Distance",
+                    "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                    "distance": 600
+                  }
+                ],
+                "specialization": 52,
+                "icon": "https://render.guildwars2.com/file/1F09ADF696D0DC9C900DB8040F98A0BD57D303CB/1058539.png"
+              },
+              "1746": {
+                "id": 1746,
+                "tier": 3,
+                "order": 0,
+                "name": "Elder's Force",
+                "description": "Increased damage per boon on you.",
+                "slot": "Major",
+                "facts": [{
+                  "text": "Bonus Damage per Boon",
+                  "type": "Percent",
+                  "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                  "percent": 2
+                }],
+                "specialization": 52,
+                "icon": "https://render.guildwars2.com/file/ED0E15AFDDD1F944A09A561B290A1BCB36F799E1/1058541.png"
+              },
+              "1772": {
+                "id": 1772,
+                "tier": 3,
+                "order": 1,
+                "name": "Soothing Bastion",
+                "description": "Activate Crystal Hibernation when struck while below the health threshold. Shield skills increase the duration of boons on nearby allies.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 25
+                  },
+                  {
+                    "text": "Health Threshold",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                    "percent": 25
+                  },
+                  {
+                    "text": "Duration Increase",
+                    "type": "Time",
+                    "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+                    "duration": 2
+                  },
+                  {
+                    "text": "Number of Targets",
+                    "type": "Number",
+                    "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+                    "value": 5
+                  },
+                  {
+                    "text": "Radius",
+                    "type": "Distance",
+                    "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                    "distance": 600
+                  }
+                ],
+                "skills": [{
+                  "name": "Crystal Hibernation",
+                  "facts": [{
+                      "text": "Recharge",
+                      "type": "Recharge",
+                      "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                      "value": 25
+                    },
+                    {
+                      "text": "Healing",
+                      "type": "AttributeAdjust",
+                      "icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png",
+                      "value": 620,
+                      "target": "Healing"
+                    },
+                    {
+                      "text": "Duration",
+                      "type": "Time",
+                      "icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+                      "duration": 3
+                    },
+                    {
+                      "text": "Pulses",
+                      "type": "Number",
+                      "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                      "value": 4
+                    }
+                  ],
+                  "description": "Channel a shield from the Mists to protect you, blocking attacks and regenerating health.",
+                  "icon": "https://render.guildwars2.com/file/642E5F995A02C7BAC7CEE5CFB964C06336B33BA1/102771.png",
+                  "flags": [],
+                  "id": 29152,
+                  "chat_link": "[&BuBxAAA=]"
+                }],
+                "specialization": 52,
+                "icon": "https://render.guildwars2.com/file/A626100680584B0F7E3DD5934B08D103C4943417/1058542.png"
+              },
+              "1777": {
+                "id": 1777,
+                "tier": 1,
+                "order": 0,
+                "name": "Crystal Harbinger",
+                "description": "You can now use <c=@abilitytype>Legendary Dragon</c> skills and gain access to Facet of Nature.",
+                "slot": "Minor",
+                "skills": [{
+                    "name": "Facet of Nature",
+                    "facts": [{
+                        "text": "Apply Buff/Condition",
+                        "type": "Buff",
+                        "icon": "https://render.guildwars2.com/file/590F7657AB11171A35304E5DDA6FDA5B2EC70350/1058606.png",
+                        "duration": 0,
+                        "status": "Facet of Nature",
+                        "description": "Pulse Naturalistic Resonance to nearby allies every few seconds.",
+                        "apply_count": 1
+                      },
+                      {
+                        "text": "Apply Buff/Condition",
+                        "type": "Buff",
+                        "icon": "https://render.guildwars2.com/file/590F7657AB11171A35304E5DDA6FDA5B2EC70350/1058606.png",
+                        "duration": 3,
+                        "status": "Naturalistic Resonance",
+                        "description": "Improve your concentration.",
+                        "apply_count": 1
+                      },
+                      {
+                        "text": "Interval",
+                        "type": "Time",
+                        "icon": "https://render.guildwars2.com/file/B75E91EB22E0DFCC1D08030204055946506D56F6/1770206.png",
+                        "duration": 3
+                      },
+                      {
+                        "text": "Number of Targets",
+                        "type": "Number",
+                        "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+                        "value": 5
+                      },
+                      {
+                        "text": "Radius",
+                        "type": "Distance",
+                        "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                        "distance": 600
+                      },
+                      {
+                        "text": "Concentration",
+                        "type": "AttributeAdjust",
+                        "icon": "https://render.guildwars2.com/file/E1E7C4D3A6E62F3D5C9F627CE8175BFB0C614CBE/156652.png",
+                        "value": 500,
+                        "target": "BoonDuration"
+                      }
+                    ],
+                    "description": "Legendary Dragon. Place the Facet of Nature on yourself to grant nearby allies Naturalistic Resonance every few seconds to increase outgoing boon duration.",
+                    "icon": "https://render.guildwars2.com/file/590F7657AB11171A35304E5DDA6FDA5B2EC70350/1058606.png",
+                    "flags": [],
+                    "id": 29371,
+                    "chat_link": "[&BrtyAAA=]",
+                    "categories": [
+                      "LegendaryDragon"
+                    ]
+                  },
+                  {
+                    "name": "One with Nature",
+                    "facts": [{
+                        "text": "Recharge",
+                        "type": "Recharge",
+                        "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                        "value": 25
+                      },
+                      {
+                        "text": "Apply Buff/Condition",
+                        "type": "Buff",
+                        "icon": "https://render.guildwars2.com/file/96D90DF84CAFE008233DD1C2606A12C1A0E68048/102842.png",
+                        "duration": 6,
+                        "status": "Fury",
+                        "description": "Critical Chance increased by 20%; stacks duration.",
+                        "apply_count": 1
+                      },
+                      {
+                        "text": "Apply Buff/Condition",
+                        "type": "Buff",
+                        "icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+                        "duration": 6,
+                        "status": "Might",
+                        "description": "Increased outgoing damage; stacks intensity.",
+                        "apply_count": 3
+                      },
+                      {
+                        "text": "Apply Buff/Condition",
+                        "type": "Buff",
+                        "icon": "https://render.guildwars2.com/file/F69996772B9E18FD18AD0AABAB25D7E3FC42F261/102835.png",
+                        "duration": 8,
+                        "status": "Regeneration",
+                        "description": "Gain health every second; stacks duration.",
+                        "apply_count": 1
+                      },
+                      {
+                        "text": "Apply Buff/Condition",
+                        "type": "Buff",
+                        "icon": "https://render.guildwars2.com/file/CD77D1FAB7B270223538A8F8ECDA1CFB044D65F4/102834.png",
+                        "duration": 4,
+                        "status": "Protection",
+                        "description": "Incoming damage decreased by 33%; stacks duration.",
+                        "apply_count": 1
+                      },
+                      {
+                        "text": "Apply Buff/Condition",
+                        "type": "Buff",
+                        "icon": "https://render.guildwars2.com/file/20CFC14967E67F7A3FD4A4B8722B4CF5B8565E11/102836.png",
+                        "duration": 8,
+                        "status": "Swiftness",
+                        "description": "Movement speed increased by 33%; stacks duration.",
+                        "apply_count": 1
+                      },
+                      {
+                        "text": "Number of Targets",
+                        "type": "Number",
+                        "icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+                        "value": 5
+                      },
+                      {
+                        "text": "Radius",
+                        "type": "Distance",
+                        "icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+                        "distance": 600
+                      }
+                    ],
+                    "description": "Legendary Dragon. Consume Facet of Nature to unify with the other facets, gaining the boons they apply. Facet of Nature will be disabled while this skill is recharging.",
+                    "icon": "https://render.guildwars2.com/file/B8D4BCE521B2ADED5E2F7CBC0A676C4262E9C714/1058607.png",
+                    "flags": [],
+                    "id": 29393,
+                    "chat_link": "[&BtFyAAA=]",
+                    "categories": [
+                      "LegendaryDragon"
+                    ]
+                  }
+                ],
+                "specialization": 52,
+                "icon": "https://render.guildwars2.com/file/717C45E150E866A74310E6E5A96FC83BD96C384A/1058543.png"
+              },
+              "1788": {
+                "id": 1788,
+                "tier": 3,
+                "order": 0,
+                "name": "Envoy of Sustenance",
+                "description": "Gain increased concentration.",
+                "slot": "Minor",
+                "facts": [{
+                  "type": "AttributeAdjust",
+                  "icon": "https://render.guildwars2.com/file/E1E7C4D3A6E62F3D5C9F627CE8175BFB0C614CBE/156652.png",
+                  "value": 240,
+                  "target": "BoonDuration"
+                }],
+                "specialization": 52,
+                "icon": "https://render.guildwars2.com/file/52070CB9BA3EDCCE2FF8AECBE769559FE2DE7619/1058545.png"
+              },
+              "1803": {
+                "id": 1803,
+                "tier": 3,
+                "order": 2,
+                "name": "Enhanced Bulwark",
+                "description": "When stability is applied to you, gain an extra stack.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 1
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/3D3A1C2D6D791C05179AB871902D28782C65C244/415959.png",
+                    "duration": 5,
+                    "status": "Stability",
+                    "description": "Cannot be knocked down, pushed back, pulled, launched, stunned, dazed, floated, sunk, feared, or taunted.",
+                    "apply_count": 1
+                  }
+                ],
+                "specialization": 52,
+                "icon": "https://render.guildwars2.com/file/717C45E150E866A74310E6E5A96FC83BD96C384A/1058543.png"
+              },
+              "1806": {
+                "id": 1806,
+                "tier": 1,
+                "order": 1,
+                "name": "Radiant Revival",
+                "description": "Gain infused light when you begin reviving a downed ally. You revive allies faster.",
+                "slot": "Major",
+                "facts": [{
+                    "text": "Recharge",
+                    "type": "Recharge",
+                    "icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+                    "value": 45
+                  },
+                  {
+                    "text": "Apply Buff/Condition",
+                    "type": "Buff",
+                    "icon": "https://render.guildwars2.com/file/051BD6BDCB2D451AB4E91F45F0DF339ACE12193E/1012990.png",
+                    "duration": 2,
+                    "status": "Infuse Light",
+                    "description": "Inverts all incoming damage to healing.",
+                    "apply_count": 1
+                  },
+                  {
+                    "text": "Increased Revive Speed",
+                    "type": "Percent",
+                    "icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+                    "percent": 10
+                  }
+                ],
+                "specialization": 52,
+                "icon": "https://render.guildwars2.com/file/F67AF8A1C7923504487AE5FB0F222DD213F99623/1058536.png"
+              },
+              "1813": {
+                "id": 1813,
+                "tier": 1,
+                "order": 0,
+                "name": "Swift Gale",
+                "description": "Gain superspeed when you successfully break a stun.",
+                "slot": "Major",
+                "facts": [{
+                  "text": "Apply Buff/Condition",
+                  "type": "Buff",
+                  "icon": "https://render.guildwars2.com/file/E04392C3D8ED985125973AEB99D8460C483263F9/103458.png",
+                  "duration": 3,
+                  "status": "Superspeed",
+                  "description": "Movement speed is greatly increased.",
+                  "apply_count": 1
+                }],
+                "specialization": 52,
+                "icon": "https://render.guildwars2.com/file/BADE3878F6F5EE4247D501CE5ACDFB7BC24BA1AE/1058535.png"
+              }
+            }
           }
         }
       ],

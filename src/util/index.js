@@ -4,7 +4,7 @@ export const parseData = data => ids => {
   return Promise.all([
     mergeEquipment(data.equipment, [ids[0].body, ids[1].body]),
     guildEmblem(ids[2].body),
-    mergeSpecialization(data.specializations, ids[3].body)
+    mergeSpecialization(data.specializations, ids[3])
   ]).then(parsedData => assignAll([data, ...parsedData]))
 }
 
