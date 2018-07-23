@@ -3,6 +3,7 @@ import bodyParser from 'body-parser'
 import * as admin from 'firebase-admin'
 import routes from './routes'
 import config from './config'
+
 const app = express()
 
 const start = () => {
