@@ -1,26 +1,31 @@
 import express from 'express'
-import unirest from 'unirest'
+import fetch from 'node-fetch'
 import config from '../../config'
-import { getCurrencies } from '../../lib'
 import { mergeIds } from './util'
+import { db } from '../../database'
 
 const router = express.Router()
+
+const checkErrors = response => {
+  if (!response.ok) {
+    throw response.status
+  }
+  return response.json()
+}
 
 router
   .get('/', request)
 
 function request (req, res) {
-  unirest.get(`${config.gwHost}/account/wallet`)
-    .headers({ Authorization: `Bearer ${req.apiKey}` })
-    .end(data => {
-      if (!data.ok) {
-        return res.status(403).send(data.body)
-      }
-      const ids = data.body.map(c => c.id)
-      getCurrencies(ids)
-        .then(ids => mergeIds(data.body, ids.body))
-        .then(merged => res.send({ body: merged, statusCode: data.statusCode }))
+  fetch(`${config.gwHost}/account/wallet`, { headers: { Authorization: `Bearer ${req.apiKey}` } })
+    .then(checkErrors)
+    .then(data => {
+      const ids = data.map(c => c.id)
+      db.currencies(ids)
+        .then(ids => mergeIds(data, ids))
+        .then(merged => res.send({ body: merged }))
     })
+    .catch(err => console.error(err))
 }
 
 export default router
