@@ -1,6 +1,9 @@
 import Datastore from 'nedb'
 import { difference, uniq, compact } from 'lodash/fp'
+import debug from 'debug'
 import { getItems, getSkins, getSpecializations, getCurrencies } from '../lib'
+
+const log = debug('Gw2:NeDB:')
 
 class Database {
   constructor () {
@@ -17,11 +20,12 @@ class Database {
   skins = ids => this.execute(this.db.skins, getSkins, ids)
   specializations = ids => this.execute(this.db.specializations, getSpecializations, ids)
 
-  execute = (db, func, queryIds) => new Promise((resolve, reject) => {
+  execute = (db, func, queryIds) => new Promise(resolve => {
     const uniqueIds = compact(uniq(queryIds))
     db.find({ id: { $in: uniqueIds } }, (err, dataDb) => {
       if (err) {
-        return reject(err)
+        log(err)
+        return resolve(dataDb)
       }
 
       if (uniqueIds.length === dataDb.length) {
@@ -29,14 +33,16 @@ class Database {
       }
 
       const diffIds = difference(uniqueIds)(dataDb.map(d => d.id))
+      log('fetching ids for', diffIds)
 
       func(diffIds).then(data => {
-        if (!data) {
+        if (data.status === 404) {
+          log(data)
           resolve(dataDb)
         } else {
           db.insert(data, err => {
             if (err) {
-              return reject(err)
+              return resolve(dataDb)
             }
             resolve(dataDb.concat(data))
           })

@@ -13,8 +13,8 @@
     "gw2_mock_server": "bin/gw2_mock_server"
   },
   "scripts": {
-    "start": "./node_modules/.bin/babel-watch src",
-    "mock": "./node_modules/.bin/babel-watch mockDb",
+    "start": "cross-env DEBUG=Gw2:* ./node_modules/.bin/babel-watch src",
+    "mock": "cross-env DEBUG=Gw2:* ./node_modules/.bin/babel-watch mockDb",
     "build": "./node_modules/.bin/npm-run-all clean --parallel build:server build:mockServer",
     "clean": "./node_modules/.bin/rimraf dist",
     "build:server": "./node_modules/.bin/webpack --config ./webpack/webpack.config.js",
@@ -23,8 +23,11 @@
   },
   "dependencies": {
     "body-parser": "^1.18.3",
+    "debug": "^3.1.0",
+    "dotenv": "^6.0.0",
     "express": "^4.16.3",
     "firebase-admin": "^5.12.1",
+    "json-server": "^0.14.0",
     "lodash": "^4.17.10",
     "nedb": "^1.8.0",
     "node-fetch": "^2.2.0"
@@ -38,7 +41,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-watch": "^2.0.7",
-    "dotenv": "^6.0.0",
+    "cross-env": "^5.2.0",
     "dotenv-webpack": "^1.5.7",
     "eslint": "^5.0.0",
     "eslint-config-standard": "^11.0.0",
@@ -46,7 +49,6 @@
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-node": "^7.0.1",
     "eslint-plugin-standard": "^3.1.0",
-    "json-server": "^0.14.0",
     "npm-run-all": "^4.1.3",
     "nsp": "^3.2.1",
     "path": "^0.12.7",
