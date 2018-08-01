@@ -1,12 +1,12 @@
 import { keyBy, assign, assignAll, flatMap, map, mapValues } from 'lodash/fp'
 
 export const parseData = data => ids => Promise.all([
-  mergeEquipment(data.equipment, [ids[0], ids[1]]),
+  mergeIds(data, [ids[0], ids[1]]),
   guildEmblem(ids[2]),
   mergeSpecialization(data.specializations, ids[3])
 ]).then(parsedData => assignAll([data, ...parsedData]))
 
-const mergeEquipment = (data, ids) => new Promise(resolve => {
+const mergeIds = (data, ids) => new Promise(resolve => {
   const _itemIdKey = keyBy('id')(ids[0])
   const _skinIdKey = keyBy('id')(ids[1])
   const _equipment = flatMap(({ infusions = [], upgrades = [], skin = null, ...e }) => assign(
@@ -16,8 +16,16 @@ const mergeEquipment = (data, ids) => new Promise(resolve => {
       upgrades: upgrades.map(u => _itemIdKey[u]),
       skin: _skinIdKey[skin]
     }
-  ))(data)
-  resolve({ equipment: keyBy('slot')(_equipment) })
+  ))(data.equipment)
+  const _inventory = flatMap(
+    ({ inventory = [], ...e }) => assign(
+      e, {
+        data: _itemIdKey[e.id],
+        inventory: inventory.map(i => i && assign(i, { data: _itemIdKey[i.id] }))
+      }
+    )
+  )(data.bags)
+  resolve({ equipment: keyBy('slot')(_equipment), bags: _inventory })
 })
 
 const guildEmblem = data => new Promise(resolve => resolve({ guild: data ? data : { name: 'Not in a Guild' } }))

@@ -19,6 +19,7 @@
     "clean": "./node_modules/.bin/rimraf dist",
     "build:server": "./node_modules/.bin/webpack --config ./webpack/webpack.config.js",
     "build:mockServer": "./node_modules/.bin/babel mockDb --out-dir dist/mock --copy-files",
+    "sandbox": "node_modules/.bin/nodemon sandbox/test.js",
     "security": "node_modules/.bin/nsp check"
   },
   "dependencies": {
@@ -26,7 +27,7 @@
     "debug": "^3.1.0",
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
-    "firebase-admin": "^5.12.1",
+    "firebase-admin": "^5.13.1",
     "json-server": "^0.14.0",
     "lodash": "^4.17.10",
     "nedb": "^1.8.0",
@@ -49,11 +50,12 @@
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-node": "^7.0.1",
     "eslint-plugin-standard": "^3.1.0",
+    "nodemon": "^1.18.3",
     "npm-run-all": "^4.1.3",
     "nsp": "^3.2.1",
     "path": "^0.12.7",
     "rimraf": "^2.6.2",
-    "webpack": "^4.15.1",
+    "webpack": "^4.16.3",
     "webpack-cli": "^3.0.8",
     "webpack-node-externals": "^1.7.2"
   }
