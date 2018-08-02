@@ -1,8 +1,10 @@
 import fetch from 'node-fetch'
 import * as admin from 'firebase-admin'
-import { assign, map, flatMap, get, concat, keyBy } from 'lodash/fp'
+import { assign, map, flatMap, get, concat, keyBy, chunk, flatten } from 'lodash/fp'
 import debug from 'debug'
 import config from '../config'
+
+const CHUNK_SIZE = 200
 
 const checkErrors = response => {
   if (!response.ok) {
@@ -17,17 +19,25 @@ const handleError = (resolve, log) => err => {
 }
 
 export const getItems = ids => new Promise(resolve => {
-  fetch(`${config.gwHost}/items?ids=${ids}`)
-    .then(checkErrors)
-    .then(resolve)
-    .catch(handleError(resolve, debug('Gw2:API-items:')))
+  if (ids.length > CHUNK_SIZE) {
+    Promise.all(chunk(CHUNK_SIZE)(ids).map(getItems)).then(d => resolve(flatten(d)))
+  } else {
+    fetch(`${config.gwHost}/items?ids=${ids}`)
+      .then(checkErrors)
+      .then(resolve)
+      .catch(handleError(resolve, debug('Gw2:API-items:')))
+  }
 })
 
 export const getSkins = ids => new Promise(resolve => {
-  fetch(`${config.gwHost}/skins?ids=${ids}`)
-    .then(checkErrors)
-    .then(resolve)
-    .catch(handleError(resolve, debug('Gw2:API-skins:')))
+  if (ids.length > CHUNK_SIZE) {
+    Promise.all(chunk(CHUNK_SIZE)(ids).map(getSkins)).then(d => resolve(flatten(d)))
+  } else {
+    fetch(`${config.gwHost}/skins?ids=${ids}`)
+      .then(checkErrors)
+      .then(resolve)
+      .catch(handleError(resolve, debug('Gw2:API-skins:')))
+  }
 })
 
 export const getGuild = guild => new Promise(resolve => {
