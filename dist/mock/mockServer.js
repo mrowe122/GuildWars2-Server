@@ -21,6 +21,9 @@ var start = function start() {
 	server.use('/api/account/wallet', function (req, res) {
 		return res.jsonp(db.wallet);
 	});
+	server.use('/api/account/skins', function (req, res) {
+		return res.jsonp(db.skins);
+	});
 
 	server.use(middlewares);
 	server.listen(PORT, function () {

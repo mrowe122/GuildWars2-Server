@@ -8,5 +8,6 @@ module.exports = {
   CorruptedMatrix: require('./api/characters/CorruptedMatrix.json'),
   CorruptedNova: require('./api/characters/CorruptedNova.json'),
   NovaCrowe: require('./api/characters/NovaCrowe.json'),
-  wallet: require('./api/account/wallet.json')
+  wallet: require('./api/account/wallet.json'),
+  skins: require('./api/account/skins.json')
 };
