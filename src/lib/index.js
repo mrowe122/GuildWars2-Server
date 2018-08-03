@@ -47,7 +47,29 @@ export const getDyes = ids => new Promise(resolve => {
     fetch(`${config.gwHost}/colors?ids=${ids}`)
       .then(checkErrors)
       .then(resolve)
-      .catch(handleError(resolve, debug('Gw2:API-skins:')))
+      .catch(handleError(resolve, debug('Gw2:API-dyes:')))
+  }
+})
+
+export const getTitles = ids => new Promise(resolve => {
+  if (ids.length > CHUNK_SIZE) {
+    Promise.all(chunk(CHUNK_SIZE)(ids).map(getTitles)).then(d => resolve(flatten(d)))
+  } else {
+    fetch(`${config.gwHost}/titles?ids=${ids}`)
+      .then(checkErrors)
+      .then(resolve)
+      .catch(handleError(resolve, debug('Gw2:API-titles:')))
+  }
+})
+
+export const getAchievements = ids => new Promise(resolve => {
+  if (ids.length > CHUNK_SIZE) {
+    Promise.all(chunk(CHUNK_SIZE)(ids).map(getSkins)).then(d => resolve(flatten(d)))
+  } else {
+    fetch(`${config.gwHost}/achievements?ids=${ids}`)
+      .then(checkErrors)
+      .then(resolve)
+      .catch(handleError(resolve, debug('Gw2:API-achievements:')))
   }
 })
 

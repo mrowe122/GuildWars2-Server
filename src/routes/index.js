@@ -5,6 +5,7 @@ import permissions from './permissions'
 import wallet from './wallet'
 import skins from './skins'
 import dyes from './dyes'
+import titles from './titles'
 import { checkToken, getApiKey } from '../lib'
 
 const router = express.Router()
@@ -27,5 +28,6 @@ router
   .use('/account/wallet', wallet)
   .use('/account/skins', skins)
   .use('/account/dyes', dyes)
+  .use('/account/titles', titles)
 
 export default router
