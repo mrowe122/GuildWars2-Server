@@ -44,7 +44,13 @@ class Database {
       func(diffIds).then(data => {
         if (data.status === 404) {
           log(data)
-          resolve(dataDb)
+          const blackList = diffIds.map(i => ({ id: i, blacklist: true }))
+          db.insert(blackList, err => {
+            if (err) {
+              return resolve(dataDb)
+            }
+            resolve(dataDb)
+          })
         } else {
           db.insert(data, err => {
             if (err) {
