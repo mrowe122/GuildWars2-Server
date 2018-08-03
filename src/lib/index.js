@@ -40,6 +40,17 @@ export const getSkins = ids => new Promise(resolve => {
   }
 })
 
+export const getDyes = ids => new Promise(resolve => {
+  if (ids.length > CHUNK_SIZE) {
+    Promise.all(chunk(CHUNK_SIZE)(ids).map(getDyes)).then(d => resolve(flatten(d)))
+  } else {
+    fetch(`${config.gwHost}/colors?ids=${ids}`)
+      .then(checkErrors)
+      .then(resolve)
+      .catch(handleError(resolve, debug('Gw2:API-skins:')))
+  }
+})
+
 export const getGuild = guild => new Promise(resolve => {
   if (guild) {
     fetch(`${config.gwHost}/guild/${guild}`)

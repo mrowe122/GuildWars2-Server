@@ -14,6 +14,7 @@ const start = () => {
 	server.use('/api/permissions', (req, res) => res.jsonp(db.permissions))
 	server.use('/api/account/wallet', (req, res) => res.jsonp(db.wallet))
 	server.use('/api/account/skins', (req, res) => res.jsonp(db.skins))
+	server.use('/api/account/dyes', (req, res) => res.jsonp(db.dyes))
 
 	server.use(middlewares)
 	server.listen(PORT, () => {
