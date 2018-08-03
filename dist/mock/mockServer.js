@@ -27,6 +27,9 @@ var start = function start() {
 	server.use('/api/account/dyes', function (req, res) {
 		return res.jsonp(db.dyes);
 	});
+	server.use('/api/account/titles', function (req, res) {
+		return res.jsonp(db.titles);
+	});
 
 	server.use(middlewares);
 	server.listen(PORT, function () {

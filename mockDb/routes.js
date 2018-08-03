@@ -8,5 +8,6 @@ module.exports = {
   NovaCrowe: require('./api/characters/NovaCrowe.json'),
   wallet: require('./api/account/wallet.json'),
   skins: require('./api/account/skins.json'),
-  dyes: require('./api/account/dyes.json')
+  dyes: require('./api/account/dyes.json'),
+  titles: require('./api/account/titles.json')
 }
