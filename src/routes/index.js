@@ -1,16 +1,16 @@
-import express from 'express'
-import character from './characters'
-import tokeninfo from './tokeninfo'
-import permissions from './permissions'
-import wallet from './wallet'
-import skins from './skins'
-import dyes from './dyes'
-import titles from './titles'
-import { checkToken, getApiKey } from '../lib'
+const express = require('express')
+const character = require('./characters')
+const tokeninfo = require('./tokeninfo')
+const permissions = require('./permissions')
+const wallet = require('./wallet')
+const skins = require('./skins')
+const dyes = require('./dyes')
+const titles = require('./titles')
+const { checkToken, getApiKey } = require('../lib')
 
 const router = express.Router()
 
-const enableCors = (req, res, next) => {
+const enableCors = function(req, res, next) {
   res.set('Cache-Control', 'no-store, must-revalidate, no-cache')
   res.set('Pragma', 'no-cache')
   res.set('Access-Control-Allow-Origin', '*')
@@ -30,4 +30,4 @@ router
   .use('/account/dyes', dyes)
   .use('/account/titles', titles)
 
-export default router
+module.exports = router

@@ -1,7 +1,7 @@
-import dotenv from 'dotenv'
+const dotenv = require('dotenv')
 dotenv.config()
 
-export default {
+module.exports = {
   port: 9001,
   gwHost: 'https://api.guildwars2.com/v2',
   firebaseCredentials: {

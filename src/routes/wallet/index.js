@@ -1,8 +1,8 @@
-import express from 'express'
-import fetch from 'node-fetch'
-import config from '../../config'
-import { mergeIds } from './util'
-import { db } from '../../database'
+const express = require('express')
+const fetch = require('node-fetch')
+const config = require('../../config')
+const { mergeIds } = require('./util')
+const db = require('../../database')
 
 const router = express.Router()
 
@@ -28,4 +28,4 @@ function request (req, res) {
     .catch(err => console.error(err))
 }
 
-export default router
+module.exports = router

@@ -4,15 +4,15 @@ const path = require('../paths')
 
 module.exports = {
   mode: 'production',
-  context: path.src,
+  context: path.mock,
   entry: ['./index'],
   output: {
     path: path.dist,
-    filename: 'main.js'
+    filename: 'mock.js'
   },
   resolve: {
     modules: [
-      path.src,
+      path.mock,
       'node_modules'
     ],
     extensions: ['*', '.js', '.json'],

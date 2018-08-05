@@ -1,11 +1,11 @@
-import express from 'express'
-import fetch from 'node-fetch'
-import * as admin from 'firebase-admin'
-import config from '../../config'
+const express = require('express')
+const fetch = require('node-fetch')
+const admin = require('firebase-admin')
+const config = require('../../config')
 
 const router = express.Router()
 
-const checkErrors = response => {
+function checkErrors(response) {
   if (!response.ok) {
     throw response.status
   }
@@ -31,4 +31,4 @@ function addToken (req, res) {
     .catch(err => console.error(err))
 }
 
-export default router
+module.exports = router

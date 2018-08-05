@@ -1,6 +1,6 @@
-import { keyBy, assign, assignAll, flatMap, map, mapValues } from 'lodash/fp'
+const { keyBy, assign, assignAll, flatMap, map, mapValues } = require('lodash/fp')
 
-export const parseData = data => ids => Promise.all([
+const parseData = data => ids => Promise.all([
   mergeIds(data, [ids[0], ids[1]]),
   guildEmblem(ids[2]),
   mergeSpecialization(data.specializations, ids[3])
@@ -35,3 +35,7 @@ const mergeSpecialization = (data, ids) => new Promise(resolve => {
   const _specialization = mapValues(map(s => s ? assign(s, { data: _itemIdKey[s.id] }) : null))(data)
   resolve({ specializations: _specialization })
 })
+
+module.exports = {
+  parseData
+}

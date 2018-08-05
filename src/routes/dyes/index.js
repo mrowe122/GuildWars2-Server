@@ -1,8 +1,8 @@
-import express from 'express'
-import fetch from 'node-fetch'
-import { keyBy, map, assign } from 'lodash/fp'
-import config from '../../config'
-import { db } from '../../database'
+const express = require('express')
+const fetch = require('node-fetch')
+const { keyBy, map, assign } = require('lodash/fp')
+const config = require('../../config')
+const db = require('../../database')
 
 const router = express.Router()
 
@@ -13,7 +13,7 @@ const checkErrors = response => {
   return response.json()
 }
 
-export const mergeIds = (data, ids) => new Promise(resolve => {
+const mergeIds = (data, ids) => new Promise(resolve => {
   const _itemIds = keyBy('id')(ids)
   const merged = map(c => assign(c, { data: _itemIds[c.item] }))(data)
   resolve(merged)
@@ -33,4 +33,4 @@ function request (req, res) {
     .catch(err => console.error(err))
 }
 
-export default router
+module.exports = router

@@ -1,9 +1,9 @@
-import express from 'express'
-import fetch from 'node-fetch'
-import { flatMap } from 'lodash/fp'
-import config from '../../config'
-import { db } from '../../database'
-import { mergeIds } from './util'
+const express = require('express')
+const fetch = require('node-fetch')
+const { flatMap } = require('lodash/fp')
+const config = require('../../config')
+const db = require('../../database')
+const { mergeIds } = require('./util')
 
 const router = express.Router()
 
@@ -28,4 +28,4 @@ function request (req, res) {
     .catch(err => console.error(err))
 }
 
-export default router
+module.exports = router

@@ -1,10 +1,10 @@
-import express from 'express'
-import fetch from 'node-fetch'
-import { map, flatMap, get } from 'lodash/fp'
-import config from '../../config'
-import { getGuild } from '../../lib'
-import { parseData } from './util'
-import { db } from '../../database'
+const express = require('express')
+const fetch = require('node-fetch')
+const { map, flatMap, get } = require('lodash/fp')
+const config = require('../../config')
+const { getGuild } = require('../../lib')
+const { parseData } = require('./util')
+const db = require('../../database')
 const router = express.Router()
 
 const checkErrors = response => {
@@ -51,4 +51,4 @@ function requestCharacter (req, res) {
     })
 }
 
-export default router
+module.exports = router

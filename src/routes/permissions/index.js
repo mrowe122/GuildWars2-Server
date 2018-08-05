@@ -1,5 +1,5 @@
-import express from 'express'
-import * as admin from 'firebase-admin'
+const express = require('express')
+const admin = require('firebase-admin')
 
 const router = express.Router()
 
@@ -12,4 +12,4 @@ function getPermissions (req, res) {
   })
 }
 
-export default router
+module.exports = router

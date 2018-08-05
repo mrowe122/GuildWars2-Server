@@ -1,9 +1,5 @@
 {
-  "parser": "babel-eslint",
   "extends": "eslint:recommended",
-  "plugins": [
-    "babel"
-  ],
   "env": {
     "browser" : true,
     "es6": true,
