@@ -1,14 +1,12 @@
-{
-	"body": [
-    "tradingpost",
-    "characters",
-    "pvp",
-    "progression",
-    "wallet",
-    "guilds",
-    "builds",
-    "account",
-    "inventories",
-    "unlocks"
-  ]
-}
+[
+  "tradingpost",
+  "characters",
+  "pvp",
+  "progression",
+  "wallet",
+  "guilds",
+  "builds",
+  "account",
+  "inventories",
+  "unlocks"
+]

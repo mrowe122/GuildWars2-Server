@@ -1,0 +1,15 @@
+{
+  "apiKey": "AAAAAAAA-BBBB-CCCC-DDDDD-EEEEEEEEEEEEEEEEEEEEE-FFFF-GGGGG-HHHHH-IIIIIIIIIIIII",
+  "permissions": [
+    "tradingpost",
+    "characters",
+    "pvp",
+    "progression",
+    "wallet",
+    "guilds",
+    "builds",
+    "account",
+    "inventories",
+    "unlocks"
+  ]
+}

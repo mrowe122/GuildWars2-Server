@@ -1,9 +1,10 @@
-import express from 'express'
-import unirest from 'unirest'
-import { map, flatMap, get } from 'lodash/fp'
-import config from '../../config'
-import { getItems, getSkins, getGuild, getSpecializations } from '../../lib'
-import { parseData } from '../../util'
+const express = require('express')
+const fetch = require('node-fetch')
+const { map, flatMap, get } = require('lodash/fp')
+const config = require('../../config')
+const { getGuild, checkErrors } = require('../../lib')
+const { parseData } = require('./util')
+const db = require('../../database')
 
 const router = express.Router()
 
@@ -12,34 +13,30 @@ router
   .get('/:id', requestCharacter)
 
 function requestAllCharacters (req, res) {
-  unirest.get(`${config.gwHost}/characters`)
-  .headers({ Authorization: `Bearer ${req.apiKey}` })
-  .end(data => {
-    if (data.ok) {
-      return res.send({ body: data.body, statusCode: data.statusCode })
-    } else {
-      return res.status(data.statusCode).send(data.body)
-    }
-  })
+  fetch(`${config.gwHost}/characters`, { headers: { Authorization: `Bearer ${req.apiKey}` } })
+    .then(checkErrors('characters'))
+    .then(data => res.send(data))
+    .catch(status => res.sendStatus(status))
 }
 
 function requestCharacter (req, res) {
-  unirest.get(`${config.gwHost}/characters${req.url}`)
-    .headers({ Authorization: `Bearer ${req.apiKey}` })
-    .end(data => {
-      if (!data.ok) {
-        return res.status(data.statusCode).send(data.body)
-      }
+  fetch(`${config.gwHost}/characters${req.url}`, { headers: { Authorization: `Bearer ${req.apiKey}` } })
+    .then(checkErrors('character'))
+    .then(data => {
       const itemsId = flatMap(
         ({ id, infusions = [] , upgrades = [] }) => [id, ...infusions, ...upgrades]
-      )(data.body.equipment)
-      const skinIds = map(get('skin'))(data.body.equipment)
-      const specializationIds = flatMap(map(get('id')))(data.body.specializations)
+      )(data.equipment)
+      const bagsId = flatMap(
+        ({ id, inventory }) => [id, ...inventory.map(i => i && i.id)]
+      )(data.bags)
+      const skinIds = map(get('skin'))(data.equipment)
+      const specializationIds = flatMap(map(get('id')))(data.specializations)
       return Promise.all([
-        getItems(itemsId), getSkins(skinIds), getGuild(data.body.guild), getSpecializations(specializationIds)
-      ]).then(parseData(data.body))
-        .then(merged => res.send({ body: merged, statusCode: data.statusCode }))
+        db.items([].concat(itemsId, bagsId)), db.skins(skinIds), getGuild(data.guild), db.specializations(specializationIds)
+      ]).then(parseData(data))
+        .then(merged => res.send(merged))
     })
+    .catch(status => res.sendStatus(status))
 }
 
-export default router
+module.exports = router

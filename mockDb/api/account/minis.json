@@ -1,0 +1,157 @@
+[
+  {
+    "id": 100,
+    "name": "Mini Brackish Skale",
+    "icon": "https://render.guildwars2.com/file/CB4F11A16832C619D219AEC495A540F7D2615EE4/625793.png",
+    "order": 133,
+    "item_id": 20213,
+    "_id": "1WUgXgyKMTFIBaUc"
+  },
+  {
+    "id": 540,
+    "name": "Mini Shadows Agent Kito",
+    "icon": "https://render.guildwars2.com/file/0B9B0BBE60523201950BBDE257E952F9E8AD0B49/1766833.png",
+    "order": 465,
+    "item_id": 83493,
+    "_id": "7ZZXpGxYxo0uDDIR"
+  },
+  {
+    "id": 319,
+    "name": "Mini Revenant Rytlock Brimstone",
+    "unlock": "This is only available in Guild Wars 2: Heart of Thorns—Deluxe.",
+    "icon": "https://render.guildwars2.com/file/2504F7F5ECE3173818A4BEF79EBABC274BAA5743/1001223.png",
+    "order": 2,
+    "item_id": 68688,
+    "_id": "92ljoIkCTcr0m1n3"
+  },
+  {
+    "id": 81,
+    "name": "Mini Dredge Strazar",
+    "icon": "https://render.guildwars2.com/file/0C5140C14AF2497D72361FDD9662EC0FBB030806/102721.png",
+    "order": 150,
+    "item_id": 20190,
+    "_id": "DVz510ci6axowJ9u"
+  },
+  {
+    "id": 504,
+    "name": "Mini Raptor Mount",
+    "icon": "https://render.guildwars2.com/file/1D48CDEABE2C50DA28EA5DDD46FC094567395895/1766845.png",
+    "order": 549,
+    "item_id": 84193,
+    "_id": "I6k9POkG0jzXTCv7"
+  },
+  {
+    "id": 497,
+    "name": "Mini Rogue Balthazar",
+    "icon": "https://render.guildwars2.com/file/E9419601F423D9ACCBBC733AAB3E230619F12205/1748159.png",
+    "order": 464,
+    "item_id": 82074,
+    "_id": "KHlRQ7oXSSNMEvmM"
+  },
+  {
+    "id": 292,
+    "name": "Mini Mordrem Thrasher",
+    "icon": "https://render.guildwars2.com/file/989001C64E609B4065D50F4E050DE9A942DA6C42/919355.png",
+    "order": 281,
+    "item_id": 66763,
+    "_id": "QbUvLvG1Knszfy5m"
+  },
+  {
+    "id": 562,
+    "name": "Mini Queen Nahlah",
+    "icon": "https://render.guildwars2.com/file/66FD0AACA8A2A7E94FA97878C40DBDF820BC30AC/1766836.png",
+    "order": 476,
+    "item_id": 82953,
+    "_id": "Qes9eGncIB5uV43O"
+  },
+  {
+    "id": 129,
+    "name": "Mini Risen Priest of Balthazar",
+    "icon": "https://render.guildwars2.com/file/3F9A1CA7C192FAFFDEE13E28A09AD8DA0F165FE4/534184.png",
+    "order": 105,
+    "item_id": 39090,
+    "_id": "Thb1YTffxcAhKSYS"
+  },
+  {
+    "id": 203,
+    "name": "Mini Holographic Scarlet",
+    "icon": "https://render.guildwars2.com/file/0E582F292430BD54C04AC7244BF8D2AFE4CDA158/643276.png",
+    "order": 195,
+    "item_id": 48743,
+    "_id": "i8uC74whfH0ruboC"
+  },
+  {
+    "id": 555,
+    "name": "Mini Master Sergeant Shadi",
+    "icon": "https://render.guildwars2.com/file/CBFAA5127E0E375C0190415E72CC73373FB44421/1766866.png",
+    "order": 496,
+    "item_id": 84601,
+    "_id": "jAX9qHdRJl25UtiV"
+  },
+  {
+    "id": 310,
+    "name": "Mini Skritta Claws",
+    "icon": "https://render.guildwars2.com/file/EF9DC90ADD06156C18E6DEB3FB16C80369B0A3EF/924589.png",
+    "order": 10,
+    "item_id": 68365,
+    "_id": "n0YThI35vYULGOwB"
+  },
+  {
+    "id": 510,
+    "name": "Mini Sunspear Kormir",
+    "icon": "https://render.guildwars2.com/file/25ED0D4A0E952213DF2D9E2EC45D3608FE9E6094/1766821.png",
+    "order": 535,
+    "item_id": 83395,
+    "_id": "pSf2EGKA99KtMNYk"
+  },
+  {
+    "id": 171,
+    "name": "Mini Twisted Nightmare",
+    "icon": "https://render.guildwars2.com/file/B5DA0F5DE6AD7675C214A76FCB5B19300DF7055B/625798.png",
+    "order": 144,
+    "item_id": 44728,
+    "_id": "vPuZ5gexWzkCpq1i"
+  },
+  {
+    "id": 289,
+    "name": "Mini Mystical Dragon",
+    "icon": "https://render.guildwars2.com/file/5C729598FD034B4916706B0295CD4F057FDE45DA/779874.png",
+    "order": 253,
+    "item_id": 43006,
+    "_id": "vSgEbOQsAbzTRsBi"
+  },
+  {
+    "id": 589,
+    "name": "Mini Green Raptor Hatchling",
+    "unlock": "<c=@reminder>This mini can be found inside Black Lion Chests.</c>",
+    "icon": "https://render.guildwars2.com/file/5EEE9A23053B0F6A75AAD4354CF823D5A2BBC306/1821096.png",
+    "order": 550,
+    "item_id": 84864,
+    "_id": "vrTFe2F2iIl6DnXt"
+  },
+  {
+    "id": 170,
+    "name": "Mini Liadri the Concealing Dark",
+    "icon": "https://render.guildwars2.com/file/959E7AFBACA7951D1104C8C56F63A5BF0566C408/619595.png",
+    "order": 125,
+    "item_id": 44641,
+    "_id": "vw6XeiMDsPT4zB8Q"
+  },
+  {
+    "id": 598,
+    "name": "Mini Blue Raptor Hatchling",
+    "unlock": "<c=@reminder>This mini can only be crafted in the Mystic Forge.</c>",
+    "icon": "https://render.guildwars2.com/file/37BD63B06A92F2340B3995C4792B31ADE336B30E/1821087.png",
+    "order": 551,
+    "item_id": 85057,
+    "_id": "yCUdNP2g13B8F8eh"
+  },
+  {
+    "id": 177,
+    "name": "Mini Queen Jennah",
+    "icon": "https://render.guildwars2.com/file/203CEDF1FD17B3BAB99A244DAC49FD5C4838B60C/625610.png",
+    "order": 126,
+    "item_id": 45001,
+    "_id": "z1OnxP4zzDQJQxEp"
+  }
+]

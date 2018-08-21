@@ -1,8 +1,10 @@
-import express from 'express'
-import bodyParser from 'body-parser'
-import * as admin from 'firebase-admin'
-import routes from './routes'
-import config from './config'
+const express = require('express')
+const bodyParser = require('body-parser')
+const compression = require('compression')
+const admin = require('firebase-admin')
+const routes = require('./routes')
+const config = require('./config')
+
 const app = express()
 
 const start = () => {
@@ -11,6 +13,7 @@ const start = () => {
     databaseURL: process.env.DATABASE_URL
   })
 
+  app.use(compression())
   app.use(bodyParser.urlencoded({ extended: false }))
   app.use(bodyParser.json())
 
@@ -20,4 +23,4 @@ const start = () => {
   })
 }
 
-export default start
+module.exports = start

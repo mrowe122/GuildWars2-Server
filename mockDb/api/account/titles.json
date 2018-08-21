@@ -1,0 +1,587 @@
+[
+  {
+    "id": 213,
+    "name": "Dark Traveler",
+    "achievement": 1824,
+    "achievements": [
+      {
+        "id": 1824,
+        "name": "Fear No Evil",
+        "description": "",
+        "requirement": "Collect key fragments from lesser nightmare pods, and unlock the greater nightmare pod while the Hidden Depths is dark.",
+        "locked_text": "",
+        "type": "Default",
+        "flags": ["Permanent"],
+        "tiers": [
+          {
+            "count": 1,
+            "points": 10
+          }
+        ],
+        "rewards": [
+          {
+            "type": "Title",
+            "id": 213
+          }
+        ],
+        "_id": "TIkBLDQiB8x0qDjO"
+      }
+    ],
+    "_id": "09eExn6fexYSvDHm"
+  },
+  {
+    "id": 13,
+    "name": "Golden",
+    "achievement": 10,
+    "achievements": [
+      {
+        "id": 10,
+        "name": "Gold Hoarder",
+        "description": "Money is truly no object for you.",
+        "requirement": "Have  coins in the wallet at one time.",
+        "locked_text": "",
+        "type": "Default",
+        "flags": ["Permanent"],
+        "tiers": [
+          {
+            "count": 10000,
+            "points": 10
+          },
+          {
+            "count": 100000,
+            "points": 10
+          },
+          {
+            "count": 1000000,
+            "points": 10
+          },
+          {
+            "count": 2000000,
+            "points": 10
+          }
+        ],
+        "rewards": [
+          {
+            "type": "Title",
+            "id": 13
+          }
+        ],
+        "_id": "zGGGRIOr0xmneHMf"
+      }
+    ],
+    "_id": "2bQr9Trhzqfgy7A4"
+  },
+  {
+    "id": 12,
+    "name": "Been there. Done that.",
+    "achievement": 137,
+    "achievements": [
+      {
+        "id": 137,
+        "name": "Been There, Done That",
+        "description": "Seeking Zhaitan's corruption in every corner of Tyria.",
+        "requirement": "Map-complete all locations in Tyria.",
+        "locked_text": "",
+        "type": "Default",
+        "flags": ["Permanent"],
+        "tiers": [
+          {
+            "count": 25,
+            "points": 5
+          },
+          {
+            "count": 50,
+            "points": 5
+          },
+          {
+            "count": 75,
+            "points": 5
+          },
+          {
+            "count": 100,
+            "points": 5
+          }
+        ],
+        "rewards": [
+          {
+            "type": "Mastery",
+            "region": "Tyria",
+            "id": 273
+          },
+          {
+            "type": "Title",
+            "id": 12
+          }
+        ],
+        "_id": "MIvYGGjKRobIBivi"
+      }
+    ],
+    "_id": "5SHLllKvO0qK79VV"
+  },
+  {
+    "id": 189,
+    "name": "Veteran",
+    "achievement": 1682,
+    "achievements": [
+      {
+        "id": 1682,
+        "name": "Birthday—Year 2",
+        "description": "You have a character that is more than 2 years old.",
+        "requirement": "",
+        "locked_text": "",
+        "type": "Default",
+        "flags": ["Pvp", "Hidden", "Permanent"],
+        "tiers": [
+          {
+            "count": 1,
+            "points": 1
+          }
+        ],
+        "rewards": [
+          {
+            "type": "Title",
+            "id": 189
+          }
+        ],
+        "_id": "i0vHaGUMPGOcsmMf"
+      }
+    ],
+    "_id": "73jNakTnbEK22Ql1"
+  },
+  {
+    "id": 293,
+    "name": "Sunspear Recruit",
+    "achievement": 3895,
+    "achievements": [
+      {
+        "id": 3895,
+        "icon": "https://render.guildwars2.com/file/10C902703E37A7ED22F00CB9249361593C5407B9/1824199.png",
+        "name": "Tip of the Spear",
+        "description": "<c=@Flavor>In addition to being a cultured and educated populace, the peoples of Elona are notably adept in ways of combat. </c>",
+        "requirement": "Recover all  Elonian weapons by completing events, looting chests, and identifying items in renown regions of the Crystal Desert.",
+        "locked_text": "",
+        "type": "ItemSet",
+        "flags": ["IgnoreNearlyComplete", "Pvp", "RepairOnLogin", "Permanent"],
+        "bits": [
+          {
+            "type": "Skin",
+            "id": 7354
+          },
+          {
+            "type": "Skin",
+            "id": 7345
+          },
+          {
+            "type": "Skin",
+            "id": 7344
+          },
+          {
+            "type": "Skin",
+            "id": 7341
+          },
+          {
+            "type": "Skin",
+            "id": 7339
+          },
+          {
+            "type": "Skin",
+            "id": 7342
+          },
+          {
+            "type": "Skin",
+            "id": 7350
+          },
+          {
+            "type": "Skin",
+            "id": 7356
+          },
+          {
+            "type": "Skin",
+            "id": 7343
+          },
+          {
+            "type": "Skin",
+            "id": 7340
+          },
+          {
+            "type": "Skin",
+            "id": 7346
+          },
+          {
+            "type": "Skin",
+            "id": 7355
+          },
+          {
+            "type": "Skin",
+            "id": 7348
+          },
+          {
+            "type": "Skin",
+            "id": 7347
+          },
+          {
+            "type": "Skin",
+            "id": 7351
+          },
+          {
+            "type": "Skin",
+            "id": 7353
+          }
+        ],
+        "tiers": [
+          {
+            "count": 1,
+            "points": 1
+          },
+          {
+            "count": 8,
+            "points": 1
+          },
+          {
+            "count": 16,
+            "points": 1
+          }
+        ],
+        "rewards": [
+          {
+            "type": "Item",
+            "id": 84274,
+            "count": 1
+          },
+          {
+            "type": "Title",
+            "id": 293
+          }
+        ],
+        "_id": "4lcgvEiHWL3Kmbrl"
+      }
+    ],
+    "_id": "R7gFYtJEV3bwphsX"
+  },
+  {
+    "id": 289,
+    "name": "Primeval Scion",
+    "achievement": 3753,
+    "achievements": [
+      {
+        "id": 3753,
+        "icon": "https://render.guildwars2.com/file/3FB1AE472DF109D022146F26B0F420140BFC26FE/1824200.png",
+        "name": "Last Rites",
+        "description": "<c=@Flavor>The elaborate rituals accompanying the funerals of Primeval rulers served as a bridge between the worlds of the living and the dead.</c>",
+        "requirement": "",
+        "locked_text": "",
+        "type": "ItemSet",
+        "flags": ["Pvp", "RepairOnLogin", "Permanent"],
+        "bits": [
+          {
+            "type": "Item",
+            "id": 84536
+          }
+        ],
+        "tiers": [
+          {
+            "count": 1,
+            "points": 0
+          }
+        ],
+        "rewards": [
+          {
+            "type": "Title",
+            "id": 289
+          }
+        ],
+        "_id": "cRWtfoCR9pF6FCBg"
+      }
+    ],
+    "_id": "YpF9oNXql1ZCOr2p"
+  },
+  {
+    "id": 117,
+    "name": "Gladiator",
+    "achievement": 247,
+    "achievements": [
+      {
+        "id": 247,
+        "name": "Gladiator",
+        "description": "Get your feet wet, rookie.",
+        "requirement": "Obtain  rank points.",
+        "locked_text": "",
+        "type": "Default",
+        "flags": ["IgnoreNearlyComplete", "Pvp", "RepairOnLogin", "Permanent"],
+        "tiers": [
+          {
+            "count": 50,
+            "points": 1
+          },
+          {
+            "count": 500,
+            "points": 5
+          },
+          {
+            "count": 1000,
+            "points": 5
+          },
+          {
+            "count": 1500,
+            "points": 5
+          },
+          {
+            "count": 2000,
+            "points": 5
+          },
+          {
+            "count": 2500,
+            "points": 5
+          },
+          {
+            "count": 4000,
+            "points": 5
+          },
+          {
+            "count": 5500,
+            "points": 5
+          },
+          {
+            "count": 7000,
+            "points": 5
+          },
+          {
+            "count": 8500,
+            "points": 5
+          }
+        ],
+        "rewards": [
+          {
+            "type": "Title",
+            "id": 117
+          }
+        ],
+        "_id": "fkzsnNjA9yEiv2mc"
+      }
+    ],
+    "_id": "Yrz7d8sEsfvAUbef"
+  },
+  {
+    "id": 162,
+    "name": "Respected Achiever",
+    "ap_required": 5000,
+    "_id": "fl54tbTGaVWJtJlw",
+    "achievements": []
+  },
+  {
+    "id": 191,
+    "name": "Stalwart",
+    "achievement": 1684,
+    "achievements": [
+      {
+        "id": 1684,
+        "name": "Birthday—Year 4",
+        "description": "You have a character that is more than 4 years old.",
+        "requirement": "",
+        "locked_text": "",
+        "type": "Default",
+        "flags": ["Pvp", "Hidden", "Permanent"],
+        "tiers": [
+          {
+            "count": 1,
+            "points": 1
+          }
+        ],
+        "rewards": [
+          {
+            "type": "Item",
+            "id": 79334,
+            "count": 1
+          },
+          {
+            "type": "Title",
+            "id": 191
+          }
+        ],
+        "_id": "uucDqQ0p53H5l0XN"
+      }
+    ],
+    "_id": "gEd833aKdrmNFev6"
+  },
+  {
+    "id": 185,
+    "name": "The Blazing Light",
+    "achievement": 4320,
+    "achievements": [
+      {
+        "id": 4320,
+        "name": "Darkness Illuminator",
+        "description": "",
+        "requirement": "Complete the third tier of the Queen's Gauntlet.",
+        "locked_text": "",
+        "type": "Default",
+        "flags": ["Permanent"],
+        "tiers": [
+          {
+            "count": 1,
+            "points": 20
+          }
+        ],
+        "rewards": [
+          {
+            "type": "Item",
+            "id": 44641,
+            "count": 1
+          },
+          {
+            "type": "Title",
+            "id": 185
+          }
+        ],
+        "_id": "5igFh7w0iBvYDBGa"
+      }
+    ],
+    "_id": "hNyuQ4SAf5fZrs8U"
+  },
+  {
+    "id": 208,
+    "name": "The Demolisher",
+    "achievement": 1799,
+    "achievements": [
+      {
+        "id": 1799,
+        "name": "The Demolisher",
+        "description": "",
+        "requirement": "Slay the Legendary Mordrem Demolisher. Appears rarely around Indigo Cave when controlled by the Pact.",
+        "locked_text": "",
+        "type": "Default",
+        "flags": ["Permanent"],
+        "tiers": [
+          {
+            "count": 1,
+            "points": 10
+          }
+        ],
+        "rewards": [
+          {
+            "type": "Mastery",
+            "region": "Tyria",
+            "id": 278
+          },
+          {
+            "type": "Title",
+            "id": 208
+          }
+        ],
+        "_id": "NPHir52sSjNMs8UK"
+      }
+    ],
+    "_id": "mT4UEVEUs0paHfVC"
+  },
+  {
+    "id": 190,
+    "name": "Faithful",
+    "achievement": 1683,
+    "achievements": [
+      {
+        "id": 1683,
+        "name": "Birthday—Year 3",
+        "description": "You have a character that is more than 3 years old.",
+        "requirement": "",
+        "locked_text": "",
+        "type": "Default",
+        "flags": ["Pvp", "Hidden", "Permanent"],
+        "tiers": [
+          {
+            "count": 1,
+            "points": 1
+          }
+        ],
+        "rewards": [
+          {
+            "type": "Item",
+            "id": 70243,
+            "count": 1
+          },
+          {
+            "type": "Title",
+            "id": 190
+          }
+        ],
+        "_id": "85VzwBMoFUwZha4V"
+      }
+    ],
+    "_id": "vTpe9vxUHuD7Nw12"
+  },
+  {
+    "id": 17,
+    "name": "Combat Healer",
+    "achievement": 136,
+    "achievements": [
+      {
+        "id": 136,
+        "name": "No One Left Behind",
+        "description": "So glad to see you!",
+        "requirement": "Revive  players.",
+        "locked_text": "",
+        "type": "Default",
+        "flags": ["Permanent"],
+        "tiers": [
+          {
+            "count": 10,
+            "points": 5
+          },
+          {
+            "count": 50,
+            "points": 5
+          },
+          {
+            "count": 100,
+            "points": 5
+          },
+          {
+            "count": 500,
+            "points": 5
+          },
+          {
+            "count": 1000,
+            "points": 5
+          }
+        ],
+        "rewards": [
+          {
+            "type": "Title",
+            "id": 17
+          }
+        ],
+        "_id": "eclipR1sV50dkei3"
+      }
+    ],
+    "_id": "w1qLx0vRPs8Ncquv"
+  },
+  {
+    "id": 188,
+    "name": "Loyal",
+    "achievement": 1681,
+    "achievements": [
+      {
+        "id": 1681,
+        "name": "Birthday—Year 1",
+        "description": "You have a character that is more than 1 year old.",
+        "requirement": "",
+        "locked_text": "",
+        "type": "Default",
+        "flags": ["Pvp", "Hidden", "Permanent"],
+        "tiers": [
+          {
+            "count": 1,
+            "points": 1
+          }
+        ],
+        "rewards": [
+          {
+            "type": "Title",
+            "id": 188
+          }
+        ],
+        "_id": "TS7HsCObmGwhhShk"
+      }
+    ],
+    "_id": "wkRdYNtoKEro0nMV"
+  }
+]

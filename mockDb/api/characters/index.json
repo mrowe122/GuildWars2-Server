@@ -1,10 +1,7 @@
-{
-	"body": [
-		"Corrupted Fear",
-		"Nova Crowe",
-		"Corrupted Nova",
-		"Corrupted Creed",
-		"Corrupted Matrix"
-	],
-	"statusCode": 200
-}
+[
+  "Corrupted Fear",
+  "Corrupted Creed",
+  "Corrupted Matrix",
+  "Nova Crowe",
+  "Corrupted Nova"
+]

@@ -1,7 +1,7 @@
-import path from 'path'
+const path = require('path')
 
-export default {
-  src: path.join(__dirname, '/src'),
-  build: path.join(__dirname, '/build'),
-  dist: path.join(__dirname, '/dist')
+module.exports = {
+  src: path.join(__dirname, 'src'),
+  dist: path.join(__dirname, 'dist'),
+  mock: path.join(__dirname, 'mockDb')
 }

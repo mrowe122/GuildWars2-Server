@@ -4,11 +4,11 @@ const admin = require('firebase-admin')
 const router = express.Router()
 
 router
-  .get('/', getPermissions)
+  .get('/', request)
 
-function getPermissions (req, res) {
+function request (req, res) {
   admin.database().ref(`users/${req.uid}`).once('value').then(snapshot => {
-    res.send(snapshot.val().permissions)
+    res.send(snapshot.val())
   })
 }
 

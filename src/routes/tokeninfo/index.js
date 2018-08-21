@@ -1,7 +1,8 @@
-import express from 'express'
-import unirest from 'unirest'
-import * as admin from 'firebase-admin'
-import config from '../../config'
+const express = require('express')
+const fetch = require('node-fetch')
+const admin = require('firebase-admin')
+const config = require('../../config')
+const { checkErrors } = require('../../lib')
 
 const router = express.Router()
 
@@ -9,19 +10,18 @@ router
   .post('/', addToken)
 
 function addToken (req, res) {
-  unirest.get(`${config.gwHost}/tokeninfo`)
-    .headers({ Authorization: `Bearer ${req.body.apiKey}` })
-    .end(data => {
-      if (data.ok) {
-        admin.database().ref(`users/${req.uid}`).set({
-          apiKey: req.body.apiKey,
-          permissions: data.body.permissions
-        })
-        res.send({ permissions: data.body.permissions })
-      } else {
-        res.status(403).send(data.body)
-      }
+  fetch(`${config.gwHost}/tokeninfo`, { headers: { Authorization: `Bearer ${req.body.apiKey}` } })
+    .then(checkErrors('tokeninfo'))
+    .then(data => {
+      admin.database().ref(`users/${req.uid}`).set({
+        apiKey: req.body.apiKey,
+        permissions: data.permissions
+      })
+      return res.send(data.permissions)
+    })
+    .catch(err => {
+      return res.sendStatus(403).send(err)
     })
 }
 
-export default router
+module.exports = router
