@@ -17,7 +17,8 @@
     "build:server": "./node_modules/.bin/webpack --config ./webpack/webpack.config.js",
     "build:mockServer": "./node_modules/.bin/webpack --config ./webpack/webpack-mock.config.js",
     "sandbox": "node_modules/.bin/nodemon sandbox/test.js",
-    "security": "node_modules/.bin/nsp check"
+    "security": "node_modules/.bin/nsp check",
+    "postinstall": "npm run build"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
