@@ -23,7 +23,7 @@ function request (req, res) {
       db.finishers(finishers.map(get('id'))).then(metadata => mergeIds(finishers, metadata))
         .then(data => res.send(data))
     })
-    .catch(status => res.sendStatus(status))
+    .catch(err => res.status(err.status).send(err.statusText))
 }
 
 module.exports = router

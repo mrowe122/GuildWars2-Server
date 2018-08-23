@@ -16,7 +16,7 @@ function requestAllCharacters (req, res) {
   fetch(`${config.gwHost}/characters`, { headers: { Authorization: `Bearer ${req.apiKey}` } })
     .then(checkErrors('characters'))
     .then(data => res.send(data))
-    .catch(status => res.sendStatus(status))
+    .catch(err => res.status(err.status).send(err.statusText))
 }
 
 function requestCharacter (req, res) {
@@ -36,7 +36,7 @@ function requestCharacter (req, res) {
       ]).then(parseData(data))
         .then(merged => res.send(merged))
     })
-    .catch(status => res.sendStatus(status))
+    .catch(err => res.status(err.status).send(err.statusText))
 }
 
 module.exports = router

@@ -9,7 +9,7 @@ const CHUNK_SIZE = 200
 const checkErrors = log => response => {
   if (!response.ok) {
     debug(`Gw2:${log}:`)(response.status, response.statusText, response.url)
-    throw response.status === 400 ? 403 : response
+    throw response
   }
   return response.json()
 }
@@ -158,7 +158,7 @@ const getApiKey = (req, res, next) => {
       req.apiKey = uuid.apiKey
       next()
     } else {
-      res.sendStatus(403).send({ message: 'No Api Key' })
+      res.status(403).send({ message: 'No Api Key' })
     }
   })
 }

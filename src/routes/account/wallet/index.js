@@ -25,7 +25,7 @@ function request (req, res) {
         .then(data => mergeIds(response, data))
         .then(data => res.send(data))
     })
-    .catch(status => res.sendStatus(status))
+    .catch(err => res.status(err.status).send(err.statusText))
 }
 
 module.exports = router

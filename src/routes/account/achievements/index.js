@@ -66,7 +66,7 @@ function request (req, res) {
     }))
     res.send(_finalData)
   })
-  .catch(status => res.sendStatus(status))
+  .catch(err => res.status(err.status).send(err.statusText))
 }
 
 module.exports = router

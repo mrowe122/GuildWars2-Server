@@ -24,7 +24,7 @@ function request (req, res) {
         .then(data => db.achievements(flatMap(i => i.achievements)(data)).then(ach => mergeIds(data, ach)))
         .then(data => res.send(data))
     })
-    .catch(status => res.sendStatus(status))
+    .catch(err => res.status(err.status).send(err.statusText))
 }
 
 module.exports = router

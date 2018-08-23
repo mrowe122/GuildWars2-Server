@@ -16,7 +16,7 @@ function request (req, res) {
       db.skins(response)
         .then(data => res.send(data))
     })
-    .catch(status => res.sendStatus(status))
+    .catch(err => res.status(err.status).send(err.statusText))
 }
 
 module.exports = router

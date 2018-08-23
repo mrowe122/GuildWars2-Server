@@ -19,9 +19,7 @@ function addToken (req, res) {
       })
       return res.send(data.permissions)
     })
-    .catch(err => {
-      return res.sendStatus(403).send(err)
-    })
+    .catch(err => res.status(err.status).send(err.statusText))
 }
 
 module.exports = router
